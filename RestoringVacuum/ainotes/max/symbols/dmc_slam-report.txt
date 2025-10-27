@@ -1,0 +1,73 @@
+> read @../symbols/dmc_slam.txt and classify them, give me some insights about where to look for IPC, I2C, CAN Messages, or protocols to a
+
+Processed @mentions: ../symbols/dmc_slam.txt
+
+I scanned the symbol list you provided and grouped the most relevant symbols, then wrote targeted advice on where to look if you want to reverse/trace network or IPC protocols (and what to look for). Short version: this binary clearly contains its own TCP/UDP networking and custom packet/bitstream/serialization layers (image + SLAM/map messages) — there are many socket/TCPPacket/stream functions you should inspect. I could not find any explicit I2C or CAN API symbols in that list; those would usually appear as /dev/tty, /dev/i2c, SocketCAN, can_frame, PF_CAN, or termios/serial functions — none are present, so hardware bus traffic is likely handled outside this module (kernel drivers or a different process) or carried over network/serial wrappers not visible here.
+
+1) High‑level classification (major areas and representative symbols)
+- Networking / sockets / transport
+  - CServerSock, CClientSock, CSingleSock (Create, AcceptSocket, _OnNetworkLoop, OnRecvLoop, StartRecv, Close, Connect, SendBinary, SendString, SendFormatString, SetRecvTimeOut, etc.)
+  - TCPPacket (TCPPacket::Receive, SendBinary, SendString, SendFormatString, _RecvHeader, _RecvBody, _SendBinBuf, SockSendData, SockRecvData, SockRecvWait, _Allocate/_Reallocate, ResetBuffer, AddDataToBuffer, SendDataInBuffer, GetTickCount)
+  - sock_* wrappers: sock_create_udp, sock_create_server, sock_create_client, sock_send, sock_recv, sock_accept, sock_release, sock_init, sock_close
+  - CCVSlamMonitorServer (Start/Stop, _cbReceive, _OnSendLoopImg, _OnSendLoopMap, _cbSendLoopMap, _cbSendLoopImg, _cbReceive etc.)
+  - FragSend, MonitorServerStart, InitializeOffLineDataSocket, InitializeLocalizerServer — suggests server/client monitoring & offline data features
+  - nameToAddr, get_wsaerrstring – Windows sockets support
+
+- Serialization / message framing / bitstreams
+  - WBaseStream, RBaseStream, WLByteStream, WLByteStream::PutBytes/PutWord/PutByte, WMByteStream, RMByteStream, WMBitStream, RMBitStream, RLBitStream, WMBitStream::Put/Get/PutHuff/Get/WriteBlock/Open/Close/ResetBuffer/Flush/GetPos/Show/SetPos/ReadBlock/Move/Skip
+  - RJpegBitStream/WJpegBitStream (image streams), WJpegBitStream::Flush/WriteBlock/Open/Close
+  - numerous operator<< and operator>> overloads for SLAM types — used for text or binary stream serialization
+  - Serialize/Deserialize methods on major types: CSlamPF::Serialize(std::ostream&), CFishEyeCal::Serialize(std::ostream&, CamParam const&) and many operator>> for CLandmark/CLmk3DPos/CParticle/etc.
+  - StreamWrite / StreamRead (CCVSlam::StreamWrite/StreamRead, VLocalizerInterface::StreamWrite/StreamRead, StreamWrite2DImgInfo, StreamWrite3DMapInfo, pub_StreamMap/std::istream& counterparts)
+
+- Image & compression handling (likely part of what is transmitted)
+  - GrFmtJpeg/GrFmtBmp/GrFmtTiff/GrFmtPxM readers & writers, CJpegWrap/CJpegTrans, RJpegBitStream/WJpegBitStream, CJpegTrans::Allocate/operator(), CJpegWrap::ImageToJpegMem etc.
+  - Functions that prepare image buffers (Remap, TransferImage, ExtractVip2DInfo, MakeUniVisionImageMask, SetImgMask, SaveImage/SaveToText/SaveBinary)
+
+- SLAM core / mapping / particle filters & algorithms
+  - CSlamPF, CParticle, MLocalizer, CCVSlam, CCVSlamProc, CLmk3DPos, MRelocation, MGROEst, many functions for landmark management, prediction, observation, resampling, pose estimation etc.
+
+- Threading / IPC primitives within the process
+  - CSingleThread, Event, CWaitEvent, CSync, CDoubleBuffer, CStackData (thread start/stop/pause/resume, SetEvent/Wait/Signal, Lock/Unlock)
+  - Callback registration APIs: CClientSock::SetCallBackOnReceive, SetCallBackOnClose, SetCallBackOnAccept; CServerSock::SetCallBackOnAccept; VLocalizerInterface::SetCallBackOnEventCVSLAM, SetCallBackOnEventIMU, SetCallBackOnEventConsole, SetCallBackOnEvent… — indicates callbacks for external events
+
+- Configuration / file IO
+  - ReadINI*, WriteINI*, LoadParamSLAM, LoadCameraParamFromINI, etc. Ports/addresses and protocol parameters are often in INI files.
+
+2) Where to inspect for IPC / protocol analysis (detailed pointers)
+If you want to reverse the protocol(s) used for inter-process communication or remote monitoring, prioritize these locations:
+
+A. Transport layer (framing / messaging)
+- TCPPacket:: _RecvHeader, _RecvBody, Receive, SendBinary, _SendBinBuf, SendString, SendFormatString, SendDataInBuffer, AddDataToBuffer, ResetBuffer, SockSendData, SockRecvData, SockRecvWait
+  - These implement framing/headers, message type fields and how payloads are split/assembled. Put breakpoints or dump parameters here to see raw bytes and header layout.
+
+- CClientSock::OnRecvLoop / CServerSock::_OnNetworkLoop / CServerSock::_OnNetworkLoop / CClientSock::cbRecvLoop
+  - These are the async receive loops — inspect how incoming buffers are passed into TCPPacket or stream decoders.
+
+- FragSend
+  - Appears to fragment large payloads (images/maps). See how it tags/frame fragments.
+
+B. Application layer (message types & dispatch)
+- CCVSlamCtrl_interface::_SendVisionAndOddometry(...) and _SendEvent(ecvEvent,..)
+  - These assemble the high-level messages (image + odometry, events). Look at the exact fields passed in and how they’re appended to a TCPPacket/WBitStream.
+
+- CCVSlam::StreamWrite / StreamWrite2DImgInfo / StreamWrite3DMapInfo and VLocalizerInterface::StreamWrite/StreamRead
+  - These write map and image data into streams; their output is likely what is sent across the network. The stream format (binary/text) is revealed here.
+
+- operator<< / operator>> overloads for SLAM data types (CLandmark, CParticle, Tmpl2DPoint/3DPoint, tag3DSlamData, etc.)
+  - They define the data field order and types when serializing. Reverse these to build schema for messages.
+
+C. Encodings & compression
+- WMBitStream, RMBitStream, RLBitStream, WMByteStream, RMByteStream, RJpegBitStream/WJpegBitStream
+  - These do bit-level packing and Huffman/JPEG handling. Inspect Put/Get and Huffman related functions (PutHuff, GetHuff, bsCreateSourceHuffmanTable, bsCreateEncodeHuffmanTable) to determine binary encoding and compression wrappers around payloads.
+
+- GrFmtJpeg*/CJpegWrap/CJpegTrans
+  - If images are transmitted, they’re likely JPEG-compressed — look for how JPEG blocks are embedded in TCP messages (are they raw JPEG files or bitstream-wrapped?)
+
+D. Discovery / ports / config
+- MonitorServerStart, CCVSlamMonitorServer::Start/Stop, InitializeOffLineDataSocket, InitializeLocalizerServer, ReadINI* and LoadParamSLAM, LoadCameraParamFromINI
+  - Configuration/INIs often contain ports, IPs, message version numbers or flags (e.g., enable/disable RTVSC). Read those INI files or instrument the ReadINI functions to get the port numbers and options.
+
+E. Callbacks & event APIs (IPC hooks)
+- VLocalizerInterface::SetCallBackOnEventCVSLAM, SetCallBackOnEventIMU, SetCallBackOnEventConsole, SetCallBackFuncWeight etc.
+  - If another process interacts via in‑process callbacks (e.g., a plugin or SDK), check the registration points to see how external modules feed data into the SLAM engine. These hints show how IMU or odometry events are delivered — could be via network client or local library glue.

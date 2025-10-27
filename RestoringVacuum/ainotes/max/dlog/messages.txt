@@ -1,0 +1,35 @@
+# Finding out the messages passed on every dlog_print call
+
+```console
+s sym.imp.__dlog_print
+af
+afs void dlog_print(int,int,char*,char*)
+e emu.str=true
+e anal.hasnext=true
+aap;aar;aac
+axtq
+pdc@@c:axtq | grep dlog_print
+```
+
+output of the script is: 
+```
+[0x00130ee0]> pdc@@c:axtq | grep dlog_print
+         dlog_print () // void dlog_print(0, 6, "VIEW_LOG", "%s: %s(%d) > \x1b[0//40//31msize:[%d]\n\x1b[0m")
+         dlog_print () // void dlog_print(0, 6, "VIEW_LOG", "%s: %s(%d) > \x1b[0//40//31m[%02x]\n\x1b[0m")
+         dlog_print () // void dlog_print(0, 6, "VIEW_LOG", "%s: %s(%d) > \x1b[0//40//31msize:[%d]\n\x1b[0m")
+         dlog_print () // void dlog_print(0, 6, "VIEW_LOG", "%s: %s(%d) > \x1b[0//40//31m[%02x]\n\x1b[0m")
+         dlog_print () // void dlog_print(0, 6, "VIEW_LOG", "%s: %s(%d) > \x1b[0//40//31msize:[%d]\n\x1b[0m")
+         dlog_print () // void dlog_print(0, 6, "VIEW_LOG", "%s: %s(%d) > \x1b[0//40//31m[%02x]\n\x1b[0m")
+         dlog_print () // void dlog_print(0, 6, "VIEW_LOG", "%s: %s(%d) > \x1b[0//40//31msize:[%d]\n\x1b[0m")
+         dlog_print () // void dlog_print(0, 6, "VIEW_LOG", "%s: %s(%d) > \x1b[0//40//31m[%02x]\n\x1b[0m")
+         dlog_print () // void dlog_print(0, 6, "VIEW_LOG", "%s: %s(%d) > \x1b[0//40//31mRM_ADV_MODE_DOCKING:[%d][%d]\x1b[0m")
+         dlog_print () // void dlog_print(0, 0, "VIEW_LOG", "%s: %s(%d) > \x1b[0//40//31mRM_ADV_MODE_HOMING:[%d]\x1b[0m")
+         dlog_print () // void dlog_print(0, 6, "VIEW_LOG", "%s: %s(%d) > \x1b[0//40//31mRM_ADV_MODE_AUTO:[%d][%d][%d][%d][%d]\x1b[0m")
+         dlog_print () // void dlog_print(0, 6, "VIEW_LOG", "%s: %s(%d) > \x1b[0//40//31mRM_ADV_MODE_DOCKING:[%d][%d]\x1b[0m")
+         dlog_print () // void dlog_print(0, 0, "VIEW_LOG", "%s: %s(%d) > \x1b[0//40//31mRM_ADV_MODE_HOMING:[%d]\x1b[0m")
+         dlog_print () // void dlog_print(0, 6, "VIEW_LOG", "%s: %s(%d) > \x1b[0//40//31mRM_ADV_MODE_AUTO:[%d][%d][%d][%d][%d]\x1b[0m")
+         dlog_print () // void dlog_print(0, 6, "VIEW_LOG", "%s: %s(%d) > \x1b[0//40//31mRM_ADV_MODE_DOCKING:[%d][%d]\x1b[0m")
+         dlog_print () // void dlog_print(0, 0, "VIEW_LOG", "%s: %s(%d) > \x1b[0//40//31mRM_ADV_MODE_HOMING:[%d]\x1b[0m")
+         dlog_print () // void dlog_print(0, 6, "VIEW_LOG", "%s: %s(%d) > \x1b[0//40//31mRM_ADV_MODE_AUTO:[%d][%d][%d][%d][%d]\x1b[0m")
+[0x00130ee0]>
+```

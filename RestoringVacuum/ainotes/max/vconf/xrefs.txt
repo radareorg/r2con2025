@@ -1,0 +1,63 @@
+s sym.imp.vconf_set_int
+/r $$
+> /r $$
+(nofunc) 0x24e114 [CALL] bl sym.imp.vconf_set_int
+(nofunc) 0x24e120 [CALL] bl sym.imp.vconf_set_int
+(nofunc) 0x24e12c [CALL] bl sym.imp.vconf_set_int
+(nofunc) 0x24e138 [CALL] bl sym.imp.vconf_set_int
+(nofunc) 0x24e144 [CALL] bl sym.imp.vconf_set_int
+(nofunc) 0x24e1b0 [CALL] bl sym.imp.vconf_set_int
+(nofunc) 0x24e1bc [CALL] bl sym.imp.vconf_set_int
+>
+> pd--1@@c:axtq
+0x0024e110      ldr r0, str.db_rvc_vision_ver ; [0x24e21c:4]=0x487a04 str.db_rvc_vision_ver ; "db/rvc/vision_ver"
+0x0024e114      bl sym.imp.vconf_set_int    ; sym.imp.vconf_set_int(0x0, 0x0, 0x0, 0x0)
+0x0024e11c      ldr r0, str.db_rvc_main_ver ; [0x24e220:4]=0x487a18 str.db_rvc_main_ver ; "db/rvc/main_ver"
+0x0024e120      bl sym.imp.vconf_set_int    ; sym.imp.vconf_set_int(0x0, 0x0, 0x0, 0x0)
+0x0024e128      ldr r0, str.db_rvc_sensor_ver ; [0x24e224:4]=0x487a28 str.db_rvc_sensor_ver ; "(zH" ; "db/rvc/sensor_ver"
+0x0024e12c      bl sym.imp.vconf_set_int    ; sym.imp.vconf_set_int(0x0, 0x0, 0x0, 0x0)
+0x0024e134      ldr r0, str.db_rvc_display_ver ; [0x24e228:4]=0x487a3c str.db_rvc_display_ver ; "<zH" ; "db/rvc/display_ver"
+0x0024e138      bl sym.imp.vconf_set_int    ; sym.imp.vconf_set_int(0x0, 0x0, 0x0, 0x0)
+0x0024e140      ldr r0, str.db_rvc_model_nation ; [0x24e22c:4]=0x487a50 str.db_rvc_model_nation ; "db/rvc/model_nation"
+0x0024e144      bl sym.imp.vconf_set_int    ; sym.imp.vconf_set_int(0x0, 0x0, 0x0, 0x0)
+0x0024e1ac      ldr r0, str.db_rvc_cleantool_info ; [0x24e238:4]=0x487a8c str.db_rvc_cleantool_info ; "db/rvc/cleantool_info"
+0x0024e1b0      bl sym.imp.vconf_set_int    ; sym.imp.vconf_set_int(0x0, 0x0, 0x0, 0x0)
+0x0024e1b8      ldr r0, str.db_rvc_repetition_info ; [0x24e23c:4]=0x487aa4 str.db_rvc_repetition_info ; "db/rvc/repetition_info"
+0x0024e1bc      bl sym.imp.vconf_set_int    ; sym.imp.vconf_set_int(0x0, 0x0, 0x0, 0x0)
+>
+
+> pd--1@@c:axtq
+            0x0024e290      30009fe5       ldr r0, str.db_rvc_accumulated_energy ; [0x24e2c8:4]=0x487ae4 str.db_rvc_accumulated_energy ; "db/rvc/accumulated_energy"
+            0x0024e294      568bfbeb       bl sym.imp.vconf_set_dbl    ; sym.imp.vconf_set_dbl(0x0, 0x0, 0x0, 0x0)
+            0x0024e7c4      30009fe5       ldr r0, str.db_rvc_accumulated_energy ; [0x24e7fc:4]=0x487ae4 str.db_rvc_accumulated_energy ; "db/rvc/accumulated_energy"
+            0x0024e7c8      098afbeb       bl sym.imp.vconf_set_dbl    ; sym.imp.vconf_set_dbl(0x0, 0x0, 0x0, 0x0)
+            0x0024f670      0030a0e3       mov r3, 0
+            0x0024f674      5e86fbeb       bl sym.imp.vconf_set_dbl    ; sym.imp.vconf_set_dbl(0x0, 0x0, 0x0, 0x0)
+>
+
+> pd--1@@c:axtq
+            0x0024e088      88019fe5       ldr r0, str.db_rvc_build_date ; [0x24e218:4]=0x4879f0 str.db_rvc_build_date ; "db/rvc/build_date"
+            0x0024e08c      d48cfbeb       bl sym.imp.vconf_set_str    ; sym.imp.vconf_set_str(0x0, 0x0, 0x0, 0x0)
+            0x0024e1a0      8c009fe5       ldr r0, str.db_rvc_model_info ; [0x24e234:4]=0x487a78 str.db_rvc_model_info ; "db/rvc/model_info"
+            0x0024e1a4      8e8cfbeb       bl sym.imp.vconf_set_str    ; sym.imp.vconf_set_str(0x0, 0x0, 0x0, 0x0)
+            0x003aec6c      68059fe5       ldr r0, str.db_rvc_assym    ; [0x3af1dc:4]=0x4ab868 str.db_rvc_assym ; "db/rvc/assym"
+            0x003aec70      db09f6eb       bl sym.imp.vconf_set_str    ; sym.imp.vconf_set_str(0x0, 0x0, 0x0, 0x0)
+            0x003aeca0      3c059fe5       ldr r0, str.db_rvc_assymv   ; [0x3af1e4:4]=0x4ab878 str.db_rvc_assymv ; "db/rvc/assymv"
+            0x003aeca4      ce09f6eb       bl sym.imp.vconf_set_str    ; sym.imp.vconf_set_str(0x0, 0x0, 0x0, 0x0)
+            0x003aee2c      c0039fe5       ldr r0, str.db_rvc_serial_lower ; [0x3af1f4:4]=0x4ab9b8 str.db_rvc_serial_lower ; "db/rvc/serial_lower"
+            0x003aee30      6b09f6eb       bl sym.imp.vconf_set_str    ; sym.imp.vconf_set_str(0x0, 0x0, 0x0, 0x0)
+            0x003aeee4      10039fe5       ldr r0, str.db_rvc_assyd    ; [0x3af1fc:4]=0x4ab8bc str.db_rvc_assyd ; "db/rvc/assyd"
+            0x003aeee8      3d09f6eb       bl sym.imp.vconf_set_str    ; sym.imp.vconf_set_str(0x0, 0x0, 0x0, 0x0)
+            0x003aef18      e0029fe5       ldr r0, str.db_rvc_assydv   ; [0x3af200:4]=0x4ab8cc str.db_rvc_assydv ; "db/rvc/assydv"
+            0x003aef1c      3009f6eb       bl sym.imp.vconf_set_str    ; sym.imp.vconf_set_str(0x0, 0x0, 0x0, 0x0)
+            0x003aef9c      68029fe5       ldr r0, str.db_rvc_group_info_lower ; [0x3af20c:4]=0x4ab950 str.db_rvc_group_info_lower ; "db/rvc/group_info_lower"
+            0x003aefa0      0f09f6eb       bl sym.imp.vconf_set_str    ; sym.imp.vconf_set_str(0x0, 0x0, 0x0, 0x0)
+            0x003af048      c4019fe5       ldr r0, str.db_rvc_assys    ; [0x3af214:4]=0x4ab894 str.db_rvc_assys ; "db/rvc/assys"
+            0x003af04c      e408f6eb       bl sym.imp.vconf_set_str    ; sym.imp.vconf_set_str(0x0, 0x0, 0x0, 0x0)
+            0x003af07c      94019fe5       ldr r0, str.db_rvc_assysv   ; [0x3af218:4]=0x4ab8a4 str.db_rvc_assysv ; "db/rvc/assysv"
+            0x003af080      d708f6eb       bl sym.imp.vconf_set_str    ; sym.imp.vconf_set_str(0x0, 0x0, 0x0, 0x0)
+            0x003af128      f0009fe5       ldr r0, str.db_rvc_group_info_upper ; [0x3af220:4]=0x4ab92c str.db_rvc_group_info_upper ; "db/rvc/group_info_upper"
+            0x003af12c      ac08f6eb       bl sym.imp.vconf_set_str    ; sym.imp.vconf_set_str(0x0, 0x0, 0x0, 0x0)
+            0x003af1b0      74009fe5       ldr r0, str.db_rvc_serial_upper ; [0x3af22c:4]=0x4ab988 str.db_rvc_serial_upper ; "db/rvc/serial_upper"
+            0x003af1b4      8a08f6eb       bl sym.imp.vconf_set_str    ; sym.imp.vconf_set_str(0x0, 0x0, 0x0, 0x0)
+>

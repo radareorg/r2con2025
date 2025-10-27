@@ -1,0 +1,296 @@
+[INS] Sensor_Check -- max_min(%5.2f, %5.2f, %5.2f) \n
+[INS] Sensor_Check -- mean   (%5.2f, %5.2f, %5.2f) \n
+device.res.sensor.thread
+device.res.sensor.thread.priority
+device.res.sensor.thread.wait_start_signal
+device.res.sensor.thread.sampling_time
+device.res.sensor.thread.time_report
+device.res.sensor.ol_processing
+device.res.sensor.ol_processing.thread.priority
+device.res.sensor.ol_processing.thread.wait_start_signal
+device.res.sensor.ol_processing.thread.sampling_time
+device.res.sensor.ol_processing.thread.sleep_time
+device.res.sensor.ol_processing.thread.time_report
+device.res.sensor.ol_processing.thread.control_max_time
+device.res.sensor.acc_manager
+device.res.sensor.acc_manager.sample_rate
+device.res.sensor.acc_manager.sense_range
+device.res.sensor.acc_manager.thread.priority
+device.res.sensor.acc_manager.thread.wait_start_signal
+device.res.sensor.acc_manager.thread.sampling_time
+device.res.sensor.acc_manager.thread.time_report
+status.map_building.monitoring.sensor
+status.map_building.monitoring.sensor.full_frame
+status.map_building.monitoring.virtual_sensor
+status.sensor_modification
+status.sensor_modification.time_report
+status.sensor_modification.msglevel.docking_candidate
+status.sensor_modification.msglevel.docking_signal
+status.sensor_modification.msglevel.mod_acc
+status.sensor_modification.virtual_halo
+status.sensor_modification.virtual_halo.station_size.regular
+status.sensor_modification.virtual_halo.station_size.auto
+status.sensor_modification.virtual_halo.station_size.small
+status.sensor_modification.virtual_halo.station_holding.time_count
+status.sensor_modification.virtual_halo.station_holding.bump_count
+status.sensor_modification.virtual_gate
+status.sensor_modification.virtual_magnetic_gate
+status.sensor_modification.virtual_magnetic_gate.moving_ext_cell
+status.sensor_modification.virtual_magnetic_gate.cleaning_ext_cell
+status.sensor_modification.ir_modification
+status.sensor_modification.upper_stuck_threshold.left
+status.sensor_modification.upper_stuck_threshold.front
+status.sensor_modification.upper_stuck_threshold.right
+status.sensor_modification.upper_stuck_threshold.max_count
+status.sensor_modification.upper_stuck_threshold.latch_max_count
+status.sensor_modification.upper_dist_offset_l
+status.sensor_modification.upper_dist_offset_f
+status.sensor_modification.upper_dist_offset_r
+status.sensor_modification.upper_stuck_new
+status.sensor_modification.narrow_pass
+status.sensor_modification.narrow_pass.dist_sum
+status.sensor_modification.narrow_pass.threshold
+status.sensor_modification.narrow_pass.ir_min
+status.sensor_modification.ignore.ir
+status.sensor_modification.ignore.bott
+status.sensor_modification.ignore.bump
+status.sensor_modification.ignore.susp
+status.sensor_modification.ignore.etc
+status.sensor_modification.ignore.upp_dist
+status.sensor_modification.virtual_rear
+status.sensor_modification.sensor_array.dist_near_thres
+status.sensor_modification.sensor_array.sarray_update_period
+status.sensor_modification.back_slant_with_lift
+status.sensor_modification.dock_sig_latch_max
+status.sensor_modification.wild_deep
+status.sensor_modification.accepted_obs_cnt
+status.sensor_modification.ignore_ol_diff
+status.sensor_modification.rotate_halo
+status.sensor_modification.rotate_halo.ang_low
+status.sensor_modification.rotate_halo.ang_high
+status.sensor_modification.rotate_halo.near_cell_dist
+status.sensor_modification.rotate_side_halo
+status.sensor_modification.rotate_side_halo.ang_low
+status.sensor_modification.rotate_side_halo.ang_high
+status.sensor_modification.rotate_side_halo.near_cell_dist
+status.sensor_modification.homing__with_map
+status.sensor_modification.homing_area_cleaning__with_map
+status.sensor_modification.charger_front_angle_compensation
+status.wild.process.deg_of_sensor
+task.nav.fsm.ir_drag.pf.thresh_sensor_inputs
+task.nav.fsm.action.sensor_stop.timeout
+task.nav.fsm.action.sensor_stopandcheck.timeout
+task.nav.fsm.action.sensor_stopandcheck.check_time
+task.nav.fsm.action.sensor_back.timeout
+task.nav.fsm.action.sensor_stopandback.timeout
+task.nav.fsm.action.sensor_approach_obs.timeout
+task.nav.fsm.action.sensor_approach_obs.check_time
+task.nav.fsm.action.sensor_stopandcheckandback.timeout
+task.nav.fsm.action.sensor_stopandcheckandback.check_time
+task.nav.fsm.sensor_action.ir
+task.nav.fsm.sensor_action.bott
+task.nav.fsm.sensor_action.bump
+task.nav.fsm.sensor_action.magnet
+task.nav.fsm.sensor_action.sg_gate
+task.nav.fsm.sensor_action.sg_fence
+task.nav.fsm.sensor_action.mb_tangle
+task.nav.fsm.sensor_action.sb_tangle
+task.nav.fsm.sensor_action.lift
+task.nav.fsm.sensor_action.wstuck
+task.nav.fsm.sensor_action.climb
+task.nav.fsm.sensor_action.slip
+task.nav.fsm.sensor_action.st_fence
+task.nav.fsm.sensor_action.emc_turn
+task.nav.fsm.sensor_action.narrow_pass
+task.nav.fsm.sensor_action.emc_stop
+task.nav.fsm.sensor_action.upper_stuck
+task.nav.fsm.sensor_action.back_climb
+task.nav.fsm.sensor_action.ir.back_dist
+task.nav.fsm.sensor_action.bott.back_dist
+task.nav.fsm.sensor_action.bump.back_dist
+task.nav.fsm.sensor_action.magnet.back_dist
+task.nav.fsm.sensor_action.sg_gate.back_dist
+task.nav.fsm.sensor_action.sg_fence.back_dist
+task.nav.fsm.sensor_action.mb_tangle.back_dist
+task.nav.fsm.sensor_action.sb_tangle.back_dist
+task.nav.fsm.sensor_action.lift.back_dist
+task.nav.fsm.sensor_action.wstuck.back_dist
+task.nav.fsm.sensor_action.climb.back_dist
+task.nav.fsm.sensor_action.slip.back_dist
+task.nav.fsm.sensor_action.st_fence.back_dist
+task.nav.fsm.sensor_action.emc_turn.back_dist
+task.nav.fsm.sensor_action.narrow_pass.back_dist
+task.nav.fsm.sensor_action.emc_stop.back_dist
+task.nav.fsm.sensor_action.upper_stuck.back_dist
+task.nav.fsm.sensor_action.back_climb.back_dist
+task.nav.fsm.sensor_action.ir.back_vel
+task.nav.fsm.sensor_action.bott.back_vel
+task.nav.fsm.sensor_action.bump.back_vel
+task.nav.fsm.sensor_action.magnet.back_vel
+task.nav.fsm.sensor_action.sg_gate.back_vel
+task.nav.fsm.sensor_action.sg_fence.back_vel
+task.nav.fsm.sensor_action.mb_tangle.back_vel
+task.nav.fsm.sensor_action.sb_tangle.back_vel
+task.nav.fsm.sensor_action.lift.back_vel
+task.nav.fsm.sensor_action.wstuck.back_vel
+task.nav.fsm.sensor_action.climb.back_vel
+task.nav.fsm.sensor_action.slip.back_vel
+task.nav.fsm.sensor_action.st_fence.back_vel
+task.nav.fsm.sensor_action.emc_turn.back_vel
+task.nav.fsm.sensor_action.narrow_pass.back_vel
+task.nav.fsm.sensor_action.emc_stop.back_vel
+task.nav.fsm.sensor_action.upper_stuck.back_vel
+task.nav.fsm.sensor_action.back_climb.back_vel
+task.nav.fsm.sensor_action.ir.dynamics
+task.nav.fsm.sensor_action.bott.dynamics
+task.nav.fsm.sensor_action.bump.dynamics
+task.nav.fsm.sensor_action.magnet.dynamics
+task.nav.fsm.sensor_action.sg_gate.dynamics
+task.nav.fsm.sensor_action.sg_fence.dynamics
+task.nav.fsm.sensor_action.mb_tangle.dynamics
+task.nav.fsm.sensor_action.sb_tangle.dynamics
+task.nav.fsm.sensor_action.lift.dynamics
+task.nav.fsm.sensor_action.wstuck.dynamics
+task.nav.fsm.sensor_action.climb.dynamics
+task.nav.fsm.sensor_action.slip.dynamics
+task.nav.fsm.sensor_action.st_fence.dynamics
+task.nav.fsm.sensor_action.emc_turn.dynamics
+task.nav.fsm.sensor_action.narrow_pass.dynamics
+task.nav.fsm.sensor_action.emc_stop.dynamics
+task.nav.fsm.sensor_action.upper_stuck.dynamics
+task.nav.fsm.sensor_action.back_climb.dynamics
+task.nav.fsm.sensor_action.emc_turn_decision.wf_sensor_emc_turn_thres
+mobility.wheel_motion.follow_wall.arc_estimation.sensor_array_valid_dist
+[SendVirtualSensor] %8d : %2d (%+6.0f, %+6.0f) %2d\n
+[SendVirtualSensor] %8d\n
+[AddVirtualSensor] %8d : %2d (%+6.0f, %+6.0f) %2d\n
+===================== dummy_ol_sensor::init() \n
+(%8ld)[OL_SENSOR] Grab buffer index = %d\n
+m_etc_sensor0.all
+m_etc_sensor1.all
+m_etc_sensor2.all
+m_nxp2arm_st.m2a_st.sensor_ver
+WF check Another sensor !\n
+\t>> SECTOR_CLEAN_MUST_WALL_FW BY SENSOR : \n
+\t>> SECTOR_CLEAN_MAIN_DECISION_EW_BY_SENSOR : \n
+virtual sensor rear_obstacle_count:%d\n
+virtual sensor unknown_count:%d\n
+virtual sensor on:%d/%d/%d\n
+virtual sensor off:%d/%d/%d\n
+db/rvc/sensor_ver
+sensor modification
+Error : rvc_sensor_unprepare failed : %x\n
+Error : rvc_sensor_destroy failed : %x\n
+Error : rvc_sensor_create failed : %x\n
+Error : rvc_sensor_set_resolution failed : %d\n
+Error : rvc_sensor_prepare failed : %x\n
+ req_time]]]    \n\r    rotate th_t [w_max dir r_dir [req_th_e req_time]]                           \n\r    timed-rotate th_t ctime [dir r_dir [req_th_e req_time]]                     \n\r    move-fw l [v_c [w_max dir [req_d_e req_th_e req_time]]]                     \n\r    move-bw l [v_c [w_max dir [req_d_e req_th_e req_time]]]                     \n\r    timed-move-fw l ctime [w_max dir [req_d_e req_th_e req_time]]               \n\r    timed-move-bw l ctime [w_max dir [req_d_e req_th_e req_time]]               \n\r    reach-line x_l y_l th_l [l_l [v_c [v_t w_max dir r_dir [req_d_e req_time]]]]\n\r    move-to x_t y_t [v_c [v_t w_max dir r_dir [req_d_e req_time]]]              \n\r    turn-to x_t y_t th_t [v_t w_max dir r_dir [req_d_e req_th_e req_time]]      \n\r    follow-circle x_c y_c r [d_l [v_t [w_max dir [req_l_e req_th fc_time]]]]    \n\r    follow-line x_l y_l th_l [d_l [v_c v_t [w_max dir [req_l_e req_d fc_time]]]]\n\r    follow-wall l w_dir [v_t [w_max dir [mode smask sid]]]                      \n\r#    follow-wall-ir l w_dir [v_t [w_max dir]]                                   \n\r#    follow-wall-sonar l w_dir [v_t [w_max dir]]                                \n\r#    follow-beacon [v_c [v_t [w_max dir]]]                                      \n\r    ctl-speed v [w [fc_time]]                                                   \n\r    ctl-motor on|off|clear [mc_time]                                            \n\r#  motor   wheel|left-arm|right-arm|head-pan|head-tilt <cmd> <args>             \n\r#  report  all                                                                  \n\r#  report  sensor [-s]                                                          \n\r#  report  motion all|wheel|joint [left-arm|right-arm|head-pan|head-tilt]       \n\r#  report  motor  all|wheel|joint [-s]                                          \n\r#  chargen [sleep]                                                              \n\r#  set loc <x> <y> <th>, reset loc                                              \n\r#  batt [sleep]                                                                 \n\r#  beacon [sleep]                                                               \n\r#  dock [modObs], docklong [modObs] [chargeTime]                                \n\r#  uptime [-r] [sleep]                                                          \n\r#  test0, test1                                                                 \n\r
+status.print_upp_dist_sensor
+status.map_building.print_update_sensor
+status.sensor_modification.print_general
+device.sensor_res.olp.print_ol
+device.sensor_res.olp.caibration_ol
+device.sensor_res.olp.caibration_wf
+device.sensor_res.olp.caibration_total
+  <token>: all, pose, vel, sum, abs_sum, board, motor, sensor, ui,\n
+sensor
+\n** MAX sensor command report:\n
+\n** MAX sensor status report:\n
+id=%s sensor_id=%s fw_info=%s\n
+sizeof(SensorData)                    = %d\n
+sizeof(Robot2PC_Sensor_Data)          = %d\n
+\n determine_sensor_action_helper : emc_turn bothhalo\n
+\n determine_sensor_action_helper : emc_turn detectir\n
+\n determine_sensor_action_helper : narrow_pass \n
+st_c_a_sensor_stop
+ * Sensor stop Reason: %s\n
+st_c_a_sensor_stopandcheck
+ * Sensor stopandcheck Reason: %s\n
+st_c_a_sensor_back
+ * Sensor back Reason: %s\n
+st_c_a_sensor_stopandback
+ * Sensor stopandback Reason: %s\n
+st_c_a_sensor_approach_obs
+ * Sensor approach_obs Reason: %s\n
+st_c_a_sensor_stopandcheckandback
+ * Sensor stopandcheckandback Reason: %s\n
+(%8ld)[FSM.MOTION] Timeout in sensor stop! (%ld ms >= %d ms)\n
+(%8ld)[FSM.SENSOR_STOP] Stopped for %ld ms\n
+(%8ld)[FSM.MOTION] Timeout in sensor stopandcheck! (%ld ms >= %d ms)\n
+(%8ld)[FSM.SENSOR_STOPANDCHECK] False positive: %s\n
+(%8ld)[FSM.SENSOR_STOPANDCHECK] Confirm: %s\n
+(%8ld)[FSM.MOTION] Timeout in sensor back! (%ld ms >= %d ms)\n
+(%8ld)[FSM.MOTION] Timeout in sensor stopandback! (%ld ms >= %d ms)\n
+(%8ld)[FSM.MOTION] Timeout in sensor stopandcheckandback! (%ld ms >= %d ms)\n
+(%8ld)[FSM.SENSOR_STOPANDCHECKANDBACK] False positive: %s\n
+(%8ld)[FSM.SENSOR_STOPANDCHECKANDBACK] Confirm: %s\n
+(%8ld)[FSM.MOTION] Timeout in sensor approach_obs! (%ld ms >= %d ms)\n
+(%8ld)[FSM.SENSOR_APPROACH_OBS] sensor_action:: STOP Confirm: %s\n
+(%8ld)[FSM.SENSOR_APPROACH_OBS] sensor_action:: STOPANDCHECK Confirm: %s\n
+(%8ld)[FSM.SENSOR_APPROACH_OBS] sensor_action:: BACK Confirm: %s\n
+(%8ld)[FSM.SENSOR_APPROACH_OBS] sensor_action:: STOPANDBACK Confirm: %s\n
+[FSM.SENSOR_APPROACH_OBS] EMC_STOP!!\n
+(%8ld)[FSM.SENSOR_APPROACH_OBS] False positive: %s\n
+(%8ld)[FSM.SENSOR_APPROACH_OBS] MAKE APPROACH OBS MOTION\n
+(%8ld)[FSM.SENSOR_APPROACH_OBS] SOFT_BUMP MOTION\n
+(%8ld)[FSM.SENSOR_APPROACH_OBS] NO SOFT_BUMP MOTION\n
+(%8ld)[FSM.CONTROL] Goto mode completed(SENSOR) after %ld ms\n
+(%8ld)[FSM.CONTROL] Goto mode exit(SENSOR) after %ld ms\n
+rotate:%d, sensor:%d, turn_angle:%3.1f curr_w:%3.1f\n
+ * [RELOCATION] Init: Reset Sensor Array\n
+ >> No Virtual Sensor Near \n
+SENSOR REASON
+ >> [REAL SENSOR -> WALL FOLLOWING]\n
+ <> [ESC] cleaned sector and else sensor event (%d, %d) \n
+ >> [REAL SENSOR -> BUT VIA AGAIN: SG CASE(%d)]\n
+ >> [SENSOR REASON]\n
+ >> [FALSE SENSOR]\n
+>> SECTOR_CLEAN_MUST_WALL_FW BY SENSOR :
+>> SECTOR_CLEAN_MAIN_DECISION_EW_BY_SENSOR :
+[MOVE_TO_UP_STATION] ignore sensor event %d, try = %d \n
+[MOVE_TO_UP_STATION] can not arrive up station by sensor event %d \n
+[MOVE_TO_UP_STATION] ignore false sensor, try = %d \n
+[CLEAN_UP_SIDE_STATION] finish clean up side station by by sensor %d \n
+[CLEAN_UP_SIDE_STATION] ignore sensor event %d, try = %d \n
+[CLEAN_UP_SIDE_STATION] can not arrive up station by sensor event %d \n
+[CLEAN_UP_SIDE_STATION] ignore sensor, try = %d \n
+[MOVE_TO_UP_STATION_AGAIN] ignore sensor event %d, try = %d \n
+[MOVE_TO_UP_STATION_AGAIN] finish clean station by sensor %d \n
+[MOVE_TO_UP_STATION_AGAIN] ignore false sensor, try = %d \n
+[MOVE_TO_DN_STATION] ignore sensor event %d, try = %d \n
+[MOVE_TO_DN_STATION] finish clean station by sensor %d \n
+[MOVE_TO_DN_STATION] ignore false sensor, try = %d \n
+[CLEAN_DN_SIDE_STATION]finish clean station by sensor event %d\n
+[CLEAN_DN_SIDE_STATION] ignore sensor event %d, try = %d \n
+[CLEAN_DN_SIDE_STATION] ignore sensor, try = %d \n
+>> sensor:
+>> SENSOR:%d %d %d(1:left,2:right)
+### MOVE_TO_AREA, Sensor Reason: Cur Dist(%3.1f) Bef Dist(%3.1f)\n
+### MOVE_TO_AREA, Start Via Moving, Sensor Reason\n
+### MOVE_TO_AREA, Start WF, Sensor Reason\n
+>> front sensor:
+>> ONLY SENSOR: WF DIRECTION
+>> SENSOR DETECTED: HAVETO WALLFOLLOWING
+>> ANGLE:%f, close_front:%d(angle:%3.1f), sensor_front:%d wall_count:%d wall_type:%d
+>> WALL_FOLLOWING SELECTED BY SENSOR, FIND MAP PATH
+>> HAVETO WALLFOLLOWING_BY_SENSOR
+FALSE_SENSOR:WALLFOLLOWING\n
+FALSE_SENSOR:MAKE VIA AGAIN\n
+FALSE_SENSOR:SECTOR_CLEAN_UNCONDITIONAL_RUN\n
+sensor reason %s\n
+[GOTO] Reason Sensor\n
+ >> [REAL SENSOR -> BUT VIA AGAIN:%d]\n
+>> SENSOR:%d %d %d(1:left,2:right)\n
+>> USING SENSOR_1st:%d
+>> KNOWN: USING MAP, PATH:angle:%3.1f,sensor_direction:%d, close_front:%d, wall_count:%d,wall_type:%d
+SENSOR
+FALSESENSOR
+[sensor]%s,%s\n
+dbsensor
+sensor resource
+\nOL_Sensor_Performance [%d]\n
+Initializing Omni-laser sensor:
+static const char* boost::detail::sp_typeid_<T>::name() [with T = boost::_bi::bind_t<void, boost::_mfi::mf1<void, mx_sensor_res, unsigned char*>, boost::_bi::list2<boost::_bi::value<mx_sensor_res*>, boost::arg<1> > >]
+static const char* boost::detail::sp_typeid_<T>::name() [with T = boost::_bi::bind_t<void*, boost::_mfi::mf1<void*, res<mx_sensor_cmd, mx_sensor_sts>, void*>, boost::_bi::list2<boost::_bi::value<res<mx_sensor_cmd, mx_sensor_sts>*>, boost::arg<1> > >]
+/home/abuild/rpmbuild/BUILD/robot-main-1.0/RVC/MaxRVC/resource/sensor_res/mx_sensor_res.cpp
+(%8ld)[RES.SENSOR] wcam_grab() -> m_wcam_grab_callback()\n

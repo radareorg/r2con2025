@@ -1,0 +1,824 @@
+[38;2;58;150;221m// callconv: r0 arm32 (r0, r1);
+[0m[38;2;197;15;31mint[0m fcn.[38;2;19;161;14m00000708[0m ([38;2;197;15;31mint[0m r0, [38;2;197;15;31mint[0m r1) {
+    loc_0x00000708:
+        [38;2;58;150;221m// XREFS: CODE 0x00000724  CODE 0x00000730  CODE 0x0000073c  CODE 0x00000748  CODE 0x00000754  CODE 0x00000760
+[0m        [38;2;58;150;221m// XREFS: CODE 0x0000076c  CODE 0x00000778  CODE 0x00000790  CODE 0x0000079c  CODE 0x000007a8
+[0m        [sp - [38;2;19;161;14m4[0m]! = lr [38;2;58;150;221m// [10] -r-x section size 164 named .plt
+[0m        lr = [[38;2;19;161;14m0x00000714[0m] [38;2;58;150;221m// [0x718:4]=0x8a70
+[0m        lr = pc + lr  [38;2;58;150;221m// section..got
+[0m        pc = [lr + [38;2;19;161;14m8[0m]!
+        [38;2;136;23;152mreturn[0m r0;
+}
+
+[38;2;58;150;221m// callconv: r0 arm32 (r0, r1);
+[0m[38;2;197;15;31mint[0m entry0 ([38;2;197;15;31mint[0m r0, [38;2;197;15;31mint[0m r1) {
+    loc_0x000007ac:
+        [38;2;58;150;221m// CALL XREF from sym._init @ 0x700(x)
+[0m        r3 = [[38;2;19;161;14m0x000007b4[0m] [38;2;58;150;221m// [0x7c8:4]=0x89cc // [11] -r-x section size 1480 named .text
+[0m        r2 = [[38;2;19;161;14m0x000007b8[0m] [38;2;58;150;221m// [0x7cc:4]=64
+[0m        r3 = pc + r3  [38;2;58;150;221m// 0x9188 // section..got
+[0m        [[38;2;19;161;14m20[0m] -rw- section size [38;2;19;161;14m72[0m named .got
+        r3 = [r3 + r2] [38;2;58;150;221m// 0x91c8 // reloc.__gmon_start__
+[0m        (a, b) = compare (r3, [38;2;19;161;14m0[0m)
+        je lr
+        [38;2;136;23;152mgoto[0m loc.imp.__gmon_start__ [38;2;58;150;221m// loc.imp.__gmon_start__(0x0, 0x0, 0x40, 0x0)
+[0m        [38;2;136;23;152mreturn[0m r0;
+}
+
+[38;2;58;150;221m// callconv: r0 arm32 (r0, r1);
+[0m[38;2;197;15;31mvoid[0m * calloc (size_t nmeb, size_t size) {
+    loc_0x0000071c:
+        [38;2;58;150;221m// DATA XREF from fcn.00000830 @ 0x85c(r)
+[0m        [38;2;58;150;221m// CALL XREF from sym.rvc_sensor_create @ 0x8e0(r)
+[0m        add ip, pc, [38;2;19;161;14m0[0m, [38;2;19;161;14m12[0m
+        add ip, ip, [38;2;19;161;14m8[0m, [38;2;19;161;14m20[0m
+        [38;2;58;150;221m// DATA XREF from sym.imp.calloc @ 0x71c(r)
+[0m        pc = [ip + [38;2;19;161;14m0xa70[0m]! [38;2;58;150;221m// 0x9194 // reloc.calloc // fcn.00000708
+[0m        [38;2;136;23;152mreturn[0m r0;
+}
+
+[38;2;58;150;221m// callconv: r0 arm32 (r0, r1);
+[0m[38;2;197;15;31mint[0m sym.imp.__cxa_finalize ([38;2;197;15;31mint[0m r0, [38;2;197;15;31mint[0m r1) {
+    loc_0x00000728:
+        [38;2;58;150;221m// CALL XREF from entry.fini0 @ 0x7ea(x)
+[0m        add ip, pc, [38;2;19;161;14m0[0m, [38;2;19;161;14m12[0m
+        add ip, ip, [38;2;19;161;14m8[0m, [38;2;19;161;14m20[0m
+        [38;2;58;150;221m// DATA XREF from sym.imp.__cxa_finalize @ 0x728(r)
+[0m        pc = [ip + [38;2;19;161;14m0xa68[0m]! [38;2;58;150;221m// fcn.00000708
+[0m        [38;2;136;23;152mreturn[0m r0;
+}
+
+[38;2;58;150;221m// callconv: r0 arm32 (r0, r1);
+[0m[38;2;197;15;31mvoid[0m free ([38;2;197;15;31mvoid[0m *ptr) {
+    loc_0x00000734:
+        [38;2;58;150;221m// CALL XREF from sym.rvc_sensor_create @ 0x8f8(x)
+[0m        [38;2;58;150;221m// CALL XREF from sym.rvc_sensor_destroy @ 0xbf8(x)
+[0m        add ip, pc, [38;2;19;161;14m0[0m, [38;2;19;161;14m12[0m
+        add ip, ip, [38;2;19;161;14m8[0m, [38;2;19;161;14m20[0m
+        [38;2;58;150;221m// DATA XREF from sym.imp.free @ 0x734(r)
+[0m        pc = [ip + sym.rvc_sensor_get_capture_resolution]! [38;2;58;150;221m// 0x919c // reloc.free // fcn.00000708
+[0m        [38;2;136;23;152mreturn[0m r0;
+}
+
+[38;2;58;150;221m// callconv: r0 arm32 (r0, r1);
+[0m[38;2;197;15;31mint[0m sym.imp.mm_rvc_sensor_unprepare ([38;2;197;15;31mint[0m r0, [38;2;197;15;31mint[0m r1) {
+    loc_0x00000740:
+        [38;2;58;150;221m// CALL XREF from sym.rvc_sensor_unprepare @ 0xb70(x)
+[0m        add ip, pc, [38;2;19;161;14m0[0m, [38;2;19;161;14m12[0m
+        add ip, ip, [38;2;19;161;14m8[0m, [38;2;19;161;14m20[0m
+        [38;2;58;150;221m// DATA XREF from sym.imp.mm_rvc_sensor_unprepare @ 0x740(r)
+[0m        pc = [ip + [38;2;19;161;14m0xa58[0m]! [38;2;58;150;221m// 0x91a0 // reloc.mm_rvc_sensor_unprepare // fcn.00000708
+[0m        [38;2;136;23;152mreturn[0m r0;
+}
+
+[38;2;58;150;221m// callconv: r0 arm32 (r0, r1);
+[0m[38;2;197;15;31mint[0m sym.imp.mm_rvc_sensor_set_capture_resolution ([38;2;197;15;31mint[0m r0, [38;2;197;15;31mint[0m r1) {
+    loc_0x0000074c:
+        [38;2;58;150;221m// CALL XREF from sym.rvc_sensor_set_capture_resolution @ 0x9ec(x)
+[0m        add ip, pc, [38;2;19;161;14m0[0m, [38;2;19;161;14m12[0m
+        add ip, ip, [38;2;19;161;14m8[0m, [38;2;19;161;14m20[0m
+        [38;2;58;150;221m// DATA XREF from sym.imp.mm_rvc_sensor_set_capture_resolution @ 0x74c(r)
+[0m        pc = [ip + [38;2;19;161;14m0xa50[0m]! [38;2;58;150;221m// 0x91a4 // reloc.mm_rvc_sensor_set_capture_resolution // fcn.00000708
+[0m        [38;2;136;23;152mreturn[0m r0;
+}
+
+[38;2;58;150;221m// callconv: r0 arm32 (r0, r1);
+[0m[38;2;197;15;31mint[0m sym.imp.mm_rvc_sensor_destroy ([38;2;197;15;31mint[0m r0, [38;2;197;15;31mint[0m r1) {
+    loc_0x00000758:
+        [38;2;58;150;221m// CALL XREF from sym.rvc_sensor_destroy @ 0xbee(x)
+[0m        add ip, pc, [38;2;19;161;14m0[0m, [38;2;19;161;14m12[0m
+        add ip, ip, [38;2;19;161;14m8[0m, [38;2;19;161;14m20[0m
+        [38;2;58;150;221m// DATA XREF from sym.imp.mm_rvc_sensor_destroy @ 0x758(r)
+[0m        pc = [ip + [38;2;19;161;14m0xa48[0m]! [38;2;58;150;221m// 0x91a8 // reloc.mm_rvc_sensor_destroy // fcn.00000708
+[0m        [38;2;136;23;152mreturn[0m r0;
+}
+
+[38;2;58;150;221m// callconv: r0 arm32 (r0, r1);
+[0m[38;2;197;15;31mint[0m sym.imp.mm_rvc_sensor_grab_image ([38;2;197;15;31mint[0m r0, [38;2;197;15;31mint[0m r1) {
+    loc_0x00000764:
+        [38;2;58;150;221m// CALL XREF from sym.rvc_sensor_take_picture @ 0xc80(x)
+[0m        add ip, pc, [38;2;19;161;14m0[0m, [38;2;19;161;14m12[0m
+        add ip, ip, [38;2;19;161;14m8[0m, [38;2;19;161;14m20[0m
+        [38;2;58;150;221m// DATA XREF from sym.imp.mm_rvc_sensor_grab_image @ 0x764(r)
+[0m        pc = [ip + [38;2;19;161;14m0xa40[0m]! [38;2;58;150;221m// 0x91ac // reloc.mm_rvc_sensor_grab_image // fcn.00000708
+[0m        [38;2;136;23;152mreturn[0m r0;
+}
+
+[38;2;58;150;221m// callconv: r0 arm32 (r0, r1);
+[0m[38;2;197;15;31mint[0m sym.imp.mm_rvc_sensor_prepare ([38;2;197;15;31mint[0m r0, [38;2;197;15;31mint[0m r1) {
+    loc_0x00000770:
+        [38;2;58;150;221m// CALL XREF from sym.rvc_sensor_prepare @ 0xaf4(x)
+[0m        add ip, pc, [38;2;19;161;14m0[0m, [38;2;19;161;14m12[0m
+        add ip, ip, [38;2;19;161;14m8[0m, [38;2;19;161;14m20[0m
+        [38;2;58;150;221m// DATA XREF from sym.imp.mm_rvc_sensor_prepare @ 0x770(r)
+[0m        pc = [ip + [38;2;19;161;14m0xa38[0m]! [38;2;58;150;221m// 0x91b0 // reloc.mm_rvc_sensor_prepare // fcn.00000708
+[0m        [38;2;136;23;152mreturn[0m r0;
+}
+
+[38;2;58;150;221m// callconv: r0 arm32 (r0, r1);
+[0m[38;2;197;15;31mint[0m sym.imp.__dlog_print ([38;2;197;15;31mint[0m r0, [38;2;197;15;31mint[0m r1) {
+    loc_0x00000788:
+        [38;2;58;150;221m// XREFS: CALL 0x0000088e  CALL 0x0000091a  CALL 0x0000097a  CALL 0x000009a2  CALL 0x00000a3c  CALL 0x00000aca
+[0m        [38;2;58;150;221m// XREFS: CALL 0x00000b44  CALL 0x00000bc2  CALL 0x00000c4a  CALL 0x00000cd2
+[0m        add ip, pc, [38;2;19;161;14m0[0m, [38;2;19;161;14m12[0m
+        add ip, ip, [38;2;19;161;14m8[0m, [38;2;19;161;14m20[0m
+        [38;2;58;150;221m// DATA XREF from sym.imp.__dlog_print @ 0x788(r)
+[0m        pc = [ip + [38;2;19;161;14m0xa28[0m]! [38;2;58;150;221m// 0x91b8 // reloc.__dlog_print // fcn.00000708
+[0m        [38;2;136;23;152mreturn[0m r0;
+}
+
+[38;2;58;150;221m// callconv: r0 arm32 (r0, r1);
+[0m[38;2;197;15;31mint[0m sym.imp.mm_rvc_sensor_create ([38;2;197;15;31mint[0m r0, [38;2;197;15;31mint[0m r1) {
+    loc_0x00000794:
+        [38;2;58;150;221m// CALL XREF from sym.rvc_sensor_create @ 0x8ec(x)
+[0m        add ip, pc, [38;2;19;161;14m0[0m, [38;2;19;161;14m12[0m
+        add ip, ip, [38;2;19;161;14m8[0m, [38;2;19;161;14m20[0m
+        [38;2;58;150;221m// DATA XREF from sym.imp.mm_rvc_sensor_create @ 0x794(r)
+[0m        pc = [ip + [38;2;19;161;14m0xa20[0m]! [38;2;58;150;221m// 0x91bc // reloc.mm_rvc_sensor_create // fcn.00000708
+[0m        [38;2;136;23;152mreturn[0m r0;
+}
+
+[38;2;58;150;221m// callconv: r0 arm32 (r0, r1);
+[0m[38;2;197;15;31mint[0m sym.imp.mm_rvc_sensor_get_capture_resolution ([38;2;197;15;31mint[0m r0, [38;2;197;15;31mint[0m r1) {
+    loc_0x000007a0:
+        [38;2;58;150;221m// CALL XREF from sym.rvc_sensor_get_capture_resolution @ 0xa70(x)
+[0m        add ip, pc, [38;2;19;161;14m0[0m, [38;2;19;161;14m12[0m
+        add ip, ip, [38;2;19;161;14m8[0m, [38;2;19;161;14m20[0m
+        [38;2;58;150;221m// DATA XREF from sym.imp.mm_rvc_sensor_get_capture_resolution @ 0x7a0(r)
+[0m        pc = [ip + [38;2;19;161;14m0xa18[0m]! [38;2;58;150;221m// 0x91c0 // reloc.mm_rvc_sensor_get_capture_resolution // fcn.00000708
+[0m        [38;2;136;23;152mreturn[0m r0;
+}
+
+[38;2;58;150;221m// callconv: r0 arm16 (r0, r1, r2, r3, r4, stack);
+[0m[38;2;197;15;31mvoid[0m sym.rvc_sensor_get_capture_resolution (int16_t arg1, int16_t arg2, int16_t arg3) {
+    loc_0x00000a60:
+        push (r4, r5, r6, r7, lr)
+        r5 = r1       [38;2;58;150;221m// arg2
+[0m        sp -= [38;2;19;161;14m0x24[0m
+        r4 = r2       [38;2;58;150;221m// arg3
+[0m        [38;2;136;23;152mif[0m (!r0) [38;2;136;23;152mgoto[0m [38;2;19;161;14m0xa92[0m [38;2;58;150;221m// likely
+[0m        [38;2;136;23;152mgoto[0m loc_0x00000a6a;
+    loc_0x00000a92:
+        [38;2;58;150;221m// CODE XREF from sym.rvc_sensor_get_capture_resolution @ 0xa68(x)
+[0m        ip = [[38;2;19;161;14m0x00000a98[0m] [38;2;58;150;221m// [0xad8:4]=0x4e4 "ensor_unprepare" // "ensor_unprepare"
+[0m        r4 = ~[38;2;19;161;14m0x15[0m
+        r5 = [[38;2;19;161;14m0x00000a9c[0m] [38;2;58;150;221m// [0xadc:4]=0x2d4
+[0m        r1 = [38;2;19;161;14m6[0m
+        r2 = [[38;2;19;161;14m0x00000aa0[0m] [38;2;58;150;221m// [0xae0:4]=0x488 "r_set_capture_resolution" // "r_set_capture_resolution"
+[0m        ip += pc      [38;2;58;150;221m// 0xf88 // "/home/abuild/rpmbuild/BUILD/capi-rvc-sensor-0.0.1/src/rvc_sensor.c" // str._home_abuild_rpmbuild_BUILD_capi_rvc_sensor_0.0.1_src_rvc_sensor.c
+[0m        r3 = [[38;2;19;161;14m0x00000aa4[0m] [38;2;58;150;221m// [0xae4:4]=0x51e "ure" // "ure"
+[0m        r5 += pc      [38;2;58;150;221m// 0xd7c // "__rvc_sensor_error_convert" // section..rodata
+[0m        r7 = [[38;2;19;161;14m0x00000aa8[0m] [38;2;58;150;221m// [0xae8:4]=0x534 "_image" // "_image"
+[0m        r2 += pc      [38;2;58;150;221m// 0xf34 // "CAPI_RVC_SENSOR" // str.CAPI_RVC_SENSOR
+[0m        r3 += pc      [38;2;58;150;221m// 0xfcc // "%s: %s(%d) > [%s] %s(0x%08x)" // str._s:__s__d______s___s_0x_08x_
+[0m        lr = r5 + [38;2;19;161;14m0x8c[0m [38;2;58;150;221m// "rvc_sensor_get_capture_resolution"
+[0m        ip += [38;2;19;161;14m0x36[0m    [38;2;58;150;221m// "rvc_sensor.c"
+[0m        r7 += pc      [38;2;58;150;221m// 0xfec // "RVC_SENSOR_ERROR_INVALID_PARAMETER" // str.RVC_SENSOR_ERROR_INVALID_PARAMETER
+[0m        r6 = [38;2;19;161;14m0x7f[0m     [38;2;58;150;221m// '\x7f'
+[0m        str.w ip, [sp]
+        r5 += [38;2;19;161;14m0xb0[0m    [38;2;58;150;221m// 0xe2c // "rvc_sensor_get_capture_resolution" // str.rvc_sensor_get_capture_resolution
+[0m        str.w lr, [sp, [38;2;19;161;14m4[0m]
+        [var_ch] = r5
+        [var_10h] = r7
+        [var_14h] = r4
+        [var_8h] = r6
+        sym.imp.__dlog_print ()
+        r0 = r4
+        [38;2;136;23;152mgoto[0m [38;2;19;161;14m0xa84[0m
+        
+    loc_0x00000a84:
+        [38;2;58;150;221m// CODE XREF from sym.rvc_sensor_get_capture_resolution @ 0xad0(x)
+[0m        sp += [38;2;19;161;14m0x24[0m
+        pop (r4, r5, r6, r7, pc)
+        [38;2;136;23;152mgoto[0m loc_0x00000a78;
+        [38;2;136;23;152mreturn[0m r0;
+    loc_0x00000a78:
+        [38;2;58;150;221m// CODE XREF from sym.rvc_sensor_get_capture_resolution @ 0xa90(x)
+[0m        r3 = [[38;2;19;161;14m0x00000a7c[0m] [38;2;58;150;221m// [0xad4:4]=0x2fe
+[0m        r3 += pc      [38;2;58;150;221m// 0xd7c // "__rvc_sensor_error_convert" // section..rodata
+[0m        r0 = r3 + [38;2;19;161;14m0x8c[0m [38;2;58;150;221m// int16_t arg1 // "rvc_sensor_get_capture_resolution"
+[0m        fcn.[38;2;19;161;14m00000830[0m () [38;2;58;150;221m// fcn.00000830(0xe08, 0x0, 0x0)
+[0m    loc_0x00000a84: [38;2;58;150;221m// orphan
+[0m         [38;2;58;150;221m// CODE XREF from sym.rvc_sensor_get_capture_resolution @ 0xad0(x)
+[0m         sp += [38;2;19;161;14m0x24[0m
+         pop (r4, r5, r6, r7, pc)
+
+        [38;2;136;23;152mreturn[0m r0;
+    loc_0x00000a88: [38;2;58;150;221m// orphan
+[0m         [38;2;58;150;221m// CODE XREF from sym.rvc_sensor_get_capture_resolution @ 0xa76(x)
+[0m         r2 = [var_18h]
+         r3 = [var_1ch]
+         [r5] = r2
+         [r4] = r3
+         
+}
+
+[38;2;58;150;221m// callconv: r0 arm16 (r0, r1, r2, r3, stack);
+[0m[38;2;197;15;31mvoid[0m sym.rvc_sensor_prepare (int16_t arg1) {
+    loc_0x00000aec:
+        push (r4, r5, r6, r7, lr)
+        sp -= [38;2;19;161;14m0x1c[0m
+        [38;2;136;23;152mif[0m (!r0) [38;2;136;23;152mgoto[0m [38;2;19;161;14m0xb0c[0m [38;2;58;150;221m// likely
+[0m        [38;2;136;23;152mgoto[0m loc_0x00000af2;
+    loc_0x00000b0c:
+        [38;2;58;150;221m// CODE XREF from sym.rvc_sensor_prepare @ 0xaf0(x)
+[0m        ip = [[38;2;19;161;14m0x00000b14[0m] [38;2;58;150;221m// [0xb54:4]=0x46a "ensor_create" // "ensor_create"
+[0m        r4 = ~[38;2;19;161;14m0x15[0m
+        r5 = [[38;2;19;161;14m0x00000b18[0m] [38;2;58;150;221m// [0xb58:4]=0x25a
+[0m        r1 = [38;2;19;161;14m6[0m
+        r2 = [[38;2;19;161;14m0x00000b1c[0m] [38;2;58;150;221m// [0xb5c:4]=0x40e "_fini" // "_fini"
+[0m        ip += pc      [38;2;58;150;221m// 0xf88 // "/home/abuild/rpmbuild/BUILD/capi-rvc-sensor-0.0.1/src/rvc_sensor.c" // str._home_abuild_rpmbuild_BUILD_capi_rvc_sensor_0.0.1_src_rvc_sensor.c
+[0m        r3 = [[38;2;19;161;14m0x00000b20[0m] [38;2;58;150;221m// [0xb60:4]=0x4a4 "rvc_sensor_get_capture_resolution" // "rvc_sensor_get_capture_resolution"
+[0m        r5 += pc      [38;2;58;150;221m// 0xd7c // "__rvc_sensor_error_convert" // section..rodata
+[0m        r7 = [[38;2;19;161;14m0x00000b24[0m] [38;2;58;150;221m// [0xb64:4]=0x4ba "_resolution" // "_resolution"
+[0m        r2 += pc      [38;2;58;150;221m// 0xf34 // "CAPI_RVC_SENSOR" // str.CAPI_RVC_SENSOR
+[0m        r3 += pc      [38;2;58;150;221m// 0xfcc // "%s: %s(%d) > [%s] %s(0x%08x)" // str._s:__s__d______s___s_0x_08x_
+[0m        lr = r5 + [38;2;19;161;14m0xd4[0m [38;2;58;150;221m// "rvc_sensor_prepare"
+[0m        ip += [38;2;19;161;14m0x36[0m    [38;2;58;150;221m// "rvc_sensor.c"
+[0m        r7 += pc      [38;2;58;150;221m// 0xfec // "RVC_SENSOR_ERROR_INVALID_PARAMETER" // str.RVC_SENSOR_ERROR_INVALID_PARAMETER
+[0m        r6 = [38;2;19;161;14m0x93[0m
+        str.w ip, [sp]
+        r5 += [38;2;19;161;14m0xe8[0m    [38;2;58;150;221m// 0xe64 // "rvc_sensor_prepare" // str.rvc_sensor_prepare
+[0m        str.w lr, [sp, [38;2;19;161;14m4[0m]
+        [var_ch] = r5
+        [var_10h] = r7
+        [var_14h] = r4
+        [var_8h] = r6
+        sym.imp.__dlog_print ()
+        r0 = r4
+        sp += [38;2;19;161;14m0x1c[0m
+        pop (r4, r5, r6, r7, pc)
+        [38;2;136;23;152mreturn[0m r0;
+}
+
+[38;2;58;150;221m// callconv: r0 arm16 (r0, r1, r2, r3, stack);
+[0m[38;2;197;15;31mvoid[0m sym.rvc_sensor_set_capture_resolution (int16_t arg1) {
+    loc_0x000009e4:
+        push (r4, r5, r6, r7, lr)
+        sp -= [38;2;19;161;14m0x1c[0m
+        [38;2;136;23;152mif[0m (!r0) [38;2;136;23;152mgoto[0m [38;2;19;161;14m0xa04[0m [38;2;58;150;221m// likely
+[0m        [38;2;136;23;152mgoto[0m loc_0x000009ea;
+    loc_0x00000a04:
+        [38;2;58;150;221m// CODE XREF from sym.rvc_sensor_set_capture_resolution @ 0x9e8(x)
+[0m        ip = [[38;2;19;161;14m0x00000a0c[0m] [38;2;58;150;221m// [0xa4c:4]=0x572 "c_s.so.1" // "c_s.so.1"
+[0m        r4 = ~[38;2;19;161;14m0x15[0m
+        r5 = [[38;2;19;161;14m0x00000a10[0m] [38;2;58;150;221m// [0xa50:4]=0x362
+[0m        r1 = [38;2;19;161;14m6[0m
+        r2 = [[38;2;19;161;14m0x00000a14[0m] [38;2;58;150;221m// [0xa54:4]=0x516 "ake_picture" // "ake_picture"
+[0m        ip += pc      [38;2;58;150;221m// 0xf88 // "/home/abuild/rpmbuild/BUILD/capi-rvc-sensor-0.0.1/src/rvc_sensor.c" // str._home_abuild_rpmbuild_BUILD_capi_rvc_sensor_0.0.1_src_rvc_sensor.c
+[0m        r3 = [[38;2;19;161;14m0x00000a18[0m] [38;2;58;150;221m// [0xa58:4]=0x5ac "end__" // "end__"
+[0m        r5 += pc      [38;2;58;150;221m// 0xd7c // "__rvc_sensor_error_convert" // section..rodata
+[0m        r7 = [[38;2;19;161;14m0x00000a1c[0m] [38;2;58;150;221m// [0xa5c:4]=0x5c2 "capi-rvc-sensor.so.0" // "capi-rvc-sensor.so.0"
+[0m        r2 += pc      [38;2;58;150;221m// 0xf34 // "CAPI_RVC_SENSOR" // str.CAPI_RVC_SENSOR
+[0m        r3 += pc      [38;2;58;150;221m// 0xfcc // "%s: %s(%d) > [%s] %s(0x%08x)" // str._s:__s__d______s___s_0x_08x_
+[0m        lr = r5 + [38;2;19;161;14m0x44[0m [38;2;58;150;221m// "rvc_sensor_set_capture_resolution"
+[0m        ip += [38;2;19;161;14m0x36[0m    [38;2;58;150;221m// "rvc_sensor.c"
+[0m        r7 += pc      [38;2;58;150;221m// 0xfec // "RVC_SENSOR_ERROR_INVALID_PARAMETER" // str.RVC_SENSOR_ERROR_INVALID_PARAMETER
+[0m        r6 = [38;2;19;161;14m0x6e[0m     [38;2;58;150;221m// 'n'
+[0m        str.w ip, [sp]
+        r5 += [38;2;19;161;14m0x68[0m    [38;2;58;150;221m// 0xde4 // "rvc_sensor_set_capture_resolution" // str.rvc_sensor_set_capture_resolution
+[0m        str.w lr, [sp, [38;2;19;161;14m4[0m]
+        [var_ch] = r5
+        [var_10h] = r7
+        [var_14h] = r4
+        [var_8h] = r6
+        sym.imp.__dlog_print ()
+        r0 = r4
+        sp += [38;2;19;161;14m0x1c[0m
+        pop (r4, r5, r6, r7, pc)
+        [38;2;136;23;152mreturn[0m r0;
+}
+
+[38;2;58;150;221m// callconv: r0 arm32 (r0, r1, r2, stack);
+[0m[38;2;197;15;31mint[0m sym._fini ([38;2;197;15;31mint[0m r0, [38;2;197;15;31mint[0m r1) {
+    loc_0x00000d74:
+        push (r3, lr) [38;2;58;150;221m// [12] -r-x section size 8 named .fini
+[0m        pop (r3, pc)  [38;2;58;150;221m// r13
+[0m        [38;2;136;23;152mreturn[0m r0;
+}
+
+[38;2;58;150;221m// callconv: r0 arm16 (r0, r1, r2, r3, r4, stack);
+[0m[38;2;197;15;31mvoid[0m sym.rvc_sensor_unprepare (int16_t arg1) {
+    loc_0x00000b68:
+        push (r4, r5, r6, r7, lr)
+        sp -= [38;2;19;161;14m0x1c[0m
+        [38;2;136;23;152mif[0m (!r0) [38;2;136;23;152mgoto[0m [38;2;19;161;14m0xb88[0m [38;2;58;150;221m// likely
+[0m        [38;2;136;23;152mgoto[0m loc_0x00000b6e;
+    loc_0x00000b88:
+        [38;2;58;150;221m// CODE XREF from sym.rvc_sensor_unprepare @ 0xb6c(x)
+[0m        ip = [[38;2;19;161;14m0x00000b90[0m] [38;2;58;150;221m// [0xbd0:4]=0x3ee
+[0m        r4 = ~[38;2;19;161;14m0x15[0m
+        r5 = [[38;2;19;161;14m0x00000b94[0m] [38;2;58;150;221m// [0xbd4:4]=478
+[0m        r1 = [38;2;19;161;14m6[0m
+        r2 = [[38;2;19;161;14m0x00000b98[0m] [38;2;58;150;221m// [0xbd8:4]=0x392
+[0m        ip += pc      [38;2;58;150;221m// 0xf88 // "/home/abuild/rpmbuild/BUILD/capi-rvc-sensor-0.0.1/src/rvc_sensor.c" // str._home_abuild_rpmbuild_BUILD_capi_rvc_sensor_0.0.1_src_rvc_sensor.c
+[0m        r3 = [[38;2;19;161;14m0x00000b9c[0m] [38;2;58;150;221m// [0xbdc:4]=0x428 "egisterClasses" // "egisterClasses"
+[0m        r5 += pc      [38;2;58;150;221m// 0xd7c // "__rvc_sensor_error_convert" // section..rodata
+[0m        r7 = [[38;2;19;161;14m0x00000ba0[0m] [38;2;58;150;221m// [0xbe0:4]=0x43e "print" // "print"
+[0m        r2 += pc      [38;2;58;150;221m// 0xf34 // "CAPI_RVC_SENSOR" // str.CAPI_RVC_SENSOR
+[0m        r3 += pc      [38;2;58;150;221m// 0xfcc // "%s: %s(%d) > [%s] %s(0x%08x)" // str._s:__s__d______s___s_0x_08x_
+[0m        lr = r5 + [38;2;19;161;14m0xfc[0m [38;2;58;150;221m// "rvc_sensor_unprepare"
+[0m        ip += [38;2;19;161;14m0x36[0m    [38;2;58;150;221m// "rvc_sensor.c"
+[0m        r7 += pc      [38;2;58;150;221m// 0xfec // "RVC_SENSOR_ERROR_INVALID_PARAMETER" // str.RVC_SENSOR_ERROR_INVALID_PARAMETER
+[0m        r6 = [38;2;19;161;14m0xa3[0m
+        str.w ip, [sp]
+        r5 += [38;2;19;161;14m0x114[0m   [38;2;58;150;221m// 0xe90 // "rvc_sensor_unprepare" // str.rvc_sensor_unprepare
+[0m        str.w lr, [sp, [38;2;19;161;14m4[0m]
+        [var_ch] = r5
+        [var_10h] = r7
+        [var_14h] = r4
+        [var_8h] = r6
+        sym.imp.__dlog_print ()
+        r0 = r4
+        sp += [38;2;19;161;14m0x1c[0m
+        pop (r4, r5, r6, r7, pc)
+        [38;2;136;23;152mreturn[0m r0;
+}
+
+[38;2;58;150;221m// callconv: r0 arm16 (r0, r1, r2, r3, stack);
+[0m[38;2;197;15;31mvoid[0m sym.rvc_sensor_destroy (int16_t arg1) {
+    loc_0x00000be4:
+        push (r4, r5, r6, r7, lr)
+        r5 = r0       [38;2;58;150;221m// arg1
+[0m        sp -= [38;2;19;161;14m0x1c[0m
+        [38;2;136;23;152mif[0m (!r0) [38;2;136;23;152mgoto[0m [38;2;19;161;14m0xc10[0m [38;2;58;150;221m// likely
+[0m        [38;2;136;23;152mgoto[0m loc_0x00000bec;
+    loc_0x00000c10:
+        [38;2;58;150;221m// CODE XREF from sym.rvc_sensor_destroy @ 0xbea(x)
+[0m        ip = [[38;2;19;161;14m0x00000c18[0m] [38;2;58;150;221m// [0xc58:4]=0x366
+[0m        r4 = ~[38;2;19;161;14m0x15[0m
+        r5 = [[38;2;19;161;14m0x00000c1c[0m] [38;2;58;150;221m// [0xc5c:4]=342
+[0m        r1 = [38;2;19;161;14m6[0m
+        r2 = [[38;2;19;161;14m0x00000c20[0m] [38;2;58;150;221m// [0xc60:4]=0x30a
+[0m        ip += pc      [38;2;58;150;221m// 0xf88 // "/home/abuild/rpmbuild/BUILD/capi-rvc-sensor-0.0.1/src/rvc_sensor.c" // str._home_abuild_rpmbuild_BUILD_capi_rvc_sensor_0.0.1_src_rvc_sensor.c
+[0m        r3 = [[38;2;19;161;14m0x00000c24[0m] [38;2;58;150;221m// [0xc64:4]=0x3a0
+[0m        r5 += pc      [38;2;58;150;221m// 0xd7c // "__rvc_sensor_error_convert" // section..rodata
+[0m        r7 = [[38;2;19;161;14m0x00000c28[0m] [38;2;58;150;221m// [0xc68:4]=0x3b6
+[0m        r2 += pc      [38;2;58;150;221m// 0xf34 // "CAPI_RVC_SENSOR" // str.CAPI_RVC_SENSOR
+[0m        r3 += pc      [38;2;58;150;221m// 0xfcc // "%s: %s(%d) > [%s] %s(0x%08x)" // str._s:__s__d______s___s_0x_08x_
+[0m        lr = r5 + [38;2;19;161;14m0x12c[0m [38;2;58;150;221m// "rvc_sensor_destroy"
+[0m        ip += [38;2;19;161;14m0x36[0m    [38;2;58;150;221m// "rvc_sensor.c"
+[0m        r7 += pc      [38;2;58;150;221m// 0xfec // "RVC_SENSOR_ERROR_INVALID_PARAMETER" // str.RVC_SENSOR_ERROR_INVALID_PARAMETER
+[0m        r6 = [38;2;19;161;14m0xaf[0m     [38;2;58;150;221m// (pstr 0x00000400) "start__"
+[0m        str.w ip, [sp]
+        r5 += [38;2;19;161;14m0x140[0m   [38;2;58;150;221m// 0xebc // "rvc_sensor_destroy" // str.rvc_sensor_destroy
+[0m        str.w lr, [sp, [38;2;19;161;14m4[0m]
+        [var_ch] = r5
+        [var_10h] = r7
+        [var_14h] = r4
+        [var_8h] = r6
+        sym.imp.__dlog_print ()
+        r0 = r4
+        sp += [38;2;19;161;14m0x1c[0m
+        pop (r4, r5, r6, r7, pc)
+        [38;2;136;23;152mgoto[0m loc_0x00000bf6;
+        [38;2;136;23;152mreturn[0m r0;
+    loc_0x00000bf6:
+        r0 = r5       [38;2;58;150;221m// void *ptr
+[0m        sym.imp.free () [38;2;58;150;221m// void free(0)
+[0m        
+    loc_0x00000bfc:
+        [38;2;58;150;221m// CODE XREF from sym.rvc_sensor_destroy @ 0xbf4(x)
+[0m        r0 = [[38;2;19;161;14m0x00000c00[0m] [38;2;58;150;221m// [0xc54:4]=376
+[0m        r1 = r4
+        r0 += pc      [38;2;58;150;221m// 0xd7c // "__rvc_sensor_error_convert" // section..rodata
+[0m        r0 += [38;2;19;161;14m0x12c[0m   [38;2;58;150;221m// "rvc_sensor_destroy"
+[0m        sp += [38;2;19;161;14m0x1c[0m
+        pop (r4, r5, r6, r7, lr)
+        [38;2;136;23;152mgoto[0m fcn.[38;2;19;161;14m00000830[0m [38;2;58;150;221m// fcn.00000830(0xea8, 0x0, 0x0)
+[0m        [38;2;136;23;152mreturn[0m r0;
+    loc_0x00000bfc: [38;2;58;150;221m// orphan
+[0m         [38;2;58;150;221m// CODE XREF from sym.rvc_sensor_destroy @ 0xbf4(x)
+[0m         r0 = [[38;2;19;161;14m0x00000c00[0m]        [38;2;58;150;221m// [0xc54:4]=376
+[0m         r1 = r4
+         r0 += pc                 [38;2;58;150;221m// 0xd7c // "__rvc_sensor_error_convert" // section..rodata
+[0m         r0 += [38;2;19;161;14m0x12c[0m              [38;2;58;150;221m// "rvc_sensor_destroy"
+[0m         sp += [38;2;19;161;14m0x1c[0m
+         pop (r4, r5, r6, r7, lr)
+         
+}
+
+[38;2;58;150;221m// callconv: r0 arm16 (r0, r1, r2, r3, stack);
+[0m[38;2;197;15;31mvoid[0m sym.rvc_sensor_create (uint32_t arg1, int16_t arg2) {
+    loc_0x000008d0:
+        push (r4, r5, r6, r7, lr)
+        r5 = r1       [38;2;58;150;221m// arg2
+[0m        sp -= [38;2;19;161;14m0x1c[0m
+        r7 = r0       [38;2;58;150;221m// arg1
+[0m        (a, b) = compare (r0, [38;2;19;161;14m0[0m) [38;2;58;150;221m// arg1
+[0m        je [38;2;19;161;14m0x942[0m      [38;2;58;150;221m// likely
+[0m        [38;2;136;23;152mgoto[0m loc_0x000008dc;
+    loc_0x00000942:
+        [38;2;58;150;221m// CODE XREF from sym.rvc_sensor_create @ 0x8da(x)
+[0m        ip = [[38;2;19;161;14m0x00000948[0m] [38;2;58;150;221m// [0x9c0:4]=0x634 "."
+[0m        r4 = ~[38;2;19;161;14m0x15[0m
+        r5 = [[38;2;19;161;14m0x0000094c[0m] [38;2;58;150;221m// [0x9c4:4]=0x424 "Jv_RegisterClasses" // "Jv_RegisterClasses"
+[0m        r1 = [38;2;19;161;14m6[0m
+        r2 = [[38;2;19;161;14m0x00000950[0m] [38;2;58;150;221m// [0x9c8:4]=0x5d8 "LIBC_2.4" // "LIBC_2.4"
+[0m        ip += pc      [38;2;58;150;221m// 0xf88 // "/home/abuild/rpmbuild/BUILD/capi-rvc-sensor-0.0.1/src/rvc_sensor.c" // str._home_abuild_rpmbuild_BUILD_capi_rvc_sensor_0.0.1_src_rvc_sensor.c
+[0m        r3 = [[38;2;19;161;14m0x00000954[0m] [38;2;58;150;221m// [0x9cc:4]=0x66e
+[0m        r5 += pc      [38;2;58;150;221m// 0xd7c // "__rvc_sensor_error_convert" // section..rodata
+[0m        r7 = [[38;2;19;161;14m0x00000958[0m] [38;2;58;150;221m// [0x9d0:4]=0x684
+[0m        r2 += pc      [38;2;58;150;221m// 0xf34 // "CAPI_RVC_SENSOR" // str.CAPI_RVC_SENSOR
+[0m        r3 += pc      [38;2;58;150;221m// 0xfcc // "%s: %s(%d) > [%s] %s(0x%08x)" // str._s:__s__d______s___s_0x_08x_
+[0m        lr = r5 + [38;2;19;161;14m0x1c[0m [38;2;58;150;221m// "rvc_sensor_create"
+[0m        ip += [38;2;19;161;14m0x36[0m    [38;2;58;150;221m// "rvc_sensor.c"
+[0m        r7 += pc      [38;2;58;150;221m// 0xfec // "RVC_SENSOR_ERROR_INVALID_PARAMETER" // str.RVC_SENSOR_ERROR_INVALID_PARAMETER
+[0m        r6 = [38;2;19;161;14m0x50[0m     [38;2;58;150;221m// 'P'
+[0m        str.w ip, [sp]
+        r5 += [38;2;19;161;14m0x30[0m    [38;2;58;150;221m// 0xdac // "rvc_sensor_create" // str.rvc_sensor_create
+[0m        str.w lr, [sp, [38;2;19;161;14m4[0m]
+        [var_ch] = r5
+        [var_10h] = r7
+        [var_14h] = r4
+        [var_8h] = r6
+        sym.imp.__dlog_print ()
+        r0 = r4
+        
+    loc_0x00000980:
+        [38;2;58;150;221m// CODE XREF from sym.rvc_sensor_create @ 0x9aa(x)
+[0m        sp += [38;2;19;161;14m0x1c[0m
+        pop (r4, r5, r6, r7, pc)
+        [38;2;136;23;152mgoto[0m loc_0x000008ea;
+        [38;2;136;23;152mreturn[0m r0;
+    loc_0x000008ea:
+        r1 = r5
+        sym.imp.mm_rvc_sensor_create ()
+        r4 = r0
+        [38;2;136;23;152mif[0m (!r0) [38;2;136;23;152mgoto[0m [38;2;19;161;14m0x92c[0m [38;2;58;150;221m// likely
+[0m        [38;2;136;23;152mgoto[0m loc_0x000008f4;
+    loc_0x0000092c:
+        [38;2;58;150;221m// CODE XREF from sym.rvc_sensor_create @ 0x8f2(x)
+[0m        r0 = [[38;2;19;161;14m0x00000930[0m] [38;2;58;150;221m// [0x9bc:4]=0x446 "aeabi_unwind_cpp_pr0" // "aeabi_unwind_cpp_pr0"
+[0m        r1 = r4
+        [r6 + [38;2;19;161;14m4[0m] = r5
+        r0 += pc      [38;2;58;150;221m// 0xd7c // "__rvc_sensor_error_convert" // section..rodata
+[0m        [r7] = r6
+        r0 += [38;2;19;161;14m0x1c[0m    [38;2;58;150;221m// "rvc_sensor_create"
+[0m        sp += [38;2;19;161;14m0x1c[0m
+        pop (r4, r5, r6, r7, lr)
+        [38;2;136;23;152mgoto[0m fcn.[38;2;19;161;14m00000830[0m [38;2;58;150;221m// fcn.00000830(0xd98, 0x0, 0x0)
+[0m        [38;2;58;150;221m// chop
+[0m        
+    loc_0x00000830:
+        [38;2;58;150;221m// XREFS: CODE 0x00000928  CODE 0x0000093e  CODE 0x00000a00  CALL 0x00000a80  CODE 0x00000b08  CODE 0x00000b84
+[0m        [38;2;58;150;221m// XREFS: CODE 0x00000c0c  CODE 0x00000c94
+[0m        r3 = [38;2;19;161;14m0x1001[0m   [38;2;58;150;221m// "LID_PARAMETER"
+[0m        r3 |= [38;2;19;161;14m0x8000[0m << [38;2;19;161;14m16[0m
+        (a, b) = compare (r1, r3) [38;2;58;150;221m// arg2
+[0m        push (r4, r5, r6, r7, r8, lr)
+        r6 = r0       [38;2;58;150;221m// arg1
+[0m        sp -= [38;2;19;161;14m0x20[0m
+        r5 = r1       [38;2;58;150;221m// arg2
+[0m        je [38;2;19;161;14m0x8a8[0m      [38;2;58;150;221m// unlikely
+[0m        [38;2;136;23;152mgoto[0m loc_0x00000846;
+        [38;2;136;23;152mreturn[0m r0;
+    loc_0x000008f4: [38;2;58;150;221m// orphan
+[0m         r0 = r6                  [38;2;58;150;221m// void *ptr
+[0m         r5 = [[38;2;19;161;14m0x000008f8[0m]        [38;2;58;150;221m// [0x9ac:4]=0x470 "create" // "create"
+[0m         sym.imp.free () [38;2;58;150;221m// void free(0)
+[0m         r7 = [[38;2;19;161;14m0x00000900[0m]        [38;2;58;150;221m// [0x9b0:4]=0x678
+[0m         r2 = [[38;2;19;161;14m0x00000900[0m]        [38;2;58;150;221m// [0x9b4:4]=0x62a
+[0m         r1 = [38;2;19;161;14m6[0m
+         r3 = [[38;2;19;161;14m0x00000904[0m]        [38;2;58;150;221m// [0x9b8:4]=0x71e
+[0m         r0 = [38;2;19;161;14m0[0m
+         r2 += pc                 [38;2;58;150;221m// 0xf34 // "CAPI_RVC_SENSOR" // str.CAPI_RVC_SENSOR
+[0m         r5 += pc                 [38;2;58;150;221m// 0xd7c // "__rvc_sensor_error_convert" // section..rodata
+[0m         r3 += pc                 [38;2;58;150;221m// 0x102c // "%s: %s(%d) > Fail to Create" // str._s:__s__d____Fail_to_Create
+[0m         r7 += pc                 [38;2;58;150;221m// 0xf88 // "/home/abuild/rpmbuild/BUILD/capi-rvc-sensor-0.0.1/src/rvc_sensor.c" // str._home_abuild_rpmbuild_BUILD_capi_rvc_sensor_0.0.1_src_rvc_sensor.c
+[0m         r5 += [38;2;19;161;14m0x1c[0m               [38;2;58;150;221m// "rvc_sensor_create"
+[0m         r7 += [38;2;19;161;14m0x36[0m               [38;2;58;150;221m// "rvc_sensor.c"
+[0m         r6 = [38;2;19;161;14m0x5d[0m                [38;2;58;150;221m// ']'
+[0m         [var_4h] = r5
+         [sp] = r7
+         [var_8h] = r6
+         sym.imp.__dlog_print ()
+         r0 = r5                  [38;2;58;150;221m// "rvc_sensor_create"
+[0m         r1 = r4
+         sp += [38;2;19;161;14m0x1c[0m
+         pop (r4, r5, r6, r7, lr)
+         
+    loc_0x00000980: [38;2;58;150;221m// orphan
+[0m         [38;2;58;150;221m// CODE XREF from sym.rvc_sensor_create @ 0x9aa(x)
+[0m         sp += [38;2;19;161;14m0x1c[0m
+         pop (r4, r5, r6, r7, pc)
+
+        [38;2;136;23;152mreturn[0m r0;
+    loc_0x00000984: [38;2;58;150;221m// orphan
+[0m         [38;2;58;150;221m// CODE XREF from sym.rvc_sensor_create @ 0x8e8(x)
+[0m         r6 = [[38;2;19;161;14m0x00000988[0m]        [38;2;58;150;221m// [0x9d4:4]=0x5f6
+[0m         r1 = [38;2;19;161;14m6[0m
+         r5 = [[38;2;19;161;14m0x0000098c[0m]        [38;2;58;150;221m// [0x9d8:4]=0x3e6
+[0m         r4 = [38;2;19;161;14m0x55[0m                [38;2;58;150;221m// 'U'
+[0m         r2 = [[38;2;19;161;14m0x00000990[0m]        [38;2;58;150;221m// [0x9dc:4]=0x59c "s_start__" // "s_start__"
+[0m         r6 += pc                 [38;2;58;150;221m// 0xf88 // "/home/abuild/rpmbuild/BUILD/capi-rvc-sensor-0.0.1/src/rvc_sensor.c" // str._home_abuild_rpmbuild_BUILD_capi_rvc_sensor_0.0.1_src_rvc_sensor.c
+[0m         r3 = [[38;2;19;161;14m0x00000994[0m]        [38;2;58;150;221m// [0x9e0:4]=0x674
+[0m         r5 += pc                 [38;2;58;150;221m// 0xd7c // "__rvc_sensor_error_convert" // section..rodata
+[0m         r2 += pc                 [38;2;58;150;221m// 0xf34 // "CAPI_RVC_SENSOR" // str.CAPI_RVC_SENSOR
+[0m         r6 += [38;2;19;161;14m0x36[0m               [38;2;58;150;221m// "rvc_sensor.c"
+[0m         r3 += pc                 [38;2;58;150;221m// 0x1010 // "%s: %s(%d) > malloc fail" // str._s:__s__d____malloc_fail
+[0m         r5 += [38;2;19;161;14m0x1c[0m               [38;2;58;150;221m// "rvc_sensor_create"
+[0m         [sp] = r6
+         [var_4h] = r5
+         [var_8h] = r4
+         sym.imp.__dlog_print ()
+         r0 = ~[38;2;19;161;14m0xb[0m
+         
+}
+
+[38;2;58;150;221m// callconv: r0 arm16 (r0, r1, r2, r3, stack);
+[0m[38;2;197;15;31mvoid[0m sym.rvc_sensor_take_picture (uint32_t arg1, uint32_t arg2, int16_t arg3) {
+    loc_0x00000c6c:
+        push (r4, r5, r6, r7, lr)
+        r4 = r1       [38;2;58;150;221m// arg2
+[0m        sp -= [38;2;19;161;14m0x1c[0m
+        r5 = r0       [38;2;58;150;221m// arg1
+[0m        (a, b) = compare (r0, [38;2;19;161;14m0[0m) [38;2;58;150;221m// arg1
+[0m        je [38;2;19;161;14m0xd00[0m      [38;2;58;150;221m// likely
+[0m        [38;2;136;23;152mgoto[0m loc_0x00000c78;
+    loc_0x00000d00:
+        [38;2;58;150;221m// CODE XREF from sym.rvc_sensor_take_picture @ 0xc76(x)
+[0m        ip = [[38;2;19;161;14m0x00000d08[0m] [38;2;58;150;221m// [0xd60:4]=0x278
+[0m        r1 = [38;2;19;161;14m6[0m
+        r4 = [[38;2;19;161;14m0x00000d08[0m] [38;2;58;150;221m// [0xd64:4]=104
+[0m        r6 = [38;2;19;161;14m0xc0[0m
+        r7 = [[38;2;19;161;14m0x00000d0c[0m] [38;2;58;150;221m// [0xd68:4]=0x2cc // "\u0611"
+[0m        ip += pc      [38;2;58;150;221m// 0xf88 // "/home/abuild/rpmbuild/BUILD/capi-rvc-sensor-0.0.1/src/rvc_sensor.c" // str._home_abuild_rpmbuild_BUILD_capi_rvc_sensor_0.0.1_src_rvc_sensor.c
+[0m        r2 = [[38;2;19;161;14m0x00000d10[0m] [38;2;58;150;221m// [0xd6c:4]=0x20e
+[0m        r4 += pc      [38;2;58;150;221m// 0xd7c // "__rvc_sensor_error_convert" // section..rodata
+[0m        r3 = [[38;2;19;161;14m0x00000d14[0m] [38;2;58;150;221m// [0xd70:4]=0x2a4
+[0m        lr = r4 + [38;2;19;161;14m0x154[0m [38;2;58;150;221m// "rvc_sensor_take_picture"
+[0m        ip += [38;2;19;161;14m0x36[0m    [38;2;58;150;221m// "rvc_sensor.c"
+[0m        r7 += pc      [38;2;58;150;221m// 0xfec // "RVC_SENSOR_ERROR_INVALID_PARAMETER" // str.RVC_SENSOR_ERROR_INVALID_PARAMETER
+[0m        r5 = ~[38;2;19;161;14m0x15[0m
+        r2 += pc      [38;2;58;150;221m// 0xf34 // "CAPI_RVC_SENSOR" // str.CAPI_RVC_SENSOR
+[0m        r3 += pc      [38;2;58;150;221m// 0xfcc // "%s: %s(%d) > [%s] %s(0x%08x)" // str._s:__s__d______s___s_0x_08x_
+[0m        str.w ip, [sp]
+        r4 += [38;2;19;161;14m0x16c[0m   [38;2;58;150;221m// 0xee8 // "rvc_sensor_take_picture" // str.rvc_sensor_take_picture
+[0m        str.w lr, [sp, [38;2;19;161;14m4[0m]
+        [38;2;136;23;152mgoto[0m [38;2;19;161;14m0xcca[0m
+        
+    loc_0x00000cca:
+        [38;2;58;150;221m// CODE XREF from sym.rvc_sensor_take_picture @ 0xd32(x)
+[0m        [var_ch] = r4
+        [var_10h] = r7
+        [var_8h] = r6
+        [var_14h] = r5
+        sym.imp.__dlog_print ()
+        r0 = ~[38;2;19;161;14m0x15[0m
+        sp += [38;2;19;161;14m0x1c[0m
+        pop (r4, r5, r6, r7, pc)
+        [38;2;136;23;152mgoto[0m loc_0x00000c7c;
+        [38;2;136;23;152mreturn[0m r0;
+    loc_0x00000c7c:
+        [38;2;136;23;152mif[0m (!r2) [38;2;136;23;152mgoto[0m [38;2;19;161;14m0xc98[0m [38;2;58;150;221m// likely
+[0m        [38;2;136;23;152mgoto[0m loc_0x00000c7e;
+    loc_0x00000c98:
+        [38;2;58;150;221m// CODE XREF from sym.rvc_sensor_take_picture @ 0xc7c(x)
+[0m        lr = [[38;2;19;161;14m0x00000ca0[0m] [38;2;58;150;221m// [0xd38:4]=0x2e0
+[0m        r0 = r2       [38;2;58;150;221m// arg3
+[0m        r7 = [[38;2;19;161;14m0x00000ca0[0m] [38;2;58;150;221m// [0xd3c:4]=0x340
+[0m        r1 = [38;2;19;161;14m6[0m
+        r4 = [[38;2;19;161;14m0x00000ca4[0m] [38;2;58;150;221m// [0xd40:4]=204
+[0m        lr += pc      [38;2;58;150;221m// 0xf88 // "/home/abuild/rpmbuild/BUILD/capi-rvc-sensor-0.0.1/src/rvc_sensor.c" // str._home_abuild_rpmbuild_BUILD_capi_rvc_sensor_0.0.1_src_rvc_sensor.c
+[0m        r2 = [[38;2;19;161;14m0x00000ca8[0m] [38;2;58;150;221m// [0xd44:4]=0x280
+[0m        r7 += pc      [38;2;58;150;221m// 0xfec // "RVC_SENSOR_ERROR_INVALID_PARAMETER" // str.RVC_SENSOR_ERROR_INVALID_PARAMETER
+[0m        r3 = [[38;2;19;161;14m0x00000cac[0m] [38;2;58;150;221m// [0xd48:4]=0x312
+[0m        r4 += pc      [38;2;58;150;221m// 0xd7c // "__rvc_sensor_error_convert" // section..rodata
+[0m        r6 = [38;2;19;161;14m0xc2[0m
+        r2 += pc      [38;2;58;150;221m// 0xf34 // "CAPI_RVC_SENSOR" // str.CAPI_RVC_SENSOR
+[0m        lr += [38;2;19;161;14m0x36[0m    [38;2;58;150;221m// "rvc_sensor.c"
+[0m        r3 += pc      [38;2;58;150;221m// 0xfcc // "%s: %s(%d) > [%s] %s(0x%08x)" // str._s:__s__d______s___s_0x_08x_
+[0m        
+    loc_0x00000cb8:
+        [38;2;58;150;221m// CODE XREF from sym.rvc_sensor_take_picture @ 0xcfe(x)
+[0m        r5 = r4 + [38;2;19;161;14m0x154[0m
+        r4 += [38;2;19;161;14m0x16c[0m   [38;2;58;150;221m// 0xee8 // "rvc_sensor_take_picture"
+[0m        [var_4h] = r5
+        r5 = ~[38;2;19;161;14m0x15[0m
+        str.w lr, [sp]
+        [38;2;136;23;152mreturn[0m r0;
+    loc_0x00000c7e: [38;2;58;150;221m// orphan
+[0m         r0 = [r0]                [38;2;58;150;221m// arg1
+[0m         sym.imp.mm_rvc_sensor_grab_image ()
+         r3 = [[38;2;19;161;14m0x00000c88[0m]        [38;2;58;150;221m// [0xd34:4]=242
+[0m         r3 += pc                 [38;2;58;150;221m// 0xd7c // "__rvc_sensor_error_convert" // section..rodata
+[0m         r1 = r0
+         r0 = r3 + [38;2;19;161;14m0x154[0m          [38;2;58;150;221m// "rvc_sensor_take_picture"
+[0m         sp += [38;2;19;161;14m0x1c[0m
+         pop (r4, r5, r6, r7, lr)
+         
+    loc_0x00000cb8: [38;2;58;150;221m// orphan
+[0m         [38;2;58;150;221m// CODE XREF from sym.rvc_sensor_take_picture @ 0xcfe(x)
+[0m         r5 = r4 + [38;2;19;161;14m0x154[0m
+         r4 += [38;2;19;161;14m0x16c[0m              [38;2;58;150;221m// 0xee8 // "rvc_sensor_take_picture"
+[0m         [var_4h] = r5
+         r5 = ~[38;2;19;161;14m0x15[0m
+         str.w lr, [sp]
+
+    loc_0x00000cca: [38;2;58;150;221m// orphan
+[0m         [38;2;58;150;221m// CODE XREF from sym.rvc_sensor_take_picture @ 0xd32(x)
+[0m         [var_ch] = r4
+         [var_10h] = r7
+         [var_8h] = r6
+         [var_14h] = r5
+         sym.imp.__dlog_print ()
+         r0 = ~[38;2;19;161;14m0x15[0m
+         sp += [38;2;19;161;14m0x1c[0m
+         pop (r4, r5, r6, r7, pc)
+
+        [38;2;136;23;152mreturn[0m r0;
+    loc_0x00000cde: [38;2;58;150;221m// orphan
+[0m         [38;2;58;150;221m// CODE XREF from sym.rvc_sensor_take_picture @ 0xc7a(x)
+[0m         lr = [[38;2;19;161;14m0x00000ce4[0m]        [38;2;58;150;221m// [0xd4c:4]=0x29a
+[0m         r0 = r1                  [38;2;58;150;221m// arg2
+[0m         r7 = [[38;2;19;161;14m0x00000ce8[0m]        [38;2;58;150;221m// [0xd50:4]=0x2fa
+[0m         r1 = [38;2;19;161;14m6[0m
+         r4 = [[38;2;19;161;14m0x00000cec[0m]        [38;2;58;150;221m// [0xd54:4]=134
+[0m         lr += pc                 [38;2;58;150;221m// 0xf88 // "/home/abuild/rpmbuild/BUILD/capi-rvc-sensor-0.0.1/src/rvc_sensor.c" // str._home_abuild_rpmbuild_BUILD_capi_rvc_sensor_0.0.1_src_rvc_sensor.c
+[0m         r2 = [[38;2;19;161;14m0x00000cf0[0m]        [38;2;58;150;221m// [0xd58:4]=0x23a
+[0m         r7 += pc                 [38;2;58;150;221m// 0xfec // "RVC_SENSOR_ERROR_INVALID_PARAMETER" // str.RVC_SENSOR_ERROR_INVALID_PARAMETER
+[0m         r3 = [[38;2;19;161;14m0x00000cf4[0m]        [38;2;58;150;221m// [0xd5c:4]=0x2cc // "\u0611"
+[0m         r4 += pc                 [38;2;58;150;221m// 0xd7c // "__rvc_sensor_error_convert" // section..rodata
+[0m         r6 = [38;2;19;161;14m0xc1[0m
+         r2 += pc                 [38;2;58;150;221m// 0xf34 // "CAPI_RVC_SENSOR" // str.CAPI_RVC_SENSOR
+[0m         lr += [38;2;19;161;14m0x36[0m               [38;2;58;150;221m// "rvc_sensor.c"
+[0m         r3 += pc                 [38;2;58;150;221m// 0xfcc // "%s: %s(%d) > [%s] %s(0x%08x)" // str._s:__s__d______s___s_0x_08x_
+[0m         
+}
+
+[38;2;58;150;221m// callconv: r0 arm32 (r0, r1, r2, stack);
+[0m[38;2;197;15;31mint[0m sym._init ([38;2;197;15;31mint[0m r0, [38;2;197;15;31mint[0m r1) {
+    loc_0x000006fc:
+        push (r3, lr) [38;2;58;150;221m// [09] -r-x section size 12 named .init
+[0m        entry0 ()     [38;2;58;150;221m// section..text
+[0m        pop (r3, pc)  [38;2;58;150;221m// r13
+[0m        [38;2;136;23;152mreturn[0m r0;
+}
+
+[38;2;58;150;221m// callconv: r0 arm16 (r0, r1, r2, r3, r4, stack);
+[0m[38;2;197;15;31mint[0m entry.init0 ([38;2;197;15;31mint[0m r0, [38;2;197;15;31mint[0m r1) {
+    loc_0x0000080c:
+        r0 = [[38;2;19;161;14m0x00000810[0m] [38;2;58;150;221m// [0x824:4]=0x8868
+[0m        push (r3, lr)
+        r0 += pc      [38;2;58;150;221m// 0x907c // section..jcr
+[0m        [[38;2;19;161;14m18[0m] -rw- section size [38;2;19;161;14m4[0m named .jcr
+        r3 = [[38;2;19;161;14m0x00000814[0m] [38;2;58;150;221m// [0x828:4]=0x896e
+[0m        r2 = [r0]     [38;2;58;150;221m// 0x907c // section..jcr
+[0m        [[38;2;19;161;14m18[0m] -rw- section size [38;2;19;161;14m4[0m named .jcr
+        r3 += pc      [38;2;58;150;221m// 0x9188 // section..got
+[0m        [[38;2;19;161;14m20[0m] -rw- section size [38;2;19;161;14m72[0m named .got
+        [38;2;136;23;152mif[0m (!r2) [38;2;136;23;152mgoto[0m [38;2;19;161;14m0x822[0m [38;2;58;150;221m// likely
+[0m        [38;2;136;23;152mgoto[0m loc_0x0000081a;
+    loc_0x00000822:
+        [38;2;58;150;221m// CODE XREFS from entry.init0 @ 0x818(x), 0x81e(x)
+[0m        pop (r3, pc)
+        [38;2;136;23;152mgoto[0m loc_0x00000820;
+        [38;2;136;23;152mreturn[0m r0;
+    loc_0x00000820:
+        r3 ()         [38;2;58;150;221m// 0xffffffff(0x0, 0x0, 0x0, 0x0)
+[0m}
+
+[38;2;58;150;221m// callconv: r0 arm16 (r0, r1, r2, r3, stack);
+[0m[38;2;197;15;31mint[0m entry.fini0 ([38;2;197;15;31mint[0m r0, [38;2;197;15;31mint[0m r1) {
+    loc_0x000007d0:
+        r2 = [[38;2;19;161;14m0x000007d4[0m] [38;2;58;150;221m// [0x7f8:4]=0x89fc
+[0m        push (r3, lr)
+        r2 += pc      [38;2;58;150;221m// 0x91d4 // loc.__bss_start
+[0m        [[38;2;19;161;14m22[0m] -rw- section size [38;2;19;161;14m4[0m named .bss
+        r3 = [[38;2;19;161;14m0x000007d8[0m] [38;2;58;150;221m// [0x7fc:4]=0x89aa
+[0m        r2 = (byte) [r2] [38;2;58;150;221m// 0x91d4 // loc.__bss_start
+[0m        [[38;2;19;161;14m22[0m] -rw- section size [38;2;19;161;14m4[0m named .bss
+        r3 += pc      [38;2;58;150;221m// 0x9188 // section..got
+[0m        [[38;2;19;161;14m20[0m] -rw- section size [38;2;19;161;14m72[0m named .got
+        [38;2;136;23;152mif[0m (r2) [38;2;136;23;152mgoto[0m [38;2;19;161;14m0x7f6[0m [38;2;58;150;221m// unlikely
+[0m        [38;2;136;23;152mgoto[0m loc_0x000007de;
+    loc_0x000007f6:
+        [38;2;58;150;221m// CODE XREF from entry.fini0 @ 0x7dc(x)
+[0m        pop (r3, pc)
+        [38;2;136;23;152mgoto[0m loc_0x000007e4;
+        [38;2;136;23;152mreturn[0m r0;
+    loc_0x000007e4:
+        r3 = [[38;2;19;161;14m0x000007e8[0m] [38;2;58;150;221m// [0x804:4]=0x89e6
+[0m        r3 += pc      [38;2;58;150;221m// 0x91d0 // section..data
+[0m        [[38;2;19;161;14m21[0m] -rw- section size [38;2;19;161;14m4[0m named .data
+        r0 = [r3]     [38;2;58;150;221m// 0x91d0 // section..data
+[0m        [[38;2;19;161;14m21[0m] -rw- section size [38;2;19;161;14m4[0m named .data
+        sym.imp.__cxa_finalize ()
+        
+    loc_0x000007ee:
+        [38;2;58;150;221m// CODE XREF from entry.fini0 @ 0x7e2(x)
+[0m        r3 = [[38;2;19;161;14m0x000007f0[0m] [38;2;58;150;221m// [0x808:4]=0x89de
+[0m        r2 = [38;2;19;161;14m1[0m
+        r3 += pc      [38;2;58;150;221m// 0x91d4 // loc.__bss_start
+[0m        [[38;2;19;161;14m22[0m] -rw- section size [38;2;19;161;14m4[0m named .bss
+        [r3] = (byte) r2 [38;2;58;150;221m// 0x91d4 // loc.__bss_start
+[0m        [[38;2;19;161;14m22[0m] -rw- section size [38;2;19;161;14m4[0m named .bss
+        [38;2;136;23;152mreturn[0m r0;
+    loc_0x000007ee: [38;2;58;150;221m// orphan
+[0m         [38;2;58;150;221m// CODE XREF from entry.fini0 @ 0x7e2(x)
+[0m         r3 = [[38;2;19;161;14m0x000007f0[0m]        [38;2;58;150;221m// [0x808:4]=0x89de
+[0m         r2 = [38;2;19;161;14m1[0m
+         r3 += pc                 [38;2;58;150;221m// 0x91d4 // loc.__bss_start
+[0m                                  [[38;2;19;161;14m22[0m] -rw- section size [38;2;19;161;14m4[0m named .bss
+         [r3] = (byte) r2         [38;2;58;150;221m// 0x91d4 // loc.__bss_start
+[0m                                  [[38;2;19;161;14m22[0m] -rw- section size [38;2;19;161;14m4[0m named .bss
+
+}
+
+[38;2;58;150;221m// callconv: r0 arm16 (r0, r1, r2, r3, stack);
+[0m[38;2;197;15;31mvoid[0m fcn.[38;2;19;161;14m00000830[0m (int16_t arg1, uint32_t arg2, int16_t arg3) {
+    loc_0x00000830:
+        [38;2;58;150;221m// XREFS: CODE 0x00000928  CODE 0x0000093e  CODE 0x00000a00  CALL 0x00000a80  CODE 0x00000b08  CODE 0x00000b84
+[0m        [38;2;58;150;221m// XREFS: CODE 0x00000c0c  CODE 0x00000c94
+[0m        r3 = [38;2;19;161;14m0x1001[0m   [38;2;58;150;221m// "LID_PARAMETER"
+[0m        r3 |= [38;2;19;161;14m0x8000[0m << [38;2;19;161;14m16[0m
+        (a, b) = compare (r1, r3) [38;2;58;150;221m// arg2
+[0m        push (r4, r5, r6, r7, r8, lr)
+        r6 = r0       [38;2;58;150;221m// arg1
+[0m        sp -= [38;2;19;161;14m0x20[0m
+        r5 = r1       [38;2;58;150;221m// arg2
+[0m        je [38;2;19;161;14m0x8a8[0m      [38;2;58;150;221m// unlikely
+[0m        [38;2;136;23;152mgoto[0m loc_0x00000846;
+    loc_0x000008a8:
+        [38;2;58;150;221m// CODE XREF from fcn.00000830 @ 0x844(x)
+[0m        ip = [[38;2;19;161;14m0x000008b0[0m] [38;2;58;150;221m// [0x8cc:4]=0x64c
+[0m        r4 = ~[38;2;19;161;14m0x15[0m
+        ip += pc      [38;2;58;150;221m// 0xf00 // "INVALID_PARAMETER" // str.INVALID_PARAMETER
+[0m        [38;2;136;23;152mgoto[0m [38;2;19;161;14m0x85c[0m
+        
+    loc_0x0000085c:
+        [38;2;58;150;221m// CODE XREFS from fcn.00000830 @ 0x850(x), 0x8b2(x)
+[0m        lr = sym.imp.calloc [38;2;58;150;221m// [0x71c:4]=0xe28fc600
+[0m        r0 = [38;2;19;161;14m0[0m
+        r2 = [[38;2;19;161;14m0x00000864[0m] [38;2;58;150;221m// [0x8c0:4]=0x6c4
+[0m        r1 = [38;2;19;161;14m6[0m
+        r3 = [[38;2;19;161;14m0x00000868[0m] [38;2;58;150;221m// [0x8c4:4]=0x6d2
+[0m        lr += pc      [38;2;58;150;221m// 0xf88 // "/home/abuild/rpmbuild/BUILD/capi-rvc-sensor-0.0.1/src/rvc_sensor.c" // str._home_abuild_rpmbuild_BUILD_capi_rvc_sensor_0.0.1_src_rvc_sensor.c
+[0m        r7 = [[38;2;19;161;14m0x0000086c[0m] [38;2;58;150;221m// [0x8c8:4]=0x504 "stroy" // "stroy"
+[0m        r2 += pc      [38;2;58;150;221m// 0xf34 // "CAPI_RVC_SENSOR" // str.CAPI_RVC_SENSOR
+[0m        r3 += pc      [38;2;58;150;221m// 0xf44 // "%s: %s(%d) > [%s] %s(0x%08x) : core frameworks error code(0x%08x)" // str._s:__s__d______s___s_0x_08x__:_core_frameworks_error_code_0x_08x_
+[0m        lr += [38;2;19;161;14m0x36[0m    [38;2;58;150;221m// "rvc_sensor.c"
+[0m        r7 += pc      [38;2;58;150;221m// 0xd7c // "__rvc_sensor_error_convert" // section..rodata
+[0m        mov.w r8, [38;2;19;161;14m0x46[0m [38;2;58;150;221m// 'F'
+[0m        [var_4h] = r6
+        str.w ip, [sp, [38;2;19;161;14m0x10[0m]
+        [var_ch] = r4
+        [var_10h] = r5
+        str.w lr, [sp]
+        [var_4h_2] = r7
+        str.w r8, [sp, [38;2;19;161;14m8[0m]
+        sym.imp.__dlog_print ()
+        r0 = r4
+        sp += [38;2;19;161;14m0x20[0m
+        pop (r4, r5, r6, r7, r8, pc)
+        [38;2;136;23;152mgoto[0m loc_0x00000848;
+        [38;2;136;23;152mreturn[0m r0;
+    loc_0x00000848:
+        ip = [[38;2;19;161;14m0x00000850[0m] [38;2;58;150;221m// [0x8b4:4]=0x6c2
+[0m        r4 = r1       [38;2;58;150;221m// arg2
+[0m        ip += pc      [38;2;58;150;221m// 0xf14 // "ERROR_NONE" // str.ERROR_NONE
+[0m        [38;2;136;23;152mif[0m (!r1) [38;2;136;23;152mgoto[0m [38;2;19;161;14m0x85c[0m [38;2;58;150;221m// likely
+[0m        [38;2;136;23;152mgoto[0m loc_0x00000852;
+    loc_0x00000852:
+        [38;2;58;150;221m// CODE XREF from fcn.00000830 @ 0x8a6(x)
+[0m        ip = [[38;2;19;161;14m0x00000858[0m] [38;2;58;150;221m// [0x8b8:4]=0x6c2
+[0m        r4 = ~[38;2;19;161;14m0x25[0m
+        ip += pc      [38;2;58;150;221m// 0xf20 // "INVALID_OPERATION" // str.INVALID_OPERATION
+[0m    loc_0x0000085c: [38;2;58;150;221m// orphan
+[0m         [38;2;58;150;221m// CODE XREFS from fcn.00000830 @ 0x850(x), 0x8b2(x)
+[0m         lr = sym.imp.calloc      [38;2;58;150;221m// [0x71c:4]=0xe28fc600
+[0m         r0 = [38;2;19;161;14m0[0m
+         r2 = [[38;2;19;161;14m0x00000864[0m]        [38;2;58;150;221m// [0x8c0:4]=0x6c4
+[0m         r1 = [38;2;19;161;14m6[0m
+         r3 = [[38;2;19;161;14m0x00000868[0m]        [38;2;58;150;221m// [0x8c4:4]=0x6d2
+[0m         lr += pc                 [38;2;58;150;221m// 0xf88 // "/home/abuild/rpmbuild/BUILD/capi-rvc-sensor-0.0.1/src/rvc_sensor.c" // str._home_abuild_rpmbuild_BUILD_capi_rvc_sensor_0.0.1_src_rvc_sensor.c
+[0m         r7 = [[38;2;19;161;14m0x0000086c[0m]        [38;2;58;150;221m// [0x8c8:4]=0x504 "stroy" // "stroy"
+[0m         r2 += pc                 [38;2;58;150;221m// 0xf34 // "CAPI_RVC_SENSOR" // str.CAPI_RVC_SENSOR
+[0m         r3 += pc                 [38;2;58;150;221m// 0xf44 // "%s: %s(%d) > [%s] %s(0x%08x) : core frameworks error code(0x%08x)" // str._s:__s__d______s___s_0x_08x__:_core_frameworks_error_code_0x_08x_
+[0m         lr += [38;2;19;161;14m0x36[0m               [38;2;58;150;221m// "rvc_sensor.c"
+[0m         r7 += pc                 [38;2;58;150;221m// 0xd7c // "__rvc_sensor_error_convert" // section..rodata
+[0m         mov.w r8, [38;2;19;161;14m0x46[0m           [38;2;58;150;221m// 'F'
+[0m         [var_4h] = r6
+         str.w ip, [sp, [38;2;19;161;14m0x10[0m]
+         [var_ch] = r4
+         [var_10h] = r5
+         str.w lr, [sp]
+         [var_4h_2] = r7
+         str.w r8, [sp, [38;2;19;161;14m8[0m]
+         sym.imp.__dlog_print ()
+         r0 = r4
+         sp += [38;2;19;161;14m0x20[0m
+         pop (r4, r5, r6, r7, r8, pc)
+
+        [38;2;136;23;152mreturn[0m r0;
+    loc_0x0000089a: [38;2;58;150;221m// orphan
+[0m         [38;2;58;150;221m// CODE XREF from fcn.00000830 @ 0x846(x)
+[0m         r3 = r1 - [38;2;19;161;14m0x80000000[0m     [38;2;58;150;221m// arg2
+[0m         r2 = ~[38;2;19;161;14m0x104[0m
+         r3 += r2                 [38;2;58;150;221m// arg3
+[0m         (a, b) = compare (r3, [38;2;19;161;14m4[0m)
+         bhi [38;2;19;161;14m0x852[0m                [38;2;58;150;221m// likely
+[0m
+}
+

@@ -1,0 +1,12 @@
+Library:
+
+- libcapi-rvc-sensor.so.0
+
+Imports:
+
+- rvc_sensor_create
+- rvc_sensor_prepare
+- rvc_sensor_take_picture
+- rvc_sensor_unprepare
+- rvc_sensor_destroy
+- rvc_sensor_set_capture_resolution

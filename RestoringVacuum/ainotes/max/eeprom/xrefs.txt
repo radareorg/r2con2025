@@ -1,0 +1,52 @@
+[0x001383c0]> axt 0x001307cc
+(nofunc) 0x1c879c [CALL:--x] bl sym.imp.eeprom_read
+(nofunc) 0x3d7b8c [CALL:--x] bl sym.imp.eeprom_read
+(nofunc) 0x3d7d00 [CALL:--x] bl sym.imp.eeprom_read
+(nofunc) 0x3d7e70 [CALL:--x] bl sym.imp.eeprom_read
+(nofunc) 0x3d9824 [CALL:--x] bl sym.imp.eeprom_read
+(nofunc) 0x3d999c [CALL:--x] bl sym.imp.eeprom_read
+(nofunc) 0x3d9b0c [CALL:--x] bl sym.imp.eeprom_read
+[0x001383c0]> axt 0x00130988
+(nofunc) 0x1cdea0 [CALL:--x] bl sym.imp.eeprom_write
+(nofunc) 0x1d263c [CALL:--x] bl sym.imp.eeprom_write
+(nofunc) 0x1d26c8 [CALL:--x] bl sym.imp.eeprom_write
+(nofunc) 0x3db6b0 [CALL:--x] bl sym.imp.eeprom_write
+[0x001383c0]> axt 0x00130ab4
+(nofunc) 0x1c8384 [CALL:--x] bl sym.imp.eeprom_create
+(nofunc) 0x1cddfc [CALL:--x] bl sym.imp.eeprom_create
+(nofunc) 0x1d2614 [CALL:--x] bl sym.imp.eeprom_create
+(nofunc) 0x3d7b2c [CALL:--x] bl sym.imp.eeprom_create
+(nofunc) 0x3d97c0 [CALL:--x] bl sym.imp.eeprom_create
+(nofunc) 0x3db5d0 [CALL:--x] bl sym.imp.eeprom_create
+[0x001383c0]> axt 0x00130cdc
+(nofunc) 0x1c89e4 [CALL:--x] bl sym.imp.eeprom_destroy
+(nofunc) 0x1cdee8 [CALL:--x] bl sym.imp.eeprom_destroy
+(nofunc) 0x1cdf34 [CALL:--x] bl sym.imp.eeprom_destroy
+(nofunc) 0x1d2664 [CALL:--x] bl sym.imp.eeprom_destroy
+(nofunc) 0x1d26f0 [CALL:--x] bl sym.imp.eeprom_destroy
+(nofunc) 0x3d803c [CALL:--x] bl sym.imp.eeprom_destroy
+(nofunc) 0x3d80c8 [CALL:--x] bl sym.imp.eeprom_destroy
+(nofunc) 0x3d9cd0 [CALL:--x] bl sym.imp.eeprom_destroy
+(nofunc) 0x3d9d0c [CALL:--x] bl sym.imp.eeprom_destroy
+(nofunc) 0x3db6fc [CALL:--x] bl sym.imp.eeprom_destroy
+(nofunc) 0x3db75c [CALL:--x] bl sym.imp.eeprom_destroy
+[0x001383c0]> axt 0x00130d48
+(nofunc) 0x1c89bc [CALL:--x] bl sym.imp.eeprom_unprepare
+(nofunc) 0x1cdec4 [CALL:--x] bl sym.imp.eeprom_unprepare
+(nofunc) 0x1cdf10 [CALL:--x] bl sym.imp.eeprom_unprepare
+(nofunc) 0x1d2654 [CALL:--x] bl sym.imp.eeprom_unprepare
+(nofunc) 0x1d26e0 [CALL:--x] bl sym.imp.eeprom_unprepare
+(nofunc) 0x3d7fd8 [CALL:--x] bl sym.imp.eeprom_unprepare
+(nofunc) 0x3d8074 [CALL:--x] bl sym.imp.eeprom_unprepare
+(nofunc) 0x3d9c70 [CALL:--x] bl sym.imp.eeprom_unprepare
+(nofunc) 0x3d9cfc [CALL:--x] bl sym.imp.eeprom_unprepare
+(nofunc) 0x3db6d8 [CALL:--x] bl sym.imp.eeprom_unprepare
+(nofunc) 0x3db738 [CALL:--x] bl sym.imp.eeprom_unprepare
+[0x001383c0]> axt 0x001310cc
+(nofunc) 0x1c8394 [CALL:--x] bl sym.imp.eeprom_prepare
+(nofunc) 0x1cde60 [CALL:--x] bl sym.imp.eeprom_prepare
+(nofunc) 0x1d2624 [CALL:--x] bl sym.imp.eeprom_prepare
+(nofunc) 0x3d7b70 [CALL:--x] bl sym.imp.eeprom_prepare
+(nofunc) 0x3d9804 [CALL:--x] bl sym.imp.eeprom_prepare
+(nofunc) 0x3db658 [CALL:--x] bl sym.imp.eeprom_prepare
+[0x001383c0]>

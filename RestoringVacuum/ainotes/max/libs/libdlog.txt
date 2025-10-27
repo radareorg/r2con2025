@@ -1,0 +1,42 @@
+> working with @report.md i want to know more about the libdlog library. it is opensource?
+
+Processed @mentions: report.md
+Short answer: libdlog is the Tizen logging library (part of the Tizen platform). It is normally provided as part of the open Tizen platform source tree, so yes — its source is available from Tizen’s repositories — but to be 100% certain about the exact license for the version you have, check the repository/package headers.
+
+What libdlog is
+- Purpose: a lightweight logging API used by Tizen native applications and system components to send records to the platform logging daemon.
+- Scope: log levels, tags, formatted messages; integration with the platform’s log collector/daemon so logs appear in the system log viewer tools on Tizen devices.
+- Typical deployment: shipped as libdlog.so on Tizen devices and used by apps and system services.
+
+Common API / usage
+- Header usually available as <dlog.h> or sometimes <dlog/dlog.h>.
+- Typical functions/macros:
+  - dlog_print(level, tag, fmt, ...);
+  - common levels: DLOG_FATAL, DLOG_ERROR, DLOG_WARN, DLOG_INFO, DLOG_DEBUG (names may vary slightly).
+- Link with: -ldlog
+- Example:
+  C:
+  #include <dlog.h>
+  ...
+  dlog_print(DLOG_INFO, "MYTAG", "initialized count=%d", count);
+
+How to inspect it on a device or buildroot
+- Find library on device: ls /usr/lib*/libdlog*
+- Find header: ls /usr/include/dlog*
+- Link check: ldconfig -p | grep dlog
+- Inspect symbols: nm -D /usr/lib/libdlog.so
+- Package: use the device/package manager (rpm, opkg, zypper, etc.) to query the dlog/libdlog package and its metadata (which includes the license).
+
+Where to get the source / verify license
+- libdlog is part of the Tizen platform codebase; the source is published in Tizen’s public repositories. To confirm and fetch:
+  - Search the Tizen Git/Gerrit servers (git.tizen.org / gerrit.tizen.org) for dlog or libdlog.
+  - Search GitHub/organizations such as Samsung or Tizen for “dlog” or “libdlog”.
+  - Check the package’s COPYING/LICENSE files or the top of source files for the license (Tizen components commonly use Apache-2.0, MIT, BSD or similar, but it varies by component/version).
+- If you have the binary package on your system, package metadata (rpm -qi packagename or opkg info) will usually state the license and where the source can be obtained.
+
+Viewing logs
+- Logs produced by libdlog are consumed by Tizen’s log daemon and can be read with the platform’s log utilities (platform-specific — often tools named dlogutil or other system log viewers).
+
+If you want, I can:
+- give exact commands to locate the libdlog files on your device (tell me its OS/version or give me a shell output),
+- try to locate the upstream repo and license for the specific Tizen/release you’re working with (tell me the Tizen version or the libdlog package version).
