@@ -1,0 +1,35 @@
+CSS = camera subsystem/service
+
+From the symbols you posted, libCss.so.0 appears to be a camera-control library that exposes a small C API for initializing, opening, powering, activating/capturing, and closing a camera device. The symbol names all use a CSS_CAM_ prefix and indicate functions for device lifecycle and image retrieval.
+
+What the symbols mean (in plain terms)
+- CSS_CAM_Init(CssCamDevIdx_e)
+  - Initialize camera subsystem for the given device index.
+- CSS_CAM_Open(CssCamDevIdx_e)
+  - Open the camera device (prepare it for power/usage).
+- CSS_CAM_IsOpened(CssCamDevIdx_e, bool*)
+  - Query whether the device is opened; writes result to a bool pointer.
+- CSS_CAM_PowerOn(CssCamDevIdx_e)
+  - Power on the camera hardware.
+- CSS_CAM_PowerOff(CssCamDevIdx_e)
+  - Power off the camera hardware.
+- CSS_CAM_Activate(CssCamDevIdx_e, CssCamActionMode_e, CssCamCaptureMode_e, CssCamPixelFormat_e)
+  - Enable capture with particular action/capture/pixel-format settings (likely start streaming or single capture).
+- CSS_CAM_GetImage(CssCamDevIdx_e, char*, int)
+  - Retrieve image data into a buffer (char*), with int probably being buffer size (or timeout/flags).
+- CSS_CAM_Deactivate(CssCamDevIdx_e)
+  - Stop capture/streaming.
+- CSS_CAM_Close(CssCamDevIdx_e)
+  - Close the device (release).
+- CSS_CAM_Deinit(CssCamDevIdx_e)
+  - Deinitialize camera subsystem for the device index.
+
+Likely enum meanings (educated guesses)
+- CssCamDevIdx_e: camera device index (e.g., 0 for main camera, 1 for secondary).
+- CssCamActionMode_e: start/stop, or modes like preview/capture.
+- CssCamCaptureMode_e: one-shot vs continuous/streaming, maybe resolution selection.
+- CssCamPixelFormat_e: image format (RGB, BGR, YUV420, MJPEG, etc.)
+
+Return values and error handling
+- The symbols don't show return types, but such APIs commonly return int (0 on success, negative error code) or an enum status. Always check the library header or test return values.
+- CSS_CAM_IsOpened writes a boolean via pointer; remember to pass a valid bool*.

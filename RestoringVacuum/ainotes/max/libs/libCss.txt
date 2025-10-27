@@ -1,0 +1,25 @@
+# libCss.so.0
+
+Summary
+- libCss.so appears to be a vendor camera-control library (the "CSS" / "CSS_CAM" API) used by this binary to manage a camera subsystem: init/deinit, power on/off, open/close, activate/deactivate captures and retrieve image data.
+- From the imports you provided, the library exposes a small, clearly-named C API (CSS_CAM_*) used by the program. It is very likely a proprietary vendor SDK library (closed-source) rather than a commonly available open-source project — there are no obvious indicators that it’s an upstream open-source project.
+
+Evidence (symbols found in all-imports.txt)
+- CSS_CAM_Init(CssCamDevIdx_e)
+- CSS_CAM_Deinit(CssCamDevIdx_e)
+- CSS_CAM_Open(CssCamDevIdx_e)
+- CSS_CAM_Close(CssCamDevIdx_e)
+- CSS_CAM_Activate(CssCamDevIdx_e, CssCamActionMode_e, CssCamCaptureMode_e, CssCamPixelFormat_e)
+- CSS_CAM_Deactivate(CssCamDevIdx_e)
+- CSS_CAM_PowerOn(CssCamDevIdx_e)
+- CSS_CAM_PowerOff(CssCamDevIdx_e)
+- CSS_CAM_GetImage(CssCamDevIdx_e, char*, int)
+- CSS_CAM_IsOpened(CssCamDevIdx_e, bool*)
+
+Related library usage
+- The binary also calls rvc_sensor_* functions (rvc_sensor_create/prepare/take_picture/unprepare/destroy/set_capture_resolution). That implies libCss.so is used by higher-level robot/vision sensor code (rvc_sensor) to control the hardware and fetch frames.
+
+Why it’s likely proprietary
+- Name and symbol style (CSS_CAM_*) and the presence of vendor-typed enums in signatures (CssCamDevIdx_e, CssCamActionMode_e, etc.) are typical of device vendor SDKs.
+- There are no standard upstream projects that use the CSS_CAM_ prefix widely; camera frameworks on Linux typically use V4L2, libcamera, or vendor-specific SDKs.
+- To determine open-source status you should look for source/package metadata or a license inside the library or in the device’s SDK — this binary alone doesn’t prove openness.

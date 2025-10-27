@@ -1,0 +1,50 @@
+db-motor
+mb-motor
+sb-motor
+suc-motor
+ctl-motor on|off|clr [mc_t]
+ctl-motor
+wheel-motor
+device.res.motor.thread
+device.res.motor.thread.priority
+device.res.motor.thread.wait_start_signal
+device.res.motor.thread.sampling_time
+device.res.motor.thread.time_report
+task.nav.fsm.action.ctl_motor.timeout
+mobility.wheel_motor.use_micom_param
+mobility.wheel_motor.encoder.ppr
+mobility.wheel_motor.encoder.freq_mul
+mobility.wheel_motor.gear_ratio
+mobility.wheel_motor.wheel_radius
+mobility.wheel_motor.wheel_base
+mobility.wheel_motor.gain.k_p
+mobility.wheel_motor.gain.k_i
+mobility.wheel_motor.gain.k_d
+mobility.wheel_motor.gain.k_ff
+mobility.wheel_motor.gain.k_dz
+m_motor_ctl.all
+m_motor_sts.all
+motor_ctl=%s(%d) dyn_ctl=%d v=%+6.0f w=%+6.0f sub_sts=%d\n
+ wheel_motor cmd [%d] sts [%d]
+### wheel_motor cmd [%d] sts [%d]\n
+Motor\n
+Turn on suction motor.\n
+Turn off suction motor.\n
+# arbo help file                                                                \n\rCommands:                                                                       \n\r  ver (v)                              : print version                          \n\r  commandtest enable|disable (ct)      : enable/disable command test mode       \n\r  commandtest <command> <option> (ct)  : set command & option                   \n\r  config (conf)                        : print parameter                        \n\r  db <pwm>                             : drum brush motor                       \n\r  debug <num>                          : debug print on/off                     \n\r  delete <filename>                    : delete file                            \n\r  dump <filename>                      : dump text file                         \n\r  estop (e)                            : emergency stop                         \n\r  exit                                 : exit program                           \n\r  gain <Kp> <Ki> <Kd>                  : motor gain setting                     \n\r  gain reset                           : motor gain reset                       \n\r  gyro ccw|cw <turn> (gy)              : gyro tuning test                       \n\r  gyro reset [on|off] (gy r)           : gyro reset control                     \n\r  help (h)                             : print this screen                      \n\r  history                              : command line history                   \n\r  looptest                             : console loop performance test          \n\r  motion on|off (mo)                   : on/off motion controller               \n\r  motion wheel <motion command> (mo w) : run wheel motion command               \n\r  motor (m)                            : reserved                               \n\r  nxbcmd <nxp mode> <nxp option> (nc)  : set NXP board command                  \n\r  nxpdebug enable|disable              : enable/disable NXP debug command       \n\r  nxpdebug <number>                    : set NXP debug command                  \n\r  proxytest                            : console proxy test                     \n\r  report [<sleep>] (r)                 : report status                          \n\r  resetgyro (rg)                       : reset gyro                             \n\r  resetlog (rl)                        : reset status   log                     \n\r  resetmap (rm)                        : reset map                              \n\r  resetpose (rp)                       : reset robot pose                       \n\r  resettask (rt)                       : reset task and task's FSM              \n\r  run [&]                              : run task subsystem                     \n\r  runloc                               : run localization                       \n\r  sb on|off                            : side brush motor                       \n\r  script <filename> (sc)               : run script file                        \n\r  stop                                 : stop task subsystem                    \n\r  stoploc                              : stop localization                      \n\r  suc on|off                           : suction motor                          \n\r  test [0..9] (t [0..9])               : test 0..9                              \n\r  threport (tr)                        : report thread                          \n\r  uptime                               : uptime                                 \n\r  writelog [<filename>] (wl)           : write status log to file               \n\r  findori (fo)                         : find ceiling angle                     \n\r  viewcmd (vc)                         : view command                           \n\r                                                                                \n\r  <motion command>\t                                                            \n\r    stop [prof_dist req_v_e req_w_e req_time [fc_time]]                         \n\r    move-pose x_t y_t th_t [v_c [v_t w_max dir [req_d_e req_th_e
+ req_time]]]    \n\r    rotate th_t [w_max dir r_dir [req_th_e req_time]]                           \n\r    timed-rotate th_t ctime [dir r_dir [req_th_e req_time]]                     \n\r    move-fw l [v_c [w_max dir [req_d_e req_th_e req_time]]]                     \n\r    move-bw l [v_c [w_max dir [req_d_e req_th_e req_time]]]                     \n\r    timed-move-fw l ctime [w_max dir [req_d_e req_th_e req_time]]               \n\r    timed-move-bw l ctime [w_max dir [req_d_e req_th_e req_time]]               \n\r    reach-line x_l y_l th_l [l_l [v_c [v_t w_max dir r_dir [req_d_e req_time]]]]\n\r    move-to x_t y_t [v_c [v_t w_max dir r_dir [req_d_e req_time]]]              \n\r    turn-to x_t y_t th_t [v_t w_max dir r_dir [req_d_e req_th_e req_time]]      \n\r    follow-circle x_c y_c r [d_l [v_t [w_max dir [req_l_e req_th fc_time]]]]    \n\r    follow-line x_l y_l th_l [d_l [v_c v_t [w_max dir [req_l_e req_d fc_time]]]]\n\r    follow-wall l w_dir [v_t [w_max dir [mode smask sid]]]                      \n\r#    follow-wall-ir l w_dir [v_t [w_max dir]]                                   \n\r#    follow-wall-sonar l w_dir [v_t [w_max dir]]                                \n\r#    follow-beacon [v_c [v_t [w_max dir]]]                                      \n\r    ctl-speed v [w [fc_time]]                                                   \n\r    ctl-motor on|off|clear [mc_time]                                            \n\r#  motor   wheel|left-arm|right-arm|head-pan|head-tilt <cmd> <args>             \n\r#  report  all                                                                  \n\r#  report  sensor [-s]                                                          \n\r#  report  motion all|wheel|joint [left-arm|right-arm|head-pan|head-tilt]       \n\r#  report  motor  all|wheel|joint [-s]                                          \n\r#  chargen [sleep]                                                              \n\r#  set loc <x> <y> <th>, reset loc                                              \n\r#  batt [sleep]                                                                 \n\r#  beacon [sleep]                                                               \n\r#  dock [modObs], docklong [modObs] [chargeTime]                                \n\r#  uptime [-r] [sleep]                                                          \n\r#  test0, test1                                                                 \n\r
+status.hwevent_processing.motor_gain
+  <token>: all, pose, vel, sum, abs_sum, board, motor, sensor, ui,\n
+\n** MAX motor command report:\n
+\n** MAX motor status report:\n
+ * ctl-motor-off completed after %ld ms.\n
+(%8ld)[FSM.CONTROL] ctl-motor-off timeout %ld ms. (too long! >= %d)\n
+ * ctl-motor-on completed after %ld ms.\n
+(%8ld)[FSM.CONTROL] ctl-motor-on timeout %ld ms. (too long! >= %d)\n
+(%8ld)[FSM.IDLE] ctl-motor-off timeout %ld ms. (too long >= %d)\n
+(%8ld)[FSM.INIT] ctl-motor-on timeout %ld ms. (too long >= %d)\n
+st_r_t_motoron
+st_r_f_motoron
+(%8ld)[FSM.RELOCATION.TURN] ctl-motor-on timeout %ld ms. (too long >= %d)\n
+(%8ld)[FSM.RELOCATION.FINALIZE] ctl-motor-on timeout %ld ms. (too long >= %d)\n
+motor resource
+static const char* boost::detail::sp_typeid_<T>::name() [with T = boost::_bi::bind_t<void*, boost::_mfi::mf1<void*, res<mx_motor_cmd, mx_motor_sts>, void*>, boost::_bi::list2<boost::_bi::value<res<mx_motor_cmd, mx_motor_sts>*>, boost::arg<1> > >]

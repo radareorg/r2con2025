@@ -1,0 +1,16 @@
+$ r2 ../max
+WARN: Relocs has not been applied. Please use `-e bin.relocs.apply=true` or `-e bin.cache=true` next time
+ -- command not found: calc.exe
+[0x001383c0]> ii~dlog
+6761  0x00130ee0 GLOBAL FUNC       __dlog_print
+[0x001383c0]> s sym.imp.__dlog_print
+[0x00130ee0]> /re $$
+[0x00130ee0]> axt $$
+(nofunc) 0x3ab72c [CALL:--x] bl sym.imp.__dlog_print
+(nofunc) 0x3ab74c [CALL:--x] bl sym.imp.__dlog_print
+(nofunc) 0x3acfdc [CALL:--x] bl sym.imp.__dlog_print
+(nofunc) 0x3acffc [CALL:--x] bl sym.imp.__dlog_print
+(nofunc) 0x3ad304 [CALL:--x] bl sym.imp.__dlog_print
+(nofunc) 0x3ad3d0 [CALL:--x] bl sym.imp.__dlog_print
+(nofunc) 0x3ad468 [CALL:--x] bl sym.imp.__dlog_print
+[0x00130ee0]>

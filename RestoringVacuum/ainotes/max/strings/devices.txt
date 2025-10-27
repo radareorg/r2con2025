@@ -1,0 +1,11 @@
+$ cat all-strings.txt | grep /dev
+/dev/ttyS0
+/dev/ttySAC1
+/dev/ttyS6
+/dev/urandom
+/dev/null
+/dev/i2c-2
+/dev/i2c
+/dev/i2c-1
+/home/abuild/rpmbuild/BUILD/robot-main-1.0/RVC/MaxRVC/resource/device_subsys/mx_serial.cpp
+0$

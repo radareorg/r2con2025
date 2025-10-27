@@ -1,0 +1,2143 @@
+[38;2;58;150;221m// callconv: r0 arm32 (r0, r1);
+[0m[38;2;197;15;31mint[0m fcn.[38;2;19;161;14m00000ae4[0m ([38;2;197;15;31mint[0m r0, [38;2;197;15;31mint[0m r1) {
+    loc_0x00000ae4:
+        [38;2;58;150;221m// XREFS(25)
+[0m        [sp - [38;2;19;161;14m4[0m]! = lr [38;2;58;150;221m// [10] -r-x section size 332 named .plt
+[0m        lr = [[38;2;19;161;14m0x00000af0[0m] [38;2;58;150;221m// [0xaf4:4]=0x9cd0
+[0m        lr = pc + lr  [38;2;58;150;221m// section..got
+[0m        pc = [lr + [38;2;19;161;14m8[0m]!
+        [38;2;136;23;152mreturn[0m r0;
+}
+
+[38;2;58;150;221m// callconv: r0 arm32 (r0, r1);
+[0m[38;2;197;15;31mint[0m entry0 ([38;2;197;15;31mint[0m r0, [38;2;197;15;31mint[0m r1) {
+    loc_0x00000c30:
+        [38;2;58;150;221m// CALL XREF from sym._init @ 0xadc(x)
+[0m        r3 = [[38;2;19;161;14m0x00000c38[0m] [38;2;58;150;221m// [0xc4c:4]=0x9b84 // [11] -r-x section size 4312 named .text
+[0m        r2 = [[38;2;19;161;14m0x00000c3c[0m] [38;2;58;150;221m// [0xc50:4]=120
+[0m        r3 = pc + r3  [38;2;58;150;221m// 0xa7c4 // section..got
+[0m        [[38;2;19;161;14m20[0m] -rw- section size [38;2;19;161;14m128[0m named .got
+        r3 = [r3 + r2] [38;2;58;150;221m// 0xa83c // reloc.__gmon_start__
+[0m        (a, b) = compare (r3, [38;2;19;161;14m0[0m)
+        je lr         [38;2;58;150;221m// r14
+[0m        [38;2;58;150;221m// DATA XREF from sym.mm_rvc_sensor_prepare @ 0x1924(r)
+[0m        [38;2;136;23;152mgoto[0m loc.imp.__gmon_start__ [38;2;58;150;221m// loc.imp.__gmon_start__(0x0, 0x3, 0x78, 0x0)
+[0m        [38;2;136;23;152mreturn[0m r0;
+}
+
+[38;2;58;150;221m// callconv: r0 arm32 (r0, r1);
+[0m[38;2;197;15;31mint[0m sym.imp.__cxa_finalize ([38;2;197;15;31mint[0m r0, [38;2;197;15;31mint[0m r1) {
+    loc_0x00000b04:
+        [38;2;58;150;221m// CALL XREF from entry.fini0 @ 0xc6e(x)
+[0m        add ip, pc, [38;2;19;161;14m0[0m, [38;2;19;161;14m12[0m
+        ip += [38;2;19;161;14m0x9000[0m
+        [38;2;58;150;221m// DATA XREF from sym.imp.__cxa_finalize @ 0xb04(r)
+[0m        [38;2;58;150;221m// DATA XREF from sym.mm_rvc_sensor_ini_load @ 0x11f8(r)
+[0m        pc = [ip + [38;2;19;161;14m0xcc8[0m]! [38;2;58;150;221m// fcn.00000ae4
+[0m        [38;2;136;23;152mreturn[0m r0;
+}
+
+[38;2;58;150;221m// callconv: r0 arm32 (r0, r1);
+[0m[38;2;197;15;31mint[0m sym.imp.g_malloc ([38;2;197;15;31mint[0m r0, [38;2;197;15;31mint[0m r1) {
+    loc_0x00000b10:
+        [38;2;58;150;221m// CALL XREF from sym.mm_rvc_sensor_create @ 0x1380(x)
+[0m        add ip, pc, [38;2;19;161;14m0[0m, [38;2;19;161;14m12[0m
+        ip += [38;2;19;161;14m0x9000[0m
+        [38;2;58;150;221m// DATA XREF from sym.imp.g_malloc @ 0xb10(r)
+[0m        pc = [ip + [38;2;19;161;14m0xcc0[0m]! [38;2;58;150;221m// 0xa7d8 // reloc.g_malloc // fcn.00000ae4
+[0m        [38;2;136;23;152mreturn[0m r0;
+}
+
+[38;2;58;150;221m// callconv: r0 arm32 (r0, r1);
+[0m[38;2;197;15;31mint[0m sym.imp.g_free ([38;2;197;15;31mint[0m r0, [38;2;197;15;31mint[0m r1) {
+    loc_0x00000b1c:
+        [38;2;58;150;221m// CALL XREF from sym.mm_rvc_sensor_create @ 0x1422(x)
+[0m        [38;2;58;150;221m// CALL XREF from sym.mm_rvc_sensor_destroy @ 0x14fe(x)
+[0m        add ip, pc, [38;2;19;161;14m0[0m, [38;2;19;161;14m12[0m
+        ip += [38;2;19;161;14m0x9000[0m
+        [38;2;58;150;221m// DATA XREF from sym.imp.g_free @ 0xb1c(r)
+[0m        pc = [ip + [38;2;19;161;14m0xcb8[0m]! [38;2;58;150;221m// 0xa7dc // reloc.g_free // fcn.00000ae4
+[0m        [38;2;136;23;152mreturn[0m r0;
+}
+
+[38;2;58;150;221m// callconv: r0 arm32 (r0, r1);
+[0m[38;2;197;15;31mint[0m sym.imp.iniparser_getboolean ([38;2;197;15;31mint[0m r0, [38;2;197;15;31mint[0m r1) {
+    loc_0x00000b28:
+        [38;2;58;150;221m// CALL XREFS from fcn.00000d44 @ 0xd9a(x), 0xdb2(x), 0xeac(x), 0xec2(x)
+[0m        add ip, pc, [38;2;19;161;14m0[0m, [38;2;19;161;14m12[0m
+        ip += [38;2;19;161;14m0x9000[0m
+        [38;2;58;150;221m// DATA XREF from sym.imp.iniparser_getboolean @ 0xb28(r)
+[0m        pc = [ip + [38;2;19;161;14m0xcb0[0m]! [38;2;58;150;221m// 0xa7e0 // reloc.iniparser_getboolean // fcn.00000ae4
+[0m        [38;2;136;23;152mreturn[0m r0;
+}
+
+[38;2;58;150;221m// callconv: r0 arm32 (r0, r1);
+[0m[38;2;197;15;31mint[0m sym.imp.__xstat ([38;2;197;15;31mint[0m r0, [38;2;197;15;31mint[0m r1) {
+    loc_0x00000b34:
+        [38;2;58;150;221m// CALL XREF from sym.mm_rvc_sensor_ini_load @ 0xcd8(x)
+[0m        add ip, pc, [38;2;19;161;14m0[0m, [38;2;19;161;14m12[0m
+        [38;2;58;150;221m// DATA XREF from sym.mm_rvc_sensor_ini_load @ 0x11cc(r)
+[0m        ip += [38;2;19;161;14m0x9000[0m
+        [38;2;58;150;221m// DATA XREF from sym.imp.__xstat @ 0xb34(r)
+[0m        pc = [ip + [38;2;19;161;14m0xca8[0m]! [38;2;58;150;221m// 0xa7e4 // reloc.__xstat // fcn.00000ae4
+[0m        [38;2;136;23;152mreturn[0m r0;
+}
+
+[38;2;58;150;221m// callconv: r0 arm32 (r0, r1);
+[0m[38;2;197;15;31mint[0m sym.imp.__strcpy_chk ([38;2;197;15;31mint[0m r0, [38;2;197;15;31mint[0m r1) {
+    loc_0x00000b4c:
+        [38;2;58;150;221m// CALL XREFS from fcn.00000d44 @ 0x118e(x), 0x119e(x), 0x11ac(x)
+[0m        [38;2;58;150;221m// CALL XREF from sym.mm_rvc_sensor_ini_load @ 0x11b8(x)
+[0m        add ip, pc, [38;2;19;161;14m0[0m, [38;2;19;161;14m12[0m
+        [38;2;58;150;221m// DATA XREF from sym.mm_rvc_sensor_ini_load @ 0x1212(r)
+[0m        [38;2;58;150;221m// DATA XREF from sym.mm_rvc_sensor_unprepare @ 0x1a64(r)
+[0m        ip += [38;2;19;161;14m0x9000[0m
+        [38;2;58;150;221m// DATA XREF from sym.imp.__strcpy_chk @ 0xb4c(r)
+[0m        pc = [ip + [38;2;19;161;14m0xc98[0m]! [38;2;58;150;221m// 0xa7ec // reloc.__strcpy_chk // fcn.00000ae4
+[0m        [38;2;136;23;152mreturn[0m r0;
+}
+
+[38;2;58;150;221m// callconv: r0 arm32 (r0, r1);
+[0msize_t strlen ([38;2;197;15;31mconst[0m [38;2;197;15;31mchar[0m *s) {
+    loc_0x00000b70:
+        [38;2;58;150;221m// CALL XREF from sym.mm_rvc_sensor_ini_load @ 0xd26(x)
+[0m        [38;2;58;150;221m// CALL XREFS from fcn.00000d44 @ 0xdd6(x), 0xe2a(x), 0xee2(x)
+[0m        add ip, pc, [38;2;19;161;14m0[0m, [38;2;19;161;14m12[0m
+        ip += [38;2;19;161;14m0x9000[0m
+        [38;2;58;150;221m// DATA XREF from sym.imp.strlen @ 0xb70(r)
+[0m        pc = [ip + [38;2;19;161;14m0xc80[0m]! [38;2;58;150;221m// 0xa7f8 // reloc.strlen // fcn.00000ae4
+[0m        [38;2;136;23;152mreturn[0m r0;
+}
+
+[38;2;58;150;221m// callconv: r0 arm32 (r0, r1);
+[0m[38;2;197;15;31mvoid[0m * memset ([38;2;197;15;31mvoid[0m *s, [38;2;197;15;31mint[0m c, size_t n) {
+    loc_0x00000ba0:
+        [38;2;58;150;221m// CALL XREF from sym.mm_rvc_sensor_ini_load @ 0xd0c(x)
+[0m        [38;2;58;150;221m// CALL XREF from sym.mm_rvc_sensor_create @ 0x138e(x)
+[0m        add ip, pc, [38;2;19;161;14m0[0m, [38;2;19;161;14m12[0m
+        [38;2;58;150;221m// DATA XREF from sym.mm_rvc_sensor_get_capture_resolution @ 0x16da(r)
+[0m        ip += [38;2;19;161;14m0x9000[0m
+        [38;2;58;150;221m// DATA XREF from sym.imp.memset @ 0xba0(r)
+[0m        pc = [ip + [38;2;19;161;14m0xc60[0m]! [38;2;58;150;221m// 0xa808 // reloc.memset // fcn.00000ae4
+[0m        [38;2;136;23;152mreturn[0m r0;
+}
+
+[38;2;58;150;221m// callconv: r0 arm32 (r0, r1);
+[0m[38;2;197;15;31mint[0m sym.imp.iniparser_freedict ([38;2;197;15;31mint[0m r0, [38;2;197;15;31mint[0m r1) {
+    loc_0x00000bb8:
+        [38;2;58;150;221m// CALL XREF from fcn.00000d44 @ 0xf24(x)
+[0m        add ip, pc, [38;2;19;161;14m0[0m, [38;2;19;161;14m12[0m
+        ip += [38;2;19;161;14m0x9000[0m
+        [38;2;58;150;221m// DATA XREF from sym.imp.iniparser_freedict @ 0xbb8(r)
+[0m        pc = [ip + [38;2;19;161;14m0xc50[0m]! [38;2;58;150;221m// 0xa810 // reloc.iniparser_freedict // fcn.00000ae4
+[0m        [38;2;136;23;152mreturn[0m r0;
+}
+
+[38;2;58;150;221m// callconv: r0 arm32 (r0, r1);
+[0m[38;2;197;15;31mint[0m sym.imp.iniparser_getint ([38;2;197;15;31mint[0m r0, [38;2;197;15;31mint[0m r1) {
+    loc_0x00000bc4:
+        [38;2;58;150;221m// XREFS: CALL 0x00000d56  CALL 0x00000d68  CALL 0x00000d7a  CALL 0x00000d8a  CALL 0x00000e60  CALL 0x00000e74
+[0m        [38;2;58;150;221m// XREFS: CALL 0x00000e88  CALL 0x00000e9a
+[0m        add ip, pc, [38;2;19;161;14m0[0m, [38;2;19;161;14m12[0m
+        ip += [38;2;19;161;14m0x9000[0m
+        [38;2;58;150;221m// DATA XREF from sym.imp.iniparser_getint @ 0xbc4(r)
+[0m        pc = [ip + [38;2;19;161;14m0xc48[0m]! [38;2;58;150;221m// 0xa814 // reloc.iniparser_getint // fcn.00000ae4
+[0m        [38;2;136;23;152mreturn[0m r0;
+}
+
+[38;2;58;150;221m// callconv: r0 arm32 (r0, r1);
+[0m[38;2;197;15;31mint[0m sym.imp.iniparser_getstring ([38;2;197;15;31mint[0m r0, [38;2;197;15;31mint[0m r1) {
+    loc_0x00000bdc:
+        [38;2;58;150;221m// CALL XREF from sym.mm_rvc_sensor_ini_load @ 0xd1e(x)
+[0m        [38;2;58;150;221m// CALL XREFS from fcn.00000d44 @ 0xdce(x), 0xe22(x), 0xeda(x)
+[0m        [38;2;58;150;221m// DATA XREF from sym.mm_rvc_sensor_ini_load @ 0x11c6(x)
+[0m        add ip, pc, [38;2;19;161;14m0[0m, [38;2;19;161;14m12[0m
+        ip += [38;2;19;161;14m0x9000[0m
+        [38;2;58;150;221m// DATA XREF from sym.imp.iniparser_getstring @ 0xbdc(r)
+[0m        pc = [ip + [38;2;19;161;14m0xc38[0m]! [38;2;58;150;221m// 0xa81c // reloc.iniparser_getstring // fcn.00000ae4
+[0m        [38;2;136;23;152mreturn[0m r0;
+}
+
+[38;2;58;150;221m// callconv: r0 arm32 (r0, r1);
+[0m[38;2;197;15;31mint[0m sym.imp.iniparser_load ([38;2;197;15;31mint[0m r0, [38;2;197;15;31mint[0m r1) {
+    loc_0x00000bf4:
+        [38;2;58;150;221m// CALL XREF from sym.mm_rvc_sensor_ini_load @ 0xcf0(x)
+[0m        add ip, pc, [38;2;19;161;14m0[0m, [38;2;19;161;14m12[0m
+        ip += [38;2;19;161;14m0x9000[0m
+        [38;2;58;150;221m// DATA XREF from sym.imp.iniparser_load @ 0xbf4(r)
+[0m        pc = [ip + [38;2;19;161;14m0xc28[0m]! [38;2;58;150;221m// 0xa824 // reloc.iniparser_load // fcn.00000ae4
+[0m        [38;2;136;23;152mreturn[0m r0;
+}
+
+[38;2;58;150;221m// callconv: r0 arm32 (r0, r1);
+[0m[38;2;197;15;31mint[0m remove ([38;2;197;15;31mconst[0m [38;2;197;15;31mchar[0m *filename) {
+    loc_0x00000c0c:
+        [38;2;58;150;221m// CALL XREF from sym.mm_rvc_sensor_ini_load @ 0x11e6(x)
+[0m        add ip, pc, [38;2;19;161;14m0[0m, [38;2;19;161;14m12[0m
+        ip += [38;2;19;161;14m0x9000[0m
+        [38;2;58;150;221m// DATA XREF from sym.imp.remove @ 0xc0c(r)
+[0m        pc = [ip + loc.imp.mm_v4l2_destroy]! [38;2;58;150;221m// 0xa82c // reloc.remove // fcn.00000ae4
+[0m        [38;2;136;23;152mreturn[0m r0;
+}
+
+[38;2;58;150;221m// callconv: r0 arm16 (r0, r1, r2, r3, r4, stack);
+[0m[38;2;197;15;31mint[0m sym.mm_rvc_sensor_led_off ([38;2;197;15;31mint[0m r0, [38;2;197;15;31mint[0m r1) {
+    loc_0x00001d04:
+        r0 = [38;2;19;161;14m0[0m
+        bx lr
+        [38;2;136;23;152mreturn[0m r0;
+}
+
+[38;2;58;150;221m// callconv: r0 arm16 (r0, r1, r2, r3, stack);
+[0m[38;2;197;15;31mint[0m sym.mm_rvc_sensor_led_on ([38;2;197;15;31mint[0m r0, [38;2;197;15;31mint[0m r1) {
+    loc_0x00001d00:
+        r0 = [38;2;19;161;14m0[0m
+        bx lr
+        [38;2;136;23;152mreturn[0m r0;
+}
+
+[38;2;58;150;221m// callconv: r0 arm32 (r0, r1, r2, stack);
+[0m[38;2;197;15;31mint[0m sym._fini ([38;2;197;15;31mint[0m r0, [38;2;197;15;31mint[0m r1) {
+    loc_0x00001d08:
+        push (r3, lr) [38;2;58;150;221m// [12] -r-x section size 8 named .fini
+[0m        pop (r3, pc)  [38;2;58;150;221m// r14 // r13
+[0m        [38;2;136;23;152mreturn[0m r0;
+}
+
+[38;2;58;150;221m// callconv: r0 arm16 (r0, r1, r2, r3, r4, stack);
+[0m[38;2;197;15;31mvoid[0m sym.mm_rvc_sensor_unprepare (uint32_t arg1) {
+    loc_0x000019fc:
+        push (r4, r5, r6, r7, lr)
+        r4 = r0       [38;2;58;150;221m// arg1
+[0m        sp -= [38;2;19;161;14m0x14[0m
+        (a, b) = compare (r0, [38;2;19;161;14m0[0m) [38;2;58;150;221m// arg1
+[0m        je [38;2;19;161;14m0x1a94[0m     [38;2;58;150;221m// likely
+[0m        [38;2;136;23;152mgoto[0m loc_0x00001a06;
+    loc_0x00001a94:
+        [38;2;58;150;221m// CODE XREF from sym.mm_rvc_sensor_unprepare @ 0x1a04(x)
+[0m        r6 = [[38;2;19;161;14m0x00001a98[0m] [38;2;58;150;221m// [0x1aec:4]=0x7ea "repare" // "repare"
+[0m        r0 = [38;2;19;161;14m2[0m
+        r2 = [[38;2;19;161;14m0x00001a9c[0m] [38;2;58;150;221m// [0x1af0:4]=0x2ca
+[0m        r1 = [38;2;19;161;14m5[0m        [38;2;58;150;221m// (pstr 0x00000101) "NU"
+[0m        r3 = [[38;2;19;161;14m0x00001aa0[0m] [38;2;58;150;221m// [0x1af4:4]=0x8ae "rser.so.0" // "rser.so.0"
+[0m        r6 += pc      [38;2;58;150;221m// 0x228c // "mm_rvc_sensor_create" // str.mm_rvc_sensor_create
+[0m        r7 = [[38;2;19;161;14m0x00001aa4[0m] [38;2;58;150;221m// [0x1af8:4]=0x8c8 "bc.so.6" // "bc.so.6"
+[0m        r2 += pc      [38;2;58;150;221m// 0x1d70 // "MM_UNKNOWN" // r6
+[0m        r5 = [[38;2;19;161;14m0x00001aa8[0m] [38;2;58;150;221m// [0x1afc:4]=0x978
+[0m        r3 += pc      [38;2;58;150;221m// 0x2358 // "%s: %s(%d) > failed [%s]\n" // str._s:__s__d____failed___s__n
+[0m        r7 += pc      [38;2;58;150;221m// 0x2374 // "mm_rvc_sensor.c" // str.mm_rvc_sensor.c
+[0m        r4 = [38;2;19;161;14m0xff[0m
+        r5 += pc      [38;2;58;150;221m// "cam"
+[0m        r6 += [38;2;19;161;14m0x98[0m    [38;2;58;150;221m// 0x2324 // "mm_rvc_sensor_unprepare" // str.mm_rvc_sensor_unprepare
+[0m        [sp] = r7
+        [var_4h] = r6
+        [var_ch] = r5
+        [var_8h] = r4
+        loc.imp.__dlog_print ()
+        r0 = [38;2;19;161;14m0x200a[0m   [38;2;58;150;221m// '\n ' // "evice node : %s"
+[0m        r0 |= [38;2;19;161;14m0x8000[0m << [38;2;19;161;14m16[0m
+        [38;2;136;23;152mgoto[0m [38;2;19;161;14m0x1a24[0m
+        
+    loc_0x00001a24:
+        [38;2;58;150;221m// CODE XREFS from sym.mm_rvc_sensor_unprepare @ 0x1a5a(x), 0x1a88(x), 0x1a92(x), 0x1ac4(x)
+[0m        sp += [38;2;19;161;14m0x14[0m
+        pop (r4, r5, r6, r7, pc)
+        [38;2;136;23;152mgoto[0m loc_0x00001a0c;
+        [38;2;136;23;152mreturn[0m r0;
+    loc_0x00001a0c:
+        r0 = [r0]     [38;2;58;150;221m// arg1
+[0m        loc.imp.mm_v4l2_stop_capture ()
+        (a, b) = compare (r0, [38;2;19;161;14m0[0m)
+        bne [38;2;19;161;14m0x1a5c[0m    [38;2;58;150;221m// likely
+[0m        [38;2;136;23;152mgoto[0m loc_0x00001a16;
+    loc_0x00001a5c:
+        [38;2;58;150;221m// CODE XREF from sym.mm_rvc_sensor_unprepare @ 0x1a14(x)
+[0m        r0 = r5
+        r2 = [[38;2;19;161;14m0x00001a60[0m] [38;2;58;150;221m// [0x1adc:4]=0x306
+[0m        r5 = [[38;2;19;161;14m0x00001a64[0m] [38;2;58;150;221m// [0x1ae0:4]=0x81e "_sensor_grab_image" // "_sensor_grab_image"
+[0m        r1 = [38;2;19;161;14m6[0m
+        r3 = [[38;2;19;161;14m0x00001a68[0m] [38;2;58;150;221m// [0x1ae4:4]=0xb50
+[0m        r2 += pc      [38;2;58;150;221m// 0x1d70 // "MM_UNKNOWN" // r6
+[0m        r6 = [[38;2;19;161;14m0x00001a6c[0m] [38;2;58;150;221m// [0x1ae8:4]=0x8fe "_end__" // "_end__"
+[0m        r5 += pc      [38;2;58;150;221m// 0x228c // "mm_rvc_sensor_create" // str.mm_rvc_sensor_create
+[0m        r3 += pc      [38;2;58;150;221m// 0x25c0 // "%s: %s(%d) > mm_v4l2_stop_capture\n" // str._s:__s__d____mm_v4l2_stop_capture_n
+[0m        mov.w r4, [38;2;19;161;14m0x104[0m
+        r6 += pc      [38;2;58;150;221m// 0x2374 // "mm_rvc_sensor.c" // str.mm_rvc_sensor.c
+[0m        r5 += [38;2;19;161;14m0x98[0m    [38;2;58;150;221m// 0x2324 // "mm_rvc_sensor_unprepare" // str.mm_rvc_sensor_unprepare
+[0m        [sp] = r6
+        [var_4h] = r5
+        [var_8h] = r4
+        loc.imp.__dlog_print ()
+        r0 = [38;2;19;161;14m0x2004[0m   [38;2;58;150;221m// "ling:device node : %s"
+[0m        r0 |= [38;2;19;161;14m0x8000[0m << [38;2;19;161;14m16[0m
+        [38;2;136;23;152mgoto[0m [38;2;19;161;14m0x1a24[0m
+    loc_0x00001a16: [38;2;58;150;221m// orphan
+[0m         r0 = [r4]
+         loc.imp.mm_v4l2_unrealize ()
+         (a, b) = compare (r0, [38;2;19;161;14m0[0m)
+         bne [38;2;19;161;14m0x1a8a[0m               [38;2;58;150;221m// likely
+[0m
+         [38;2;136;23;152mgoto[0m loc_0x00001a20
+    loc_0x00001a20: [38;2;58;150;221m// orphan
+[0m         r3 = [38;2;19;161;14m1[0m
+         [r4 + [38;2;19;161;14m8[0m] = r3
+
+    loc_0x00001a24: [38;2;58;150;221m// orphan
+[0m         [38;2;58;150;221m// CODE XREFS from sym.mm_rvc_sensor_unprepare @ 0x1a5a(x), 0x1a88(x), 0x1a92(x), 0x1ac4(x)
+[0m         sp += [38;2;19;161;14m0x14[0m
+         pop (r4, r5, r6, r7, pc)
+
+        [38;2;136;23;152mreturn[0m r0;
+    loc_0x00001a28: [38;2;58;150;221m// orphan
+[0m         [38;2;58;150;221m// CODE XREF from sym.mm_rvc_sensor_unprepare @ 0x1a0a(x)
+[0m         r6 = [[38;2;19;161;14m0x00001a2c[0m]        [38;2;58;150;221m// [0x1ac8:4]=0x856 "ff" // "ff"
+[0m         r0 = [38;2;19;161;14m2[0m
+         r2 = [[38;2;19;161;14m0x00001a30[0m]        [38;2;58;150;221m// [0x1acc:4]=0x336 // "6\x03"
+[0m         r1 = [38;2;19;161;14m5[0m                   [38;2;58;150;221m// (pstr 0x00000101) "NU"
+[0m         r3 = [[38;2;19;161;14m0x00001a34[0m]        [38;2;58;150;221m// [0x1ad0:4]=0x91a "so.0" // "so.0"
+[0m         r6 += pc                 [38;2;58;150;221m// 0x228c // "mm_rvc_sensor_create" // str.mm_rvc_sensor_create
+[0m         r7 = [[38;2;19;161;14m0x00001a38[0m]        [38;2;58;150;221m// [0x1ad4:4]=0x934 // "4\t"
+[0m         r2 += pc                 [38;2;58;150;221m// 0x1d70 // "MM_UNKNOWN" // r6
+[0m         r5 = [[38;2;19;161;14m0x00001a3c[0m]        [38;2;58;150;221m// [0x1ad8:4]=0xa56 // "V\n"
+[0m         r3 += pc                 [38;2;58;150;221m// 0x2358 // "%s: %s(%d) > failed [%s]\n" // str._s:__s__d____failed___s__n
+[0m         r7 += pc                 [38;2;58;150;221m// 0x2374 // "mm_rvc_sensor.c" // str.mm_rvc_sensor.c
+[0m         mov.w r4, [38;2;19;161;14m0x100[0m          [38;2;58;150;221m// "GNU"
+[0m         r5 += pc                 [38;2;58;150;221m// 0x249c // "(cam->state == MM_RVC_SENSOR_STATE_PREPARED)" // str._cam__state__MM_RVC_SENSOR_STATE_PREPARED_
+[0m         r6 += [38;2;19;161;14m0x98[0m               [38;2;58;150;221m// 0x2324 // "mm_rvc_sensor_unprepare" // str.mm_rvc_sensor_unprepare
+[0m         [sp] = r7
+         [var_4h] = r6
+         [var_ch] = r5
+         [var_8h] = r4
+         loc.imp.__dlog_print ()
+         r0 = [38;2;19;161;14m0x2005[0m              [38;2;58;150;221m// "ing:device node : %s"
+[0m         r0 |= [38;2;19;161;14m0x8000[0m << [38;2;19;161;14m16[0m
+         
+    loc_0x00001a8a: [38;2;58;150;221m// orphan
+[0m         [38;2;58;150;221m// CODE XREF from sym.mm_rvc_sensor_unprepare @ 0x1a1e(x)
+[0m         r0 = [38;2;19;161;14m0x2004[0m              [38;2;58;150;221m// "ling:device node : %s"
+[0m         r0 |= [38;2;19;161;14m0x8000[0m << [38;2;19;161;14m16[0m
+         
+}
+
+[38;2;58;150;221m// callconv: r0 arm32 (r0, r1, r2, stack);
+[0m[38;2;197;15;31mint[0m loc.imp.mm_v4l2_stop_capture ([38;2;197;15;31mint[0m r0, [38;2;197;15;31mint[0m r1) {
+    loc_0x00000b64:
+        [38;2;58;150;221m// CALL XREF from sym.mm_rvc_sensor_unprepare @ 0x1a0e(x)
+[0m        add ip, pc, [38;2;19;161;14m0[0m, [38;2;19;161;14m12[0m
+        ip += [38;2;19;161;14m0x9000[0m
+        [38;2;58;150;221m// DATA XREF from loc.imp.mm_v4l2_stop_capture @ 0xb64(r)
+[0m        pc = [ip + [38;2;19;161;14m0xc88[0m]! [38;2;58;150;221m// 0xa7f4 // reloc.mm_v4l2_stop_capture // fcn.00000ae4
+[0m        [38;2;136;23;152mreturn[0m r0;
+}
+
+[38;2;58;150;221m// callconv: r0 arm32 (r0, r1);
+[0m[38;2;197;15;31mint[0m loc.imp.mm_v4l2_unrealize ([38;2;197;15;31mint[0m r0, [38;2;197;15;31mint[0m r1) {
+    loc_0x00000b40:
+        [38;2;58;150;221m// CALL XREF from sym.mm_rvc_sensor_unprepare @ 0x1a18(x)
+[0m        add ip, pc, [38;2;19;161;14m0[0m, [38;2;19;161;14m12[0m
+        ip += [38;2;19;161;14m0x9000[0m
+        [38;2;58;150;221m// DATA XREF from loc.imp.mm_v4l2_unrealize @ 0xb40(r)
+[0m        pc = [ip + [38;2;19;161;14m0xca0[0m]! [38;2;58;150;221m// 0xa7e8 // reloc.mm_v4l2_unrealize // fcn.00000ae4
+[0m        [38;2;136;23;152mreturn[0m r0;
+}
+
+[38;2;58;150;221m// callconv: r0 arm32 (r0, r1);
+[0m[38;2;197;15;31mint[0m loc.imp.__dlog_print ([38;2;197;15;31mint[0m r0, [38;2;197;15;31mint[0m r1) {
+    loc_0x00000bd0:
+        [38;2;58;150;221m// XREFS(44)
+[0m        add ip, pc, [38;2;19;161;14m0[0m, [38;2;19;161;14m12[0m
+        ip += [38;2;19;161;14m0x9000[0m
+        [38;2;58;150;221m// DATA XREF from loc.imp.__dlog_print @ 0xbd0(r)
+[0m        pc = [ip + [38;2;19;161;14m0xc40[0m]! [38;2;58;150;221m// 0xa818 // reloc.__dlog_print // fcn.00000ae4
+[0m        [38;2;136;23;152mreturn[0m r0;
+}
+
+[38;2;58;150;221m// callconv: r0 arm16 (r0, r1, r2, r3, r4, stack);
+[0m[38;2;197;15;31mvoid[0m sym.mm_rvc_sensor_set_capture_resolution (int16_t arg1, int16_t arg2, int16_t arg3) {
+    loc_0x000015d0:
+        r3 = [r0 + [38;2;19;161;14m8[0m] [38;2;58;150;221m// arg1
+[0m        push (r4, r5, r6, r7, r8, lr)
+        r5 = [38;2;19;161;14m0[0m
+        sp -= [38;2;19;161;14m0x18[0m
+        (a, b) = compare (r3, [38;2;19;161;14m1[0m)
+        r4 = r0       [38;2;58;150;221m// arg1
+[0m        r7 = r1       [38;2;58;150;221m// arg2
+[0m        r6 = r2       [38;2;58;150;221m// arg3 // "MM_UNKNOWN"
+[0m        [var_14h] = r5
+        bne [38;2;19;161;14m0x162a[0m    [38;2;58;150;221m// likely
+[0m        [38;2;136;23;152mgoto[0m loc_0x000015e6;
+    loc_0x0000162a:
+        [38;2;58;150;221m// CODE XREF from sym.mm_rvc_sensor_set_capture_resolution @ 0x15e4(x)
+[0m        r6 = entry.fini0 [38;2;58;150;221m// [0xc54:4]=0xb5084a09 // "\tJ\b\xb5zD\tK\x12x{DZ\xb9\bJ\x9bX#\xb1\aK{D\x18h\xff\xf7J\xef\x06K\x01\"{D\x1ap\b\xbd\xec\x9b"
+[0m        r0 = [38;2;19;161;14m2[0m
+        r2 = [[38;2;19;161;14m0x00001630[0m] [38;2;58;150;221m// [0x1694:4]=0x734 "sor_set_capture_resolution" // "4\a" // "sor_set_capture_resolution"
+[0m        r1 = [38;2;19;161;14m5[0m        [38;2;58;150;221m// (pstr 0x00000101) "NU"
+[0m        r3 = [[38;2;19;161;14m0x00001634[0m] [38;2;58;150;221m// [0x1698:4]=0xd18
+[0m        r6 += pc      [38;2;58;150;221m// 0x228c // "mm_rvc_sensor_create" // str.mm_rvc_sensor_create
+[0m        r7 = [[38;2;19;161;14m0x00001638[0m] [38;2;58;150;221m// [0x169c:4]=0xd32 // "2\r"
+[0m        r2 += pc      [38;2;58;150;221m// 0x1d70 // "MM_UNKNOWN" // r6
+[0m        r5 = [[38;2;19;161;14m0x0000163c[0m] [38;2;58;150;221m// [0x16a0:4]=0xde6
+[0m        r3 += pc      [38;2;58;150;221m// 0x2358 // "%s: %s(%d) > failed [%s]\n" // str._s:__s__d____failed___s__n
+[0m        r7 += pc      [38;2;58;150;221m// 0x2374 // "mm_rvc_sensor.c" // str.mm_rvc_sensor.c
+[0m        r4 = [38;2;19;161;14m0x79[0m     [38;2;58;150;221m// 'y' // "&"
+[0m        r5 += pc      [38;2;58;150;221m// 0x242c // "(cam->state == MM_RVC_SENSOR_STATE_CREATED)" // str._cam__state__MM_RVC_SENSOR_STATE_CREATED_
+[0m        r6 += [38;2;19;161;14m0x30[0m    [38;2;58;150;221m// 0x22bc // "mm_rvc_sensor_set_capture_resolution" // str.mm_rvc_sensor_set_capture_resolution
+[0m        [sp] = r7
+        [var_4h] = r6
+        [var_ch] = r5
+        [var_8h] = r4
+        loc.imp.__dlog_print ()
+        r0 = [38;2;19;161;14m0x2005[0m   [38;2;58;150;221m// "ing:device node : %s"
+[0m        r0 |= [38;2;19;161;14m0x8000[0m << [38;2;19;161;14m16[0m
+        [38;2;136;23;152mgoto[0m [38;2;19;161;14m0x1618[0m
+        
+    loc_0x00001618:
+        [38;2;58;150;221m// CODE XREFS from sym.mm_rvc_sensor_set_capture_resolution @ 0x1628(x), 0x165a(x), 0x1686(x)
+[0m        sp += [38;2;19;161;14m0x18[0m
+        pop (r4, r5, r6, r7, r8, pc)
+        [38;2;136;23;152mgoto[0m loc_0x0000160c;
+        [38;2;136;23;152mreturn[0m r0;
+    loc_0x0000160c:
+        r3 = [r4 + [38;2;19;161;14m4[0m]
+        [38;2;136;23;152mif[0m (!r3) [38;2;136;23;152mgoto[0m [38;2;19;161;14m0x161e[0m [38;2;58;150;221m// unlikely
+[0m        [38;2;136;23;152mgoto[0m loc_0x00001610;
+    loc_0x0000161e:
+        [38;2;58;150;221m// CODE XREF from sym.mm_rvc_sensor_set_capture_resolution @ 0x160e(x)
+[0m        str.w r7, [r8, [38;2;19;161;14m0x58[0m]
+        r0 = r3       [38;2;58;150;221m// "%s: %s(%d) > --------------------------------------------------"
+[0m        str.w r6, [r8, [38;2;19;161;14m0x5c[0m]
+        [38;2;136;23;152mgoto[0m [38;2;19;161;14m0x1618[0m
+    loc_0x00001610: [38;2;58;150;221m// orphan
+[0m         str.w r7, [r8, [38;2;19;161;14m0x10c[0m]
+         str.w r6, [r8, [38;2;19;161;14m0x110[0m]
+
+    loc_0x00001618: [38;2;58;150;221m// orphan
+[0m         [38;2;58;150;221m// CODE XREFS from sym.mm_rvc_sensor_set_capture_resolution @ 0x1628(x), 0x165a(x), 0x1686(x)
+[0m         sp += [38;2;19;161;14m0x18[0m
+         pop (r4, r5, r6, r7, r8, pc)
+
+        [38;2;136;23;152mreturn[0m r0;
+    loc_0x0000165c: [38;2;58;150;221m// orphan
+[0m         [38;2;58;150;221m// CODE XREF from sym.mm_rvc_sensor_set_capture_resolution @ 0x160a(x)
+[0m         r5 = [[38;2;19;161;14m0x00001660[0m]        [38;2;58;150;221m// [0x16a4:4]=0xc22
+[0m         r0 = [38;2;19;161;14m2[0m
+         r2 = [[38;2;19;161;14m0x00001664[0m]        [38;2;58;150;221m// [0x16a8:4]=0x702 "e" // "e"
+[0m         r1 = [38;2;19;161;14m6[0m
+         r3 = [[38;2;19;161;14m0x00001668[0m]        [38;2;58;150;221m// [0x16ac:4]=0xe08
+[0m         r5 += pc                 [38;2;58;150;221m// 0x228c // "mm_rvc_sensor_create" // str.mm_rvc_sensor_create
+[0m         r6 = [[38;2;19;161;14m0x0000166c[0m]        [38;2;58;150;221m// [0x16b0:4]=0xd00
+[0m         r2 += pc                 [38;2;58;150;221m// 0x1d70 // "MM_UNKNOWN" // r6
+[0m         r3 += pc                 [38;2;58;150;221m// 0x2478 // "%s: %s(%d) > mm_v4l2_set_attribute\n" // str._s:__s__d____mm_v4l2_set_attribute_n
+[0m         r4 = [38;2;19;161;14m0x82[0m
+         r6 += pc                 [38;2;58;150;221m// 0x2374 // "mm_rvc_sensor.c" // str.mm_rvc_sensor.c
+[0m         r5 += [38;2;19;161;14m0x30[0m               [38;2;58;150;221m// 0x22bc // "mm_rvc_sensor_set_capture_resolution" // str.mm_rvc_sensor_set_capture_resolution
+[0m         [sp] = r6
+         [var_4h] = r5
+         [var_8h] = r4
+         loc.imp.__dlog_print ()
+         r0 = [38;2;19;161;14m0x2004[0m              [38;2;58;150;221m// "ling:device node : %s"
+[0m         r0 |= [38;2;19;161;14m0x8000[0m << [38;2;19;161;14m16[0m
+         
+}
+
+[38;2;58;150;221m// callconv: r0 arm32 (r0, r1, r2, stack);
+[0m[38;2;197;15;31mint[0m rsym.mm_rvc_sensor_ini_get_structure ([38;2;197;15;31mint[0m r0, [38;2;197;15;31mint[0m r1) {
+    loc_0x00000be8:
+        [38;2;58;150;221m// CALL XREF from sym.mm_rvc_sensor_set_capture_resolution @ 0x15e6(x)
+[0m        [38;2;58;150;221m// CALL XREF from sym.mm_rvc_sensor_prepare @ 0x1776(x)
+[0m        [38;2;58;150;221m// CALL XREF from sym.mm_rvc_sensor_grab_image @ 0x1b18(x)
+[0m        add ip, pc, [38;2;19;161;14m0[0m, [38;2;19;161;14m12[0m
+        ip += [38;2;19;161;14m0x9000[0m
+        [38;2;58;150;221m// DATA XREF from rsym.mm_rvc_sensor_ini_get_structure @ 0xbe8(r)
+[0m        pc = [ip + entry0]! [38;2;58;150;221m// 0xa820 // reloc.mm_rvc_sensor_ini_get_structure // fcn.00000ae4
+[0m        [38;2;136;23;152mreturn[0m r0;
+}
+
+[38;2;58;150;221m// callconv: r0 arm32 (r0, r1);
+[0m[38;2;197;15;31mint[0m loc.imp.mm_v4l2_set_attribute ([38;2;197;15;31mint[0m r0, [38;2;197;15;31mint[0m r1) {
+    loc_0x00000b88:
+        [38;2;58;150;221m// CALL XREF from sym.mm_rvc_sensor_set_capture_resolution @ 0x1604(x)
+[0m        [38;2;58;150;221m// CALL XREF from sym.mm_rvc_sensor_prepare @ 0x183e(x)
+[0m        add ip, pc, [38;2;19;161;14m0[0m, [38;2;19;161;14m12[0m
+        [38;2;58;150;221m// DATA XREFS from sym.mm_rvc_sensor_prepare @ 0x1846(r), 0x18e0(r)
+[0m        ip += [38;2;19;161;14m0x9000[0m
+        [38;2;58;150;221m// DATA XREF from loc.imp.mm_v4l2_set_attribute @ 0xb88(r)
+[0m        pc = [ip + [38;2;19;161;14m0xc70[0m]! [38;2;58;150;221m// 0xa800 // reloc.mm_v4l2_set_attribute // fcn.00000ae4
+[0m        [38;2;136;23;152mreturn[0m r0;
+}
+
+[38;2;58;150;221m// callconv: r0 arm16 (r0, r1, r2, r3, r4, stack);
+[0m[38;2;197;15;31mvoid[0m sym.mm_rvc_sensor_destroy (uint32_t arg1) {
+    loc_0x000014e0:
+        push (r4, r5, r6, r7, lr)
+        r4 = r0       [38;2;58;150;221m// arg1
+[0m        sp -= [38;2;19;161;14m0x14[0m
+        (a, b) = compare (r0, [38;2;19;161;14m0[0m) [38;2;58;150;221m// arg1
+[0m        je [38;2;19;161;14m0x1566[0m     [38;2;58;150;221m// likely
+[0m        [38;2;136;23;152mgoto[0m loc_0x000014ea;
+    loc_0x00001566:
+        [38;2;58;150;221m// CODE XREF from sym.mm_rvc_sensor_destroy @ 0x14e8(x)
+[0m        r6 = [[38;2;19;161;14m0x00001568[0m] [38;2;58;150;221m// [0x15bc:4]=0xd18
+[0m        r0 = [38;2;19;161;14m2[0m
+        r2 = [[38;2;19;161;14m0x0000156c[0m] [38;2;58;150;221m// [0x15c0:4]=0x7f8 "_stop_capture" // "_stop_capture"
+[0m        r1 = [38;2;19;161;14m5[0m        [38;2;58;150;221m// (pstr 0x00000101) "NU"
+[0m        r3 = [[38;2;19;161;14m0x00001570[0m] [38;2;58;150;221m// [0x15c4:4]=0xddc
+[0m        r6 += pc      [38;2;58;150;221m// 0x228c // "mm_rvc_sensor_create" // str.mm_rvc_sensor_create
+[0m        r7 = [[38;2;19;161;14m0x00001574[0m] [38;2;58;150;221m// [0x15c8:4]=0xdf6
+[0m        r2 += pc      [38;2;58;150;221m// 0x1d70 // "MM_UNKNOWN" // r6
+[0m        r5 = [[38;2;19;161;14m0x00001578[0m] [38;2;58;150;221m// [0x15cc:4]=0xea6
+[0m        r3 += pc      [38;2;58;150;221m// 0x2358 // "%s: %s(%d) > failed [%s]\n" // str._s:__s__d____failed___s__n
+[0m        r7 += pc      [38;2;58;150;221m// 0x2374 // "mm_rvc_sensor.c" // str.mm_rvc_sensor.c
+[0m        r4 = [38;2;19;161;14m0x5d[0m     [38;2;58;150;221m// ']'
+[0m        r5 += pc      [38;2;58;150;221m// "cam"
+[0m        r6 += [38;2;19;161;14m0x18[0m    [38;2;58;150;221m// 0x22a4 // "mm_rvc_sensor_destroy" // str.mm_rvc_sensor_destroy
+[0m        [sp] = r7
+        [var_4h] = r6
+        [var_ch] = r5
+        [var_8h] = r4
+        loc.imp.__dlog_print ()
+        r0 = [38;2;19;161;14m0x200a[0m   [38;2;58;150;221m// '\n ' // "evice node : %s"
+[0m        r0 |= [38;2;19;161;14m0x8000[0m << [38;2;19;161;14m16[0m
+        [38;2;136;23;152mgoto[0m [38;2;19;161;14m0x1504[0m
+        
+    loc_0x00001504:
+        [38;2;58;150;221m// CODE XREFS from sym.mm_rvc_sensor_destroy @ 0x1538(x), 0x1564(x), 0x1596(x)
+[0m        sp += [38;2;19;161;14m0x14[0m
+        pop (r4, r5, r6, r7, pc)
+        [38;2;136;23;152mgoto[0m loc_0x000014f0;
+        [38;2;136;23;152mreturn[0m r0;
+    loc_0x000014f0:
+        r0 = [r0]     [38;2;58;150;221m// arg1
+[0m        loc.imp.mm_v4l2_destroy ()
+        r5 = r0
+        [38;2;136;23;152mif[0m (r0) [38;2;136;23;152mgoto[0m [38;2;19;161;14m0x153a[0m [38;2;58;150;221m// likely
+[0m        [38;2;136;23;152mgoto[0m loc_0x000014fa;
+    loc_0x0000153a:
+        [38;2;58;150;221m// CODE XREF from sym.mm_rvc_sensor_destroy @ 0x14f8(x)
+[0m        r5 = fcn.[38;2;19;161;14m00000d44[0m [38;2;58;150;221m// [0xd44:4]=0x7e883
+[0m        r0 = [38;2;19;161;14m2[0m
+        r2 = [[38;2;19;161;14m0x00001540[0m] [38;2;58;150;221m// [0x15b0:4]=0x824 "r_grab_image" // "r_grab_image"
+[0m        r1 = [38;2;19;161;14m6[0m
+        r3 = [[38;2;19;161;14m0x00001544[0m] [38;2;58;150;221m// [0x15b4:4]=0xf0a
+[0m        r5 += pc      [38;2;58;150;221m// 0x228c // "mm_rvc_sensor_create" // str.mm_rvc_sensor_create
+[0m        r6 = [[38;2;19;161;14m0x00001548[0m] [38;2;58;150;221m// [0x15b8:4]=0xe22
+[0m        r2 += pc      [38;2;58;150;221m// 0x1d70 // "MM_UNKNOWN" // r6
+[0m        r3 += pc      [38;2;58;150;221m// 0x2458 // "%s: %s(%d) > mm_v4l2_destroy\n" // str._s:__s__d____mm_v4l2_destroy_n
+[0m        r4 = [38;2;19;161;14m0x63[0m     [38;2;58;150;221m// 'c'
+[0m        r6 += pc      [38;2;58;150;221m// 0x2374 // "mm_rvc_sensor.c" // str.mm_rvc_sensor.c
+[0m        r5 += [38;2;19;161;14m0x18[0m    [38;2;58;150;221m// 0x22a4 // "mm_rvc_sensor_destroy" // str.mm_rvc_sensor_destroy
+[0m        [sp] = r6
+        [var_4h] = r5
+        [var_8h] = r4
+        loc.imp.__dlog_print ()
+        r0 = [38;2;19;161;14m0x2004[0m   [38;2;58;150;221m// "ling:device node : %s"
+[0m        r0 |= [38;2;19;161;14m0x8000[0m << [38;2;19;161;14m16[0m
+        [38;2;136;23;152mgoto[0m [38;2;19;161;14m0x1504[0m
+    loc_0x000014fa: [38;2;58;150;221m// orphan
+[0m         [r4 + [38;2;19;161;14m8[0m] = r0
+         r0 = r4                  [38;2;58;150;221m// "mm_rvc_s"
+[0m         sym.imp.g_free ()
+         r0 = r5
+
+    loc_0x00001504: [38;2;58;150;221m// orphan
+[0m         [38;2;58;150;221m// CODE XREFS from sym.mm_rvc_sensor_destroy @ 0x1538(x), 0x1564(x), 0x1596(x)
+[0m         sp += [38;2;19;161;14m0x14[0m
+         pop (r4, r5, r6, r7, pc)
+
+        [38;2;136;23;152mreturn[0m r0;
+    loc_0x00001508: [38;2;58;150;221m// orphan
+[0m         [38;2;58;150;221m// CODE XREF from sym.mm_rvc_sensor_destroy @ 0x14ee(x)
+[0m         r6 = [[38;2;19;161;14m0x0000150c[0m]        [38;2;58;150;221m// [0x1598:4]=0xd76 // "v\r"
+[0m         r0 = [38;2;19;161;14m2[0m
+         r2 = [[38;2;19;161;14m0x00001510[0m]        [38;2;58;150;221m// [0x159c:4]=0x856 "ff" // "ff"
+[0m         r1 = [38;2;19;161;14m5[0m                   [38;2;58;150;221m// (pstr 0x00000101) "NU"
+[0m         r3 = [[38;2;19;161;14m0x00001514[0m]        [38;2;58;150;221m// [0x15a0:4]=0xe3a
+[0m         r6 += pc                 [38;2;58;150;221m// 0x228c // "mm_rvc_sensor_create" // str.mm_rvc_sensor_create
+[0m         r7 = [[38;2;19;161;14m0x00001518[0m]        [38;2;58;150;221m// [0x15a4:4]=0xe54 // "T\x0e"
+[0m         r2 += pc                 [38;2;58;150;221m// 0x1d70 // "MM_UNKNOWN" // r6
+[0m         r5 = [[38;2;19;161;14m0x0000151c[0m]        [38;2;58;150;221m// [0x15a8:4]=0xf08
+[0m         r3 += pc                 [38;2;58;150;221m// 0x2358 // "%s: %s(%d) > failed [%s]\n" // str._s:__s__d____failed___s__n
+[0m         r7 += pc                 [38;2;58;150;221m// 0x2374 // "mm_rvc_sensor.c" // str.mm_rvc_sensor.c
+[0m         r4 = [38;2;19;161;14m0x5e[0m                [38;2;58;150;221m// '^'
+[0m         r5 += pc                 [38;2;58;150;221m// 0x242c // "(cam->state == MM_RVC_SENSOR_STATE_CREATED)" // str._cam__state__MM_RVC_SENSOR_STATE_CREATED_
+[0m         r6 += [38;2;19;161;14m0x18[0m               [38;2;58;150;221m// 0x22a4 // "mm_rvc_sensor_destroy" // str.mm_rvc_sensor_destroy
+[0m         [sp] = r7
+         [var_4h] = r6
+         [var_ch] = r5
+         [var_8h] = r4
+         loc.imp.__dlog_print ()
+         r0 = [38;2;19;161;14m0x2005[0m              [38;2;58;150;221m// "ing:device node : %s"
+[0m         r0 |= [38;2;19;161;14m0x8000[0m << [38;2;19;161;14m16[0m
+         
+}
+
+[38;2;58;150;221m// callconv: r0 arm32 (r0, r1, r2, stack);
+[0m[38;2;197;15;31mint[0m loc.imp.mm_v4l2_destroy ([38;2;197;15;31mint[0m r0, [38;2;197;15;31mint[0m r1) {
+    loc_0x00000c18:
+        [38;2;58;150;221m// CALL XREF from sym.mm_rvc_sensor_destroy @ 0x14f2(x)
+[0m        add ip, pc, [38;2;19;161;14m0[0m, [38;2;19;161;14m12[0m
+        ip += [38;2;19;161;14m0x9000[0m
+        [38;2;58;150;221m// DATA XREF from loc.imp.mm_v4l2_destroy @ 0xc18(r)
+[0m        pc = [ip + [38;2;19;161;14m0xc10[0m]! [38;2;58;150;221m// 0xa830 // reloc.mm_v4l2_destroy // fcn.00000ae4
+[0m        [38;2;136;23;152mreturn[0m r0;
+}
+
+[38;2;58;150;221m// callconv: r0 arm16 (r0, r1, r2, r3, r4, stack);
+[0m[38;2;197;15;31mvoid[0m fcn.[38;2;19;161;14m00000d44[0m (int16_t arg_0h, int16_t arg_4h, int16_t arg_8h, int16_t arg_ch) {
+    loc_0x00000cc6:
+        [38;2;58;150;221m// CODE XREF from fcn.00000d44 @ 0x1184(x)
+[0m        [38;2;58;150;221m// CODE XREF from sym.mm_rvc_sensor_ini_load @ 0x1236(x)
+[0m        sp += [38;2;19;161;14m0x68[0m
+        pop (r4, r5, r6, r7, r8, pc)
+        [38;2;136;23;152mreturn[0m r0;
+    loc_0x00000d48: [38;2;58;150;221m// orphan
+[0m         [38;2;58;150;221m// CODE XREF from sym.mm_rvc_sensor_ini_load @ 0x11bc(x)
+[0m         r1 = [[38;2;19;161;14m0x00000d50[0m]        [38;2;58;150;221m// [0x1258:4]=0x10f8 // DATA XREF from sym.mm_rvc_sensor_prepare @ 0x17e8(r)
+[0m         r2 = [38;2;19;161;14m6[0m
+         r0 = r4                  [38;2;58;150;221m// "mm_rvc_s"
+[0m         r5 = [[38;2;19;161;14m0x00000d58[0m]        [38;2;58;150;221m// [0x125c:4]=0x9aee
+[0m         r1 += pc                 [38;2;58;150;221m// 0x1e50 // "ceiling:buffer num" // str.ceiling:buffer_num // DATA XREF from sym.mm_rvc_sensor_prepare @ 0x17ee(r)
+[0m         sym.imp.iniparser_getint () [38;2;58;150;221m// DATA XREF from sym.mm_rvc_sensor_prepare @ 0x17f4(r)
+[0m         r5 += pc
+         r1 = [[38;2;19;161;14m0x00000d64[0m]        [38;2;58;150;221m// [0x1260:4]=0x10fe // DATA XREF from sym.mm_rvc_sensor_prepare @ 0x1798(r)
+[0m         r2 = [38;2;19;161;14m1[0m
+         r1 += pc                 [38;2;58;150;221m// 0x1e64 // "ceiling:capture count" // str.ceiling:capture_count
+[0m         [r5 + [38;2;19;161;14m0x54[0m] = r0
+         r0 = r4                  [38;2;58;150;221m// "mm_rvc_s"
+[0m         sym.imp.iniparser_getint ()
+         r1 = [[38;2;19;161;14m0x00000d74[0m]        [38;2;58;150;221m// [0x1264:4]=0x1104
+[0m         mov.w r2, [38;2;19;161;14m0x140[0m
+         r1 += pc                 [38;2;58;150;221m// 0x1e7c // "ceiling:width" // str.ceiling:width // DATA XREF from sym.mm_rvc_sensor_destroy @ 0x1508(r) // DATA XREFS from sym.mm_rvc_sensor_prepare @ 0x17a2(r), 0x17a6(r), 0x17be(r)
+[0m         [r5 + [38;2;19;161;14m0x58[0m] = r0
+         r0 = r4                  [38;2;58;150;221m// "mm_rvc_s"
+[0m         sym.imp.iniparser_getint ()
+         r1 = [[38;2;19;161;14m0x00000d84[0m]        [38;2;58;150;221m// [0x1268:4]=0x1104
+[0m         r2 = [38;2;19;161;14m0xf0[0m
+         r1 += pc                 [38;2;58;150;221m// 0x1e8c // "ceiling:height" // str.ceiling:height
+[0m         [r5 + [38;2;19;161;14m0x5c[0m] = r0
+         r0 = r4                  [38;2;58;150;221m// "mm_rvc_s"
+[0m         sym.imp.iniparser_getint ()
+         r1 = [[38;2;19;161;14m0x00000d94[0m]        [38;2;58;150;221m// [0x126c:4]=0x1104
+[0m         r2 = [38;2;19;161;14m0[0m
+         r1 += pc                 [38;2;58;150;221m// 0x1e9c // "ceiling:use time stamp" // str.ceiling:use_time_stamp
+[0m         [r5 + [38;2;19;161;14m0x60[0m] = r0
+         r0 = r4                  [38;2;58;150;221m// "mm_rvc_s"
+[0m         sym.imp.iniparser_getboolean ()
+         r2 = [38;2;19;161;14m0[0m
+         r1 = [[38;2;19;161;14m0x00000da8[0m]        [38;2;58;150;221m// [0x1270:4]=0x110c
+[0m         r1 += pc                 [38;2;58;150;221m// 0x1eb4 // "ceiling:save image" // str.ceiling:save_image // DATA XREF from sym.mm_rvc_sensor_get_capture_resolution @ 0x16ea(r)
+[0m         r3 = r0 - r2             [38;2;58;150;221m// "mm_rvc_s" r4
+[0m         r0 = r4                  [38;2;58;150;221m// "mm_rvc_s"
+[0m         it ne [38;2;58;150;221m// DATA XREF from sym.mm_rvc_sensor_get_capture_resolution @ 0x1714(r)
+[0m         r3 = [38;2;19;161;14m1[0m
+         strb.w r3, [r5, [38;2;19;161;14m0x64[0m]
+         sym.imp.iniparser_getboolean ()
+         r1 = [[38;2;19;161;14m0x00000dbc[0m]        [38;2;58;150;221m// [0x1274:4]=0x1106
+[0m         r2 = [[38;2;19;161;14m0x00000dc0[0m]        [38;2;58;150;221m// [0x1278:4]=0x1118
+[0m         r1 += pc                 [38;2;58;150;221m// 0x1ec8 // "ceiling:file path" // str.ceiling:file_path
+[0m         r2 += pc                 [38;2;58;150;221m// 0x1edc // "/opt/media/CeilingCapture-#.yuv" // str._opt_media_CeilingCapture_.yuv
+[0m         r3 = r0 + [38;2;19;161;14m0[0m              [38;2;58;150;221m// "mm_rvc_s" r4
+[0m         r0 = r4                  [38;2;58;150;221m// "mm_rvc_s"
+[0m         it ne
+         r3 = [38;2;19;161;14m1[0m
+         strb.w r3, [r5, [38;2;19;161;14m0x65[0m]
+         sym.imp.iniparser_getstring ()
+         r6 = r0                  [38;2;58;150;221m// "mm_rvc_s" r4
+[0m         [38;2;136;23;152mif[0m (!r0) 
+         [38;2;136;23;152mgoto[0m loc_0x00000dd6
+    loc_0x00000dd6: [38;2;58;150;221m// orphan
+[0m         sym.imp.strlen () [38;2;58;150;221m// size_t strlen(0)
+[0m         (a, b) = compare (r0, [38;2;19;161;14m1[0m) [38;2;58;150;221m// DATA XREF from sym.mm_rvc_sensor_destroy @ 0x156e(r)
+[0m         bls [38;2;19;161;14m0xde4[0m                [38;2;58;150;221m// likely
+[0m
+    loc_0x00000dde: [38;2;58;150;221m// orphan
+[0m         (a, b) = compare (r0, [38;2;19;161;14m0x4f[0m)
+         bls.w [38;2;19;161;14m0x11a4[0m             [38;2;58;150;221m// likely
+[0m
+         [38;2;136;23;152mgoto[0m loc_0x00000de4
+    loc_0x00000de4: [38;2;58;150;221m// orphan
+[0m         [38;2;58;150;221m// CODE XREFS from fcn.00000d44 @ 0xdd4(x), 0xddc(x)
+[0m         r5 = [[38;2;19;161;14m0x00000dec[0m]        [38;2;58;150;221m// [0x127c:4]=0x10ec
+[0m         r7 = [[38;2;19;161;14m0x00000df0[0m]        [38;2;58;150;221m// [0x1280:4]=0x9a5a
+[0m         r5 += pc                 [38;2;58;150;221m// 0x1edc // "/opt/media/CeilingCapture-#.yuv" // str._opt_media_CeilingCapture_.yuv
+[0m         r7 += pc
+         ldm r5!, (r0, r1, r2, r3) [38;2;58;150;221m// 0x1edc // "/opt/media/CeilingCapture-#.yuv" // "ngCapture-#.yuv"
+[0m         str.w r0, [r7, [38;2;19;161;14m0x66[0m] [38;2;58;150;221m// DATA XREF from sym.mm_rvc_sensor_destroy @ 0x1572(r)
+[0m         str.w r1, [r7, [38;2;19;161;14m0x6a[0m]
+         str.w r2, [r7, [38;2;19;161;14m0x6e[0m]
+         str.w r3, [r7, [38;2;19;161;14m0x72[0m]
+         ldm r5!, (r0, r1, r2, r3) [38;2;58;150;221m// "wild:device node" str.wild:device_node
+[0m         str.w r0, [r7, [38;2;19;161;14m0x76[0m] [38;2;58;150;221m// DATA XREF from sym.mm_rvc_sensor_set_capture_resolution @ 0x1664(r)
+[0m         str.w r1, [r7, [38;2;19;161;14m0x7a[0m]
+         str.w r2, [r7, [38;2;19;161;14m0x7e[0m]
+         str.w r3, [r7, [38;2;19;161;14m0x82[0m]
+
+    loc_0x00000e14: [38;2;58;150;221m// orphan
+[0m         [38;2;58;150;221m// CODE XREF from fcn.00000d44 @ 0x11b0(x)
+[0m         r1 = [[38;2;19;161;14m0x00000e1c[0m]        [38;2;58;150;221m// [0x1284:4]=0x10da // "0"
+[0m         r0 = r4                  [38;2;58;150;221m// "mm_rvc_s" // DATA XREF from sym.mm_rvc_sensor_create @ 0x1466(r)
+[0m         r2 = [[38;2;19;161;14m0x00000e20[0m]        [38;2;58;150;221m// [0x1288:4]=0x10ec
+[0m         r1 += pc                 [38;2;58;150;221m// 0x1efc // "wild:device node" // str.wild:device_node
+[0m         r2 += pc                 [38;2;58;150;221m// 0x1f10 // "/dev/video1" // str._dev_video1 // DATA XREF from sym.mm_rvc_sensor_destroy @ 0x1546(r)
+[0m         sym.imp.iniparser_getstring ()
+         r5 = r0                  [38;2;58;150;221m// "mm_rvc_s" r4
+[0m         [38;2;136;23;152mif[0m (!r0) 
+         [38;2;136;23;152mgoto[0m loc_0x00000e2a
+    loc_0x00000e2a: [38;2;58;150;221m// orphan
+[0m         sym.imp.strlen () [38;2;58;150;221m// size_t strlen(0)
+[0m         (a, b) = compare (r0, [38;2;19;161;14m1[0m)
+         bls [38;2;19;161;14m0xe38[0m                [38;2;58;150;221m// likely
+[0m
+    loc_0x00000e32: [38;2;58;150;221m// orphan
+[0m         (a, b) = compare (r0, [38;2;19;161;14m0x4f[0m)
+         bls.w [38;2;19;161;14m0x1194[0m             [38;2;58;150;221m// likely
+[0m
+         [38;2;136;23;152mgoto[0m loc_0x00000e38
+    loc_0x00000e38: [38;2;58;150;221m// orphan
+[0m         [38;2;58;150;221m// CODE XREFS from fcn.00000d44 @ 0xe28(x), 0xe30(x)
+[0m         r3 = [[38;2;19;161;14m0x00000e40[0m]        [38;2;58;150;221m// [0x128c:4]=0x10cc
+[0m         r5 = [[38;2;19;161;14m0x00000e44[0m]        [38;2;58;150;221m// [0x1290:4]=0x9a06 // DATA XREF from fcn.00000d44 @ 0xf22(r)
+[0m         r3 += pc                 [38;2;58;150;221m// 0x1f10 // "/dev/video1" // str._dev_video1
+[0m         r5 += pc [38;2;58;150;221m// DATA XREF from sym.mm_rvc_sensor_create @ 0x143c(r)
+[0m         ldm r3!, (r0, r1, r2)    [38;2;58;150;221m// 0x1f10 // "/dev/video1" // "wild:buffer num" str.wild:buffer_num
+[0m         str.w r0, [r5, [38;2;19;161;14m0xb6[0m]
+         str.w r1, [r5, [38;2;19;161;14m0xba[0m]
+         str.w r2, [r5, [38;2;19;161;14m0xbe[0m]
+
+    loc_0x00000e52: [38;2;58;150;221m// orphan
+[0m         [38;2;58;150;221m// CODE XREF from fcn.00000d44 @ 0x11a2(x)
+[0m         r1 = [[38;2;19;161;14m0x00000e58[0m]        [38;2;58;150;221m// [0x1294:4]=0x10ba
+[0m         r2 = [38;2;19;161;14m6[0m
+         r0 = r4                  [38;2;58;150;221m// "mm_rvc_s"
+[0m         r5 = [[38;2;19;161;14m0x00000e60[0m]        [38;2;58;150;221m// [0x1298:4]=0x99e4
+[0m         r1 += pc                 [38;2;58;150;221m// 0x1f1c // "wild:buffer num" // str.wild:buffer_num
+[0m         sym.imp.iniparser_getint ()
+         r5 += pc [38;2;58;150;221m// DATA XREF from fcn.00000d44 @ 0xf32(r)
+[0m         r1 = [[38;2;19;161;14m0x00000e6c[0m]        [38;2;58;150;221m// [0x129c:4]=0x10bc
+[0m         r2 = [38;2;19;161;14m3[0m                   [38;2;58;150;221m// r1
+[0m         r1 += pc                 [38;2;58;150;221m// 0x1f2c // "wild:capture count" // str.wild:capture_count
+[0m         str.w r0, [r5, [38;2;19;161;14m0x108[0m]
+         r0 = r4                  [38;2;58;150;221m// "mm_rvc_s" // DATA XREF from sym.mm_rvc_sensor_create @ 0x140c(r)
+[0m         sym.imp.iniparser_getint ()
+         r1 = [[38;2;19;161;14m0x00000e80[0m]        [38;2;58;150;221m// [0x12a0:4]=0x10bc
+[0m         mov.w r2, [38;2;19;161;14m0x140[0m
+         r1 += pc                 [38;2;58;150;221m// 0x1f40 // "wild:width" // str.wild:width
+[0m         str.w r0, [r5, [38;2;19;161;14m0x10c[0m]
+         r0 = r4                  [38;2;58;150;221m// "mm_rvc_s"
+[0m         sym.imp.iniparser_getint ()
+         r1 = [[38;2;19;161;14m0x00000e94[0m]        [38;2;58;150;221m// [0x12a4:4]=0x10b6
+[0m         r2 = [38;2;19;161;14m0xf0[0m
+         r1 += pc                 [38;2;58;150;221m// 0x1f4c // "wild:height" // str.wild:height
+[0m         str.w r0, [r5, [38;2;19;161;14m0x110[0m]
+         r0 = r4                  [38;2;58;150;221m// "mm_rvc_s"
+[0m         sym.imp.iniparser_getint () [38;2;58;150;221m// DATA XREF from sym.mm_rvc_sensor_create @ 0x13e2(r)
+[0m         r1 = [[38;2;19;161;14m0x00000ea4[0m]        [38;2;58;150;221m// [0x12a8:4]=0x10b0
+[0m         r2 = [38;2;19;161;14m1[0m
+         r1 += pc                 [38;2;58;150;221m// 0x1f58 // "wild:use time stamp" // str.wild:use_time_stamp // DATA XREF from sym.mm_rvc_sensor_destroy @ 0x1576(r)
+[0m         str.w r0, [r5, [38;2;19;161;14m0x114[0m]
+         r0 = r4                  [38;2;58;150;221m// "mm_rvc_s"
+[0m         sym.imp.iniparser_getboolean ()
+         r2 = [38;2;19;161;14m0[0m
+         r1 = [[38;2;19;161;14m0x00000eb4[0m]        [38;2;58;150;221m// [0x12ac:4]=0x10b4
+[0m         r1 += pc                 [38;2;58;150;221m// 0x1f6c // "wild:save image" // str.wild:save_image
+[0m         r3 = r0 - r2             [38;2;58;150;221m// "mm_rvc_s" r4
+[0m         r0 = r4                  [38;2;58;150;221m// "mm_rvc_s"
+[0m         it ne
+         r3 = [38;2;19;161;14m1[0m
+         strb.w r3, [r5, section..hash]
+         sym.imp.iniparser_getboolean ()
+         r1 = [[38;2;19;161;14m0x00000ec8[0m]        [38;2;58;150;221m// [0x12b0:4]=0x10ae
+[0m         r2 = [[38;2;19;161;14m0x00000ecc[0m]        [38;2;58;150;221m// [0x12b4:4]=0x10bc
+[0m         r1 += pc                 [38;2;58;150;221m// 0x1f7c // "wild:file path" // str.wild:file_path
+[0m         r2 += pc                 [38;2;58;150;221m// 0x1f8c // "/opt/media/WildCapture-#.yuv" // str._opt_media_WildCapture_.yuv
+[0m         r3 = r0 + [38;2;19;161;14m0[0m              [38;2;58;150;221m// "mm_rvc_s" r4 // DATA XREF from sym.mm_rvc_sensor_create @ 0x13ac(r) // DATA XREF from sym.mm_rvc_sensor_get_capture_resolution @ 0x16b8(r)
+[0m         r0 = r4                  [38;2;58;150;221m// "mm_rvc_s"
+[0m         it ne
+         r3 = [38;2;19;161;14m1[0m
+         strb.w r3, [r5, [38;2;19;161;14m0x119[0m]
+         sym.imp.iniparser_getstring ()
+         r6 = r0                  [38;2;58;150;221m// "mm_rvc_s" r4
+[0m         [38;2;136;23;152mif[0m (!r0) 
+         [38;2;136;23;152mgoto[0m loc_0x00000ee2
+    loc_0x00000ee2: [38;2;58;150;221m// orphan
+[0m         sym.imp.strlen () [38;2;58;150;221m// size_t strlen(0)
+[0m         (a, b) = compare (r0, [38;2;19;161;14m1[0m)
+         bls [38;2;19;161;14m0xef0[0m                [38;2;58;150;221m// likely
+[0m
+    loc_0x00000eea: [38;2;58;150;221m// orphan
+[0m         (a, b) = compare (r0, [38;2;19;161;14m0x4f[0m) [38;2;58;150;221m// DATA XREF from sym.mm_rvc_sensor_create @ 0x145e(r)
+[0m         bls.w [38;2;19;161;14m0x1186[0m             [38;2;58;150;221m// likely
+[0m
+         [38;2;136;23;152mgoto[0m loc_0x00000ef0
+    loc_0x00000ef0: [38;2;58;150;221m// orphan
+[0m         [38;2;58;150;221m// CODE XREFS from fcn.00000d44 @ 0xee0(x), 0xee8(x)
+[0m         r5 = [[38;2;19;161;14m0x00000ef4[0m]        [38;2;58;150;221m// [0x12b8:4]=0x1094
+[0m         r7 = [[38;2;19;161;14m0x00000ef4[0m]        [38;2;58;150;221m// [0x12bc:4]=0x9952
+[0m         r5 += pc                 [38;2;58;150;221m// 0x1f8c // "/opt/media/WildCapture-#.yuv" // str._opt_media_WildCapture_.yuv
+[0m         r7 += pc
+         ldm r5!, (r0, r1, r2, r3) [38;2;58;150;221m// 0x1f8c // "/opt/media/WildCapture-#.yuv" // "apture-#.yuv"
+[0m         str.w r0, [r7, [38;2;19;161;14m0x11a[0m]
+         str.w r1, [r7, [38;2;19;161;14m0x11e[0m]
+         str.w r2, [r7, [38;2;19;161;14m0x122[0m]
+         str.w r3, [r7, [38;2;19;161;14m0x126[0m] [38;2;58;150;221m// DATA XREF from sym.mm_rvc_sensor_destroy @ 0x1542(r)
+[0m         ldm r5!, (r0, r1, r2)
+         str.w r0, [r7, [38;2;19;161;14m0x12a[0m]
+         str.w r1, [r7, [38;2;19;161;14m0x12e[0m]
+         str.w r2, [r7, [38;2;19;161;14m0x132[0m]
+         r3 = (byte) [r5]
+         strb.w r3, [r7, [38;2;19;161;14m0x136[0m]
+
+    loc_0x00000f1e: [38;2;58;150;221m// orphan
+[0m         [38;2;58;150;221m// CODE XREF from fcn.00000d44 @ 0x1192(x)
+[0m         r7 = [[38;2;19;161;14m0x00000f20[0m]        [38;2;58;150;221m// [0x12c0:4]=0x9920
+[0m         r0 = r4                  [38;2;58;150;221m// "mm_rvc_s"
+[0m         r6 = [[38;2;19;161;14m0x00000f24[0m]        [38;2;58;150;221m// [0x12c4:4]=0xe40
+[0m         sym.imp.iniparser_freedict ()
+         r7 += pc
+         r3 = [38;2;19;161;14m1[0m
+         r6 += pc                 [38;2;58;150;221m// 0x1d70 // "MM_UNKNOWN"
+[0m         r5 = [[38;2;19;161;14m0x00000f30[0m]        [38;2;58;150;221m// [0x12c8:4]=0xdcc // DATA XREF from sym.mm_rvc_sensor_create @ 0x1438(r)
+[0m         r8 = r7
+         r4 = [[38;2;19;161;14m0x00000f34[0m]        [38;2;58;150;221m// [0x12cc:4]=0xe66
+[0m         [r8] + [38;2;19;161;14m4[0m = (byte) r3
+         r1 = [38;2;19;161;14m3[0m
+         r3 = [[38;2;19;161;14m0x00000f3c[0m]        [38;2;58;150;221m// [0x12d0:4]=0x1066
+[0m         r2 = r6                  [38;2;58;150;221m// "MM_UNKNOWN"
+[0m         r0 = [38;2;19;161;14m2[0m
+         r5 += pc                 [38;2;58;150;221m// 0x1d10 // "__mm_rvc_sensor_ini_check_ini_status" // section..rodata
+[0m         r3 += pc                 [38;2;58;150;221m// 0x1fac // "%s: %s(%d) > rvc_sensor settings -----------------------------------\n" // str._s:__s__d____rvc_sensor_settings_____________________________________n
+[0m         r5 += [38;2;19;161;14m0x28[0m               [38;2;58;150;221m// 0x1d38 // "mm_rvc_sensor_ini_load" // str.mm_rvc_sensor_ini_load
+[0m         r4 += pc                 [38;2;58;150;221m// 0x1db0 // "mm_rvc_s"
+[0m         mov.w lr, [38;2;19;161;14m0x92[0m
+         [arg_4h] = r5
+         str.w lr, [sp, [38;2;19;161;14m8[0m]
+         [sp] = r4
+         loc.imp.__dlog_print ()
+         r3 = [[38;2;19;161;14m0x00000f5c[0m]        [38;2;58;150;221m// [0x12d4:4]=0x1090
+[0m         r1 = [38;2;19;161;14m3[0m
+         r2 = r6                  [38;2;58;150;221m// "MM_UNKNOWN"
+[0m         r0 = [38;2;19;161;14m2[0m [38;2;58;150;221m// DATA XREF from sym.mm_rvc_sensor_create @ 0x1408(r)
+[0m         r3 += pc                 [38;2;58;150;221m// 0x1ff4 // "%s: %s(%d) > ceiling:device node : %s" // str._s:__s__d____ceiling:device_node_:__s
+[0m         mov.w lr, [38;2;19;161;14m0x97[0m
+         str.w r8, [sp, [38;2;19;161;14m0xc[0m]
+         stm.w sp, (r4, r5, lr)
+         loc.imp.__dlog_print () [38;2;58;150;221m// DATA XREF from sym.mm_rvc_sensor_create @ 0x1434(r)
+[0m         r1 = [38;2;19;161;14m3[0m
+         ip = [r7 + [38;2;19;161;14m0x54[0m]         [38;2;58;150;221m// "mm_rvc_s" r4
+[0m         r2 = r6                  [38;2;58;150;221m// "MM_UNKNOWN"
+[0m         r3 = [[38;2;19;161;14m0x00000f7c[0m]        [38;2;58;150;221m// [0x12d8:4]=0x1092
+[0m         r0 = [38;2;19;161;14m2[0m
+         mov.w lr, [38;2;19;161;14m0x98[0m
+         stm.w sp, (r4, r5)
+         r3 += pc                 [38;2;58;150;221m// 0x201c // "%s: %s(%d) > ceiling:buffer num : %d" // str._s:__s__d____ceiling:buffer_num_:__d
+[0m         str.w ip, [sp, [38;2;19;161;14m0xc[0m]
+         str.w lr, [sp, [38;2;19;161;14m8[0m]
+         loc.imp.__dlog_print ()
+         ip = [r7 + [38;2;19;161;14m0x58[0m]         [38;2;58;150;221m// "mm_rvc_s" r4
+[0m         r1 = [38;2;19;161;14m3[0m
+         r3 = [[38;2;19;161;14m0x00000f9c[0m]        [38;2;58;150;221m// [0x12dc:4]=0x109c
+[0m         r2 = r6                  [38;2;58;150;221m// "MM_UNKNOWN"
+[0m         r0 = [38;2;19;161;14m2[0m
+         mov.w lr, [38;2;19;161;14m0x99[0m           [38;2;58;150;221m// "&" // DATA XREF from sym.mm_rvc_sensor_create @ 0x13da(r)
+[0m         r3 += pc                 [38;2;58;150;221m// 0x2044 // "%s: %s(%d) > ceiling:capture count : %d" // str._s:__s__d____ceiling:capture_count_:__d
+[0m         stm.w sp, (r4, r5)
+         str.w ip, [sp, [38;2;19;161;14m0xc[0m]
+         str.w lr, [sp, [38;2;19;161;14m8[0m]
+         loc.imp.__dlog_print ()
+         ip = [r7 + [38;2;19;161;14m0x5c[0m]         [38;2;58;150;221m// "mm_rvc_s" r4
+[0m         r1 = [38;2;19;161;14m3[0m
+         r3 = [[38;2;19;161;14m0x00000fc0[0m]        [38;2;58;150;221m// [0x12e0:4]=0x10a2 // DATA XREF from sym.mm_rvc_sensor_create @ 0x13a6(r)
+[0m         r2 = r6                  [38;2;58;150;221m// "MM_UNKNOWN"
+[0m         r0 = [38;2;19;161;14m2[0m
+         mov.w lr, [38;2;19;161;14m0x9a[0m
+         r3 += pc                 [38;2;58;150;221m// 0x206c // "%s: %s(%d) > ceiling:width : %d" // str._s:__s__d____ceiling:width_:__d
+[0m         stm.w sp, (r4, r5)
+         str.w ip, [sp, [38;2;19;161;14m0xc[0m]
+         str.w lr, [sp, [38;2;19;161;14m8[0m]
+         loc.imp.__dlog_print ()
+         ip = [r7 + [38;2;19;161;14m0x60[0m]         [38;2;58;150;221m// "mm_rvc_s" r4
+[0m         r1 = [38;2;19;161;14m3[0m
+         r3 = [[38;2;19;161;14m0x00000fe0[0m]        [38;2;58;150;221m// [0x12e4:4]=0x10a0
+[0m         r2 = r6                  [38;2;58;150;221m// "MM_UNKNOWN"
+[0m         r0 = [38;2;19;161;14m2[0m
+         mov.w lr, [38;2;19;161;14m0x9b[0m
+         r3 += pc                 [38;2;58;150;221m// 0x208c // "%s: %s(%d) > ceiling:height : %d" // str._s:__s__d____ceiling:height_:__d
+[0m         stm.w sp, (r4, r5)
+         str.w ip, [sp, [38;2;19;161;14m0xc[0m]
+         str.w lr, [sp, [38;2;19;161;14m8[0m]
+         loc.imp.__dlog_print ()
+         ldrb.w ip, [r7, [38;2;19;161;14m0x64[0m]
+         r1 = [38;2;19;161;14m3[0m
+         r3 = [[38;2;19;161;14m0x00001004[0m]        [38;2;58;150;221m// [0x12e8:4]=0x10a2
+[0m         r2 = r6                  [38;2;58;150;221m// "MM_UNKNOWN"
+[0m         r0 = [38;2;19;161;14m2[0m
+         mov.w lr, [38;2;19;161;14m0x9d[0m
+         r3 += pc                 [38;2;58;150;221m// 0x20b0 // "%s: %s(%d) > ceiling:use time stamp : %d" // str._s:__s__d____ceiling:use_time_stamp_:__d
+[0m         stm.w sp, (r4, r5)
+         str.w ip, [sp, [38;2;19;161;14m0xc[0m]
+         str.w lr, [sp, [38;2;19;161;14m8[0m]
+         loc.imp.__dlog_print ()
+         ldrb.w ip, [r7, [38;2;19;161;14m0x65[0m]
+         r1 = [38;2;19;161;14m3[0m
+         r3 = [[38;2;19;161;14m0x00001024[0m]        [38;2;58;150;221m// [0x12ec:4]=0x10ac
+[0m         r2 = r6                  [38;2;58;150;221m// "MM_UNKNOWN"
+[0m         r0 = [38;2;19;161;14m2[0m
+         mov.w lr, [38;2;19;161;14m0x9e[0m
+         r3 += pc                 [38;2;58;150;221m// 0x20dc // "%s: %s(%d) > ceiling:save image : %d" // str._s:__s__d____ceiling:save_image_:__d
+[0m         stm.w sp, (r4, r5)
+         str.w ip, [sp, [38;2;19;161;14m0xc[0m]
+         str.w lr, [sp, [38;2;19;161;14m8[0m]
+         loc.imp.__dlog_print ()
+         r3 = [[38;2;19;161;14m0x00001040[0m]        [38;2;58;150;221m// [0x12f0:4]=0x10ba
+[0m         r1 = [38;2;19;161;14m3[0m
+         r2 = r6                  [38;2;58;150;221m// "MM_UNKNOWN"
+[0m         r0 = [38;2;19;161;14m2[0m
+         r3 += pc                 [38;2;58;150;221m// 0x2104 // "%s: %s(%d) > ceiling:file path : %s" // str._s:__s__d____ceiling:file_path_:__s
+[0m         ip = r7 + [38;2;19;161;14m0x66[0m           [38;2;58;150;221m// "/opt/media/CeilingCapture-#.yuv"
+[0m         mov.w lr, [38;2;19;161;14m0x9f[0m [38;2;58;150;221m// DATA XREF from sym.mm_rvc_sensor_create @ 0x13a2(r)
+[0m         [arg_4h] = r5
+         str.w ip, [sp, [38;2;19;161;14m0xc[0m]
+         str.w lr, [sp, [38;2;19;161;14m8[0m]
+         [sp] = r4
+         loc.imp.__dlog_print ()
+         r3 = [[38;2;19;161;14m0x00001064[0m]        [38;2;58;150;221m// [0x12f4:4]=0x10bc
+[0m         r1 = [38;2;19;161;14m3[0m
+         r2 = r6                  [38;2;58;150;221m// "MM_UNKNOWN" // DATA XREF from fcn.00000d44 @ 0xf3a(r)
+[0m         r0 = [38;2;19;161;14m2[0m
+         r3 += pc                 [38;2;58;150;221m// 0x2128 // "%s: %s(%d) > wild:device node : %s" // str._s:__s__d____wild:device_node_:__s
+[0m         ip = r7 + [38;2;19;161;14m0xb6[0m           [38;2;58;150;221m// "/dev/video1"
+[0m         mov.w lr, [38;2;19;161;14m0xa3[0m
+         [arg_4h] = r5
+         str.w ip, [sp, [38;2;19;161;14m0xc[0m] [38;2;58;150;221m// DATA XREF from sym.mm_rvc_sensor_ini_load @ 0xccc(r)
+[0m         str.w lr, [sp, [38;2;19;161;14m8[0m]
+         [sp] = r4
+         loc.imp.__dlog_print ()
+         ip = [r7 + [38;2;19;161;14m0x108[0m]        [38;2;58;150;221m// "mm_rvc_s" r4
+[0m         r0 = [38;2;19;161;14m2[0m
+         r3 = [[38;2;19;161;14m0x0000108c[0m]        [38;2;58;150;221m// [0x12f8:4]=0x10b6
+[0m         r2 = r6                  [38;2;58;150;221m// "MM_UNKNOWN"
+[0m         r1 = [38;2;19;161;14m3[0m
+         mov.w lr, [38;2;19;161;14m0xa4[0m           [38;2;58;150;221m// (pstr 0x00000100) "GNU" // DATA XREF from fcn.00000d44 @ 0xf7a(r)
+[0m         r3 += pc                 [38;2;58;150;221m// 0x214c // "%s: %s(%d) > wild:buffer num : %d" // str._s:__s__d____wild:buffer_num_:__d // DATA XREF from fcn.00000d44 @ 0xef0(r)
+[0m         stm.w sp, (r4, r5)
+         str.w ip, [sp, [38;2;19;161;14m0xc[0m] [38;2;58;150;221m// DATA XREF from fcn.00000d44 @ 0xf9a(r)
+[0m         str.w lr, [sp, [38;2;19;161;14m8[0m] [38;2;58;150;221m// DATA XREFS from fcn.00000d44 @ 0xfde(r), 0xffa(r)
+[0m         loc.imp.__dlog_print ()
+         ip = [r7 + [38;2;19;161;14m0x10c[0m]        [38;2;58;150;221m// "mm_rvc_s" r4
+[0m         r2 = r6                  [38;2;58;150;221m// "MM_UNKNOWN"
+[0m         r3 = [[38;2;19;161;14m0x000010ac[0m]        [38;2;58;150;221m// [0x12fc:4]=0x10b8 // "0" // DATA XREF from fcn.00000d44 @ 0x1022(r)
+[0m         r1 = [38;2;19;161;14m3[0m [38;2;58;150;221m// DATA XREF from fcn.00000d44 @ 0xec6(r)
+[0m         r0 = [38;2;19;161;14m2[0m [38;2;58;150;221m// DATA XREF from fcn.00000d44 @ 0xe9e(r)
+[0m         mov.w lr, [38;2;19;161;14m0xa5[0m [38;2;58;150;221m// DATA XREF from fcn.00000d44 @ 0xeb2(r)
+[0m         r3 += pc                 [38;2;58;150;221m// 0x2170 // "%s: %s(%d) > wild:capture count : %d" // str._s:__s__d____wild:capture_count_:__d // DATA XREFS from fcn.00000d44 @ 0xe8c(r), 0x1088(r)
+[0m         stm.w sp, (r4, r5) [38;2;58;150;221m// DATA XREFS from fcn.00000d44 @ 0xe52(r), 0x103e(r), 0x1110(r), 0x112c(r)
+[0m         str.w ip, [sp, [38;2;19;161;14m0xc[0m] [38;2;58;150;221m// DATA XREF from fcn.00000d44 @ 0x10cc(r)
+[0m         str.w lr, [sp, [38;2;19;161;14m8[0m]
+         loc.imp.__dlog_print ()
+         ip = [r7 + [38;2;19;161;14m0x110[0m]        [38;2;58;150;221m// "mm_rvc_s" r4 // DATA XREF from fcn.00000d44 @ 0x114e(r)
+[0m         r2 = r6                  [38;2;58;150;221m// "MM_UNKNOWN" // DATA XREF from fcn.00000d44 @ 0xe38(r)
+[0m         r3 = [[38;2;19;161;14m0x000010d0[0m]        [38;2;58;150;221m// [0x1300:4]=0x10be
+[0m         r1 = [38;2;19;161;14m3[0m [38;2;58;150;221m// DATA XREF from fcn.00000d44 @ 0x116c(r) // DATA XREF from sym.mm_rvc_sensor_grab_image @ 0x1b06(r)
+[0m         r0 = [38;2;19;161;14m2[0m
+         mov.w lr, [38;2;19;161;14m0xa6[0m
+         r3 += pc                 [38;2;58;150;221m// 0x2198 // "%s: %s(%d) > wild:width : %d" // str._s:__s__d____wild:width_:__d
+[0m         stm.w sp, (r4, r5)
+         str.w ip, [sp, [38;2;19;161;14m0xc[0m]
+         str.w lr, [sp, [38;2;19;161;14m8[0m]
+         loc.imp.__dlog_print ()
+         ip = [r7 + [38;2;19;161;14m0x114[0m]        [38;2;58;150;221m// "mm_rvc_s" r4 // DATA XREFS from fcn.00000d44 @ 0xde4(r), 0xe1a(r)
+[0m         r2 = r6                  [38;2;58;150;221m// "MM_UNKNOWN"
+[0m         r3 = [[38;2;19;161;14m0x000010f0[0m]        [38;2;58;150;221m// [0x1304:4]=0x10bc
+[0m         r1 = [38;2;19;161;14m3[0m
+         r0 = [38;2;19;161;14m2[0m
+         mov.w lr, [38;2;19;161;14m0xa7[0m [38;2;58;150;221m// DATA XREF from fcn.00000d44 @ 0xd48(r)
+[0m         r3 += pc                 [38;2;58;150;221m// 0x21b8 // "%s: %s(%d) > wild:height : %d" // str._s:__s__d____wild:height_:__d
+[0m         stm.w sp, (r4, r5) [38;2;58;150;221m// DATA XREF from fcn.00000d44 @ 0xd5c(r)
+[0m         str.w ip, [sp, [38;2;19;161;14m0xc[0m]
+         str.w lr, [sp, [38;2;19;161;14m8[0m] [38;2;58;150;221m// DATA XREF from fcn.00000d44 @ 0xdb6(r)
+[0m         loc.imp.__dlog_print ()
+         ldrb.w ip, [r7, section..hash]
+         r2 = r6                  [38;2;58;150;221m// "MM_UNKNOWN"
+[0m         r3 = [[38;2;19;161;14m0x00001114[0m]        [38;2;58;150;221m// [0x1308:4]=0x10ba // DATA XREF from sym.mm_rvc_sensor_ini_load @ 0xd10(r)
+[0m         r1 = [38;2;19;161;14m3[0m
+         r0 = [38;2;19;161;14m2[0m
+         mov.w lr, [38;2;19;161;14m0xa9[0m
+         r3 += pc                 [38;2;58;150;221m// 0x21d8 // "%s: %s(%d) > wild:use time stamp : %d" // str._s:__s__d____wild:use_time_stamp_:__d
+[0m         stm.w sp, (r4, r5)
+         str.w ip, [sp, [38;2;19;161;14m0xc[0m] [38;2;58;150;221m// DATA XREF from sym.mm_rvc_sensor_ini_load @ 0xd14(r)
+[0m         str.w lr, [sp, [38;2;19;161;14m8[0m]
+         loc.imp.__dlog_print ()
+         ldrb.w ip, [r7, [38;2;19;161;14m0x119[0m]
+         r2 = r6                  [38;2;58;150;221m// "MM_UNKNOWN"
+[0m         r3 = [[38;2;19;161;14m0x00001134[0m]        [38;2;58;150;221m// [0x130c:4]=0x10c0
+[0m         r1 = [38;2;19;161;14m3[0m
+         r0 = [38;2;19;161;14m2[0m
+         mov.w lr, [38;2;19;161;14m0xaa[0m
+         r3 += pc                 [38;2;58;150;221m// 0x2200 // "%s: %s(%d) > wild:save image : %d" // str._s:__s__d____wild:save_image_:__d
+[0m         str.w ip, [sp, [38;2;19;161;14m0xc[0m]
+         stm.w sp, (r4, r5)
+         str.w lr, [sp, [38;2;19;161;14m8[0m]
+         loc.imp.__dlog_print ()
+         r3 = [[38;2;19;161;14m0x00001150[0m]        [38;2;58;150;221m// [0x1310:4]=0x10ca
+[0m         r2 = r6                  [38;2;58;150;221m// "MM_UNKNOWN"
+[0m         r1 = [38;2;19;161;14m3[0m
+         r0 = [38;2;19;161;14m2[0m
+         r3 += pc                 [38;2;58;150;221m// 0x2224 // "%s: %s(%d) > wild:file path : %s" // str._s:__s__d____wild:file_path_:__s
+[0m         lr = r7 + [38;2;19;161;14m0x11a[0m          [38;2;58;150;221m// "/opt/media/WildCapture-#.yuv"
+[0m         [arg_4h] = r5
+         r7 = [38;2;19;161;14m0xab[0m                [38;2;58;150;221m// (pstr 0x00000600) "_load"
+[0m         str.w lr, [sp, [38;2;19;161;14m0xc[0m]
+         [sp] = r4
+         [arg_8h] = r7
+         loc.imp.__dlog_print ()
+         r3 = [[38;2;19;161;14m0x00001170[0m]        [38;2;58;150;221m// [0x1314:4]=0x10d0
+[0m         r2 = r6                  [38;2;58;150;221m// "MM_UNKNOWN"
+[0m         r0 = [38;2;19;161;14m2[0m
+         r1 = [38;2;19;161;14m3[0m
+         r3 += pc                 [38;2;58;150;221m// 0x2248
+[0m         [arg_4h] = r5
+         [sp] = r4
+         r5 = [38;2;19;161;14m0xad[0m
+         [arg_8h] = r5
+         loc.imp.__dlog_print ()  [38;2;58;150;221m// r14
+[0m         r0 = [38;2;19;161;14m0[0m
+         
+         [38;2;136;23;152mgoto[0m loc_0x00001186
+    loc_0x00001186: [38;2;58;150;221m// orphan
+[0m         [38;2;58;150;221m// CODE XREF from fcn.00000d44 @ 0xeec(x)
+[0m         r0 = r5 + [38;2;19;161;14m0x11a[0m
+         r1 = r6                  [38;2;58;150;221m// "MM_UNKNOWN"
+[0m         r2 = [38;2;19;161;14m0x50[0m                [38;2;58;150;221m// 'P'
+[0m         sym.imp.__strcpy_chk ()
+         
+         [38;2;136;23;152mgoto[0m loc_0x00001194
+    loc_0x00001194: [38;2;58;150;221m// orphan
+[0m         [38;2;58;150;221m// CODE XREF from fcn.00000d44 @ 0xe34(x)
+[0m         r0 = [[38;2;19;161;14m0x00001198[0m]        [38;2;58;150;221m// [0x1318:4]=0x96ae
+[0m         r1 = r5
+         r2 = [38;2;19;161;14m0x50[0m                [38;2;58;150;221m// 'P'
+[0m         r0 += pc
+         r0 += [38;2;19;161;14m0xb6[0m               [38;2;58;150;221m// "/dev/video1"
+[0m         sym.imp.__strcpy_chk ()
+         
+         [38;2;136;23;152mgoto[0m loc_0x000011a4
+    loc_0x000011a4: [38;2;58;150;221m// orphan
+[0m         [38;2;58;150;221m// CODE XREF from fcn.00000d44 @ 0xde0(x)
+[0m         r0 = r5 + [38;2;19;161;14m0x66[0m
+         r1 = r6                  [38;2;58;150;221m// "MM_UNKNOWN"
+[0m         r2 = [38;2;19;161;14m0x50[0m                [38;2;58;150;221m// 'P'
+[0m         sym.imp.__strcpy_chk ()
+         
+}
+
+[38;2;58;150;221m// callconv: r0 arm16 (r0, r1, r2, r3, stack);
+[0m[38;2;197;15;31mvoid[0m sym.mm_rvc_sensor_grab_image (uint32_t arg1, uint32_t arg2, int16_t arg3) {
+    loc_0x00001b00:
+        push (r4, r5, r6, r7, r8, lr) [38;2;58;150;221m// (pstr 0x00001db0) "mm_rvc_s"
+[0m        r7 = r0       [38;2;58;150;221m// arg1
+[0m        r0 = [r0 + [38;2;19;161;14m8[0m] [38;2;58;150;221m// arg1
+[0m        sp -= [38;2;19;161;14m0x20[0m
+        r5 = r1       [38;2;58;150;221m// arg2
+[0m        r4 = r2       [38;2;58;150;221m// arg3 // "MM_UNKNOWN" r6
+[0m        (a, b) = compare (r0, [38;2;19;161;14m2[0m) [38;2;58;150;221m// arg1
+[0m        bne [38;2;19;161;14m0x1bea[0m    [38;2;58;150;221m// likely
+[0m        [38;2;136;23;152mgoto[0m loc_0x00001b12;
+    loc_0x00001bea:
+        [38;2;58;150;221m// CODE XREF from sym.mm_rvc_sensor_grab_image @ 0x1b10(x)
+[0m        r6 = [[38;2;19;161;14m0x00001bec[0m] [38;2;58;150;221m// [0x1cac:4]=0x694 "move" // "move"
+[0m        r0 = [38;2;19;161;14m2[0m
+        r2 = [[38;2;19;161;14m0x00001bf0[0m] [38;2;58;150;221m// [0x1cb0:4]=372
+[0m        r1 = [38;2;19;161;14m5[0m        [38;2;58;150;221m// (pstr 0x00000101) "NU"
+[0m        r3 = [[38;2;19;161;14m0x00001bf4[0m] [38;2;58;150;221m// [0x1cb4:4]=0x758 "et_attribute" // "et_attribute"
+[0m        r6 += pc      [38;2;58;150;221m// 0x228c // "mm_rvc_sensor_create" // str.mm_rvc_sensor_create
+[0m        r7 = [[38;2;19;161;14m0x00001bf8[0m] [38;2;58;150;221m// [0x1cb8:4]=0x772 "_get_capture_resolution" // "_get_capture_resolution"
+[0m        r2 += pc      [38;2;58;150;221m// 0x1d70 // "MM_UNKNOWN" // r6
+[0m        r5 = [[38;2;19;161;14m0x00001bfc[0m] [38;2;58;150;221m// [0x1cbc:4]=0x894
+[0m        r3 += pc      [38;2;58;150;221m// 0x2358 // "%s: %s(%d) > failed [%s]\n" // str._s:__s__d____failed___s__n
+[0m        r7 += pc      [38;2;58;150;221m// 0x2374 // "mm_rvc_sensor.c" // str.mm_rvc_sensor.c
+[0m        r4 = [38;2;19;161;14m0x11f[0m
+        r5 += pc      [38;2;58;150;221m// 0x249c // "(cam->state == MM_RVC_SENSOR_STATE_PREPARED)" // str._cam__state__MM_RVC_SENSOR_STATE_PREPARED_
+[0m        r6 += [38;2;19;161;14m0xb0[0m    [38;2;58;150;221m// 0x233c // "mm_rvc_sensor_grab_image" // str.mm_rvc_sensor_grab_image
+[0m        [sp] = r7
+        [var_4h] = r6
+        [var_ch] = r5
+        [var_8h] = r4
+        loc.imp.__dlog_print ()
+        r0 = [38;2;19;161;14m0x2005[0m   [38;2;58;150;221m// "ing:device node : %s"
+[0m        r0 |= [38;2;19;161;14m0x8000[0m << [38;2;19;161;14m16[0m
+        [38;2;136;23;152mgoto[0m [38;2;19;161;14m0x1ba8[0m
+        
+    loc_0x00001ba8:
+        [38;2;58;150;221m// CODE XREFS from sym.mm_rvc_sensor_grab_image @ 0x1c1c(x), 0x1c4a(x), 0x1c7c(x)
+[0m        sp += [38;2;19;161;14m0x20[0m
+        pop (r4, r5, r6, r7, r8, pc)
+        [38;2;136;23;152mgoto[0m loc_0x00001b18;
+        [38;2;136;23;152mreturn[0m r0;
+    loc_0x00001b18:
+        rsym.mm_rvc_sensor_ini_get_structure ()
+        r6 = [r7 + [38;2;19;161;14m4[0m]
+        (a, b) = compare (r6, [38;2;19;161;14m0[0m)
+        je [38;2;19;161;14m0x1bae[0m     [38;2;58;150;221m// unlikely
+[0m        [38;2;136;23;152mgoto[0m loc_0x00001b22;
+    loc_0x00001bae:
+        [38;2;58;150;221m// CODE XREF from sym.mm_rvc_sensor_grab_image @ 0x1b20(x)
+[0m        r1 = [r0 + [38;2;19;161;14m0x54[0m]
+        lr = r0 + [38;2;19;161;14m0x62[0m
+        ldrb.w ip, [r0, [38;2;19;161;14m0x60[0m]
+        ldrb.w r8, [r0, [38;2;19;161;14m0x61[0m]
+        [38;2;136;23;152mgoto[0m [38;2;19;161;14m0x1b32[0m
+        
+    loc_0x00001b32:
+        [38;2;58;150;221m// CODE XREF from sym.mm_rvc_sensor_grab_image @ 0x1bbc(x)
+[0m        (a, b) = compare (r1, [38;2;19;161;14m0[0m)
+        ble.w [38;2;19;161;14m0x1c7e[0m  [38;2;58;150;221m// unlikely
+[0m        [38;2;136;23;152mgoto[0m loc_0x00001b38;
+        [38;2;136;23;152mreturn[0m r0;
+    loc_0x00001b22: [38;2;58;150;221m// orphan
+[0m         r1 = [r0 + [38;2;19;161;14m0x108[0m]
+         lr = r0 + [38;2;19;161;14m0x116[0m
+         ldrb.w ip, [r0, [38;2;19;161;14m0x114[0m]
+         ldrb.w r8, [r0, [38;2;19;161;14m0x115[0m]
+
+    loc_0x00001b32: [38;2;58;150;221m// orphan
+[0m         [38;2;58;150;221m// CODE XREF from sym.mm_rvc_sensor_grab_image @ 0x1bbc(x)
+[0m         (a, b) = compare (r1, [38;2;19;161;14m0[0m)
+         ble.w [38;2;19;161;14m0x1c7e[0m             [38;2;58;150;221m// unlikely
+[0m
+         [38;2;136;23;152mgoto[0m loc_0x00001b38
+    loc_0x00001b38: [38;2;58;150;221m// orphan
+[0m         r0 = [r7]                [38;2;58;150;221m// "_load"
+[0m         (a, b) = compare (r6, [38;2;19;161;14m0[0m)
+         bne [38;2;19;161;14m0x1bbe[0m               [38;2;58;150;221m// likely
+[0m
+         [38;2;136;23;152mgoto[0m loc_0x00001b3e
+    loc_0x00001b3e: [38;2;58;150;221m// orphan
+[0m         r2 = r6                  [38;2;58;150;221m// "MM_UNKNOWN"
+[0m         r3 = r6                  [38;2;58;150;221m// "MM_UNKNOWN"
+[0m         cmp.w ip, [38;2;19;161;14m0[0m
+         ite ne
+         r7 = r4                  [38;2;58;150;221m// "mm_rvc_s"
+[0m         r7 = [38;2;19;161;14m0[0m
+         cmp.w r8, [38;2;19;161;14m0[0m
+         it eq
+         mov.w lr, [38;2;19;161;14m0[0m
+         [var_14h] = r7
+         r7 = var_1ch
+         [var_ch] = r5
+         str.w lr, [sp, [38;2;19;161;14m8[0m]
+         [sp] = r6
+         [var_4h] = r6
+         [var_10h] = r7
+         loc.imp.mm_v4l2_capture_image ()
+         r5 = r0
+
+    loc_0x00001b6c: [38;2;58;150;221m// orphan
+[0m         [38;2;58;150;221m// CODE XREF from sym.mm_rvc_sensor_grab_image @ 0x1be8(x)
+[0m         (a, b) = compare (r5, [38;2;19;161;14m0[0m)
+         bne [38;2;19;161;14m0x1c1e[0m               [38;2;58;150;221m// likely
+[0m
+         [38;2;136;23;152mgoto[0m loc_0x00001b70
+    loc_0x00001b70: [38;2;58;150;221m// orphan
+[0m         r7 = [r4]                [38;2;58;150;221m// 0x1d70 // "MM_UNKNOWN"
+[0m         r0 = [38;2;19;161;14m2[0m
+         r6 = [r4 + [38;2;19;161;14m4[0m]
+         r1 = [38;2;19;161;14m4[0m
+         ip = [[38;2;19;161;14m0x00001b80[0m]        [38;2;58;150;221m// [0x1c9c:4]=0x704 "mm_rvc_sensor_destroy" // "mm_rvc_sensor_destroy"
+[0m         mov.w r4, [38;2;19;161;14m0x158[0m
+         r2 = [[38;2;19;161;14m0x00001b84[0m]        [38;2;58;150;221m// [0x1ca0:4]=482
+[0m         r3 = [[38;2;19;161;14m0x00001b84[0m]        [38;2;58;150;221m// [0x1ca4:4]=0xa94 // (pstr 0x00002516) "xel_format"
+[0m         ip += pc                 [38;2;58;150;221m// 0x228c // "mm_rvc_sensor_create" // str.mm_rvc_sensor_create
+[0m         lr = [[38;2;19;161;14m0x00001b8c[0m]        [38;2;58;150;221m// [0x1ca8:4]=0x7de "c_sensor_unprepare" // "c_sensor_unprepare"
+[0m         r2 += pc                 [38;2;58;150;221m// 0x1d70 // "MM_UNKNOWN" // r6
+[0m         r3 += pc                 [38;2;58;150;221m// 0x2624 // "%s: %s(%d) > success capture image. time (%lu.%06lu) seconds\n" // str._s:__s__d____success_capture_image._time___lu._06lu__seconds_n
+[0m         ip += [38;2;19;161;14m0xb0[0m               [38;2;58;150;221m// 0x233c // "mm_rvc_sensor_grab_image" // str.mm_rvc_sensor_grab_image
+[0m         lr += pc                 [38;2;58;150;221m// 0x2374 // "mm_rvc_sensor.c" // str.mm_rvc_sensor.c
+[0m         str.w ip, [sp, [38;2;19;161;14m4[0m]
+         str.w lr, [sp]
+         [var_ch] = r7
+         [var_10h] = r6
+         [var_8h] = r4
+         loc.imp.__dlog_print ()
+         r0 = r5
+
+    loc_0x00001ba8: [38;2;58;150;221m// orphan
+[0m         [38;2;58;150;221m// CODE XREFS from sym.mm_rvc_sensor_grab_image @ 0x1c1c(x), 0x1c4a(x), 0x1c7c(x)
+[0m         sp += [38;2;19;161;14m0x20[0m
+         pop (r4, r5, r6, r7, r8, pc)
+
+        [38;2;136;23;152mreturn[0m r0;
+    loc_0x00001bbe: [38;2;58;150;221m// orphan
+[0m         [38;2;58;150;221m// CODE XREF from sym.mm_rvc_sensor_grab_image @ 0x1b3c(x)
+[0m         r6 = [38;2;19;161;14m0[0m
+         [var_ch] = r5
+         (a, b) = compare (r8, r6)
+         it eq
+         lr = r6
+         (a, b) = compare (ip, r6)
+         ite ne
+         r7 = r4                  [38;2;58;150;221m// "mm_rvc_s"
+[0m         r7 = r6
+         r2 = r6
+         r3 = r6
+         r5 = var_1ch
+         str.w lr, [sp, [38;2;19;161;14m8[0m]
+         [var_10h] = r5
+         [var_14h] = r7
+         [sp] = r6
+         [var_4h] = r6
+         loc.imp.mm_v4l2_capture_image ()
+         r5 = r0
+         
+    loc_0x00001c1e: [38;2;58;150;221m// orphan
+[0m         [38;2;58;150;221m// CODE XREF from sym.mm_rvc_sensor_grab_image @ 0x1b6e(x)
+[0m         r5 = [[38;2;19;161;14m0x00001c20[0m]        [38;2;58;150;221m// [0x1cc0:4]=0x660 "lean" // "lean"
+[0m         r0 = [38;2;19;161;14m2[0m
+         r2 = [[38;2;19;161;14m0x00001c24[0m]        [38;2;58;150;221m// [0x1cc4:4]=320
+[0m         r1 = [38;2;19;161;14m6[0m
+         r3 = [[38;2;19;161;14m0x00001c28[0m]        [38;2;58;150;221m// [0x1cc8:4]=0x9ce
+[0m         r5 += pc                 [38;2;58;150;221m// 0x228c // "mm_rvc_sensor_create" // str.mm_rvc_sensor_create
+[0m         r6 = [[38;2;19;161;14m0x00001c2c[0m]        [38;2;58;150;221m// [0x1ccc:4]=0x73c "capture_resolution" // "capture_resolution"
+[0m         r2 += pc                 [38;2;58;150;221m// 0x1d70 // "MM_UNKNOWN" // r6
+[0m         r3 += pc                 [38;2;58;150;221m// 0x2600 // "%s: %s(%d) > mm_v4l2_capture_image\n" // str._s:__s__d____mm_v4l2_capture_image_n
+[0m         mov.w r4, [38;2;19;161;14m0x152[0m
+         r6 += pc                 [38;2;58;150;221m// 0x2374 // "mm_rvc_sensor.c" // str.mm_rvc_sensor.c
+[0m         r5 += [38;2;19;161;14m0xb0[0m               [38;2;58;150;221m// 0x233c // "mm_rvc_sensor_grab_image" // str.mm_rvc_sensor_grab_image
+[0m         [sp] = r6
+         [var_4h] = r5
+         [var_8h] = r4
+         loc.imp.__dlog_print ()
+         r0 = [38;2;19;161;14m0x2004[0m              [38;2;58;150;221m// "ling:device node : %s"
+[0m         r0 |= [38;2;19;161;14m0x8000[0m << [38;2;19;161;14m16[0m
+         
+         [38;2;136;23;152mgoto[0m loc_0x00001c4c
+    loc_0x00001c4c: [38;2;58;150;221m// orphan
+[0m         [38;2;58;150;221m// CODE XREF from sym.mm_rvc_sensor_grab_image @ 0x1b14(x)
+[0m         r7 = [[38;2;19;161;14m0x00001c50[0m]        [38;2;58;150;221m// [0x1cd0:4]=0x718 "y" // "y"
+[0m         r1 = [38;2;19;161;14m5[0m                   [38;2;58;150;221m// (pstr 0x00000101) "NU"
+[0m         r5 = [[38;2;19;161;14m0x00001c54[0m]        [38;2;58;150;221m// [0x1cd4:4]=0x984
+[0m         mov.w r4, [38;2;19;161;14m0x120[0m
+         r6 = [[38;2;19;161;14m0x00001c58[0m]        [38;2;58;150;221m// [0x1cd8:4]=0x628 "arser_getstring" // "arser_getstring"
+[0m         r7 += pc                 [38;2;58;150;221m// 0x2374 // "mm_rvc_sensor.c" // str.mm_rvc_sensor.c
+[0m         r2 = [[38;2;19;161;14m0x00001c5c[0m]        [38;2;58;150;221m// [0x1cdc:4]=266
+[0m         r5 += pc                 [38;2;58;150;221m// 0x25e4 // "buffer" // str.buffer
+[0m         r3 = [[38;2;19;161;14m0x00001c60[0m]        [38;2;58;150;221m// [0x1ce0:4]=0x6f0 "_v4l2_create" // "_v4l2_create"
+[0m         r6 += pc                 [38;2;58;150;221m// 0x228c // "mm_rvc_sensor_create" // str.mm_rvc_sensor_create
+[0m         r2 += pc                 [38;2;58;150;221m// 0x1d70 // "MM_UNKNOWN" // r6
+[0m         r3 += pc                 [38;2;58;150;221m// 0x2358 // "%s: %s(%d) > failed [%s]\n" // str._s:__s__d____failed___s__n
+[0m
+    loc_0x00001c66: [38;2;58;150;221m// orphan
+[0m         [38;2;58;150;221m// CODE XREF from sym.mm_rvc_sensor_grab_image @ 0x1c9a(x)
+[0m         r6 += [38;2;19;161;14m0xb0[0m               [38;2;58;150;221m// 0x233c // "mm_rvc_sensor_grab_image" // "ile found. \n"
+[0m         [sp] = r7
+         [var_4h] = r6
+         [var_ch] = r5
+         [var_8h] = r4
+         loc.imp.__dlog_print ()
+         r0 = [38;2;19;161;14m0x2009[0m              [38;2;58;150;221m// "device node : %s"
+[0m         r0 |= [38;2;19;161;14m0x8000[0m << [38;2;19;161;14m16[0m
+         
+    loc_0x00001c7e: [38;2;58;150;221m// orphan
+[0m         [38;2;58;150;221m// CODE XREF from sym.mm_rvc_sensor_grab_image @ 0x1b34(x)
+[0m         r7 = [[38;2;19;161;14m0x00001c80[0m]        [38;2;58;150;221m// [0x1ce4:4]=0x6e8 "alloc" // "alloc"
+[0m         r0 = [38;2;19;161;14m2[0m
+         r5 = [[38;2;19;161;14m0x00001c84[0m]        [38;2;58;150;221m// [0x1ce8:4]=0x95c // "\\t"
+[0m         r1 = [38;2;19;161;14m5[0m                   [38;2;58;150;221m// (pstr 0x00000101) "NU"
+[0m         r6 = [[38;2;19;161;14m0x00001c88[0m]        [38;2;58;150;221m// [0x1cec:4]=0x5f8 "nsor_ini_load" // "nsor_ini_load"
+[0m         r7 += pc                 [38;2;58;150;221m// 0x2374 // "mm_rvc_sensor.c" // str.mm_rvc_sensor.c
+[0m         r2 = [[38;2;19;161;14m0x00001c8c[0m]        [38;2;58;150;221m// [0x1cf0:4]=214 // "td"
+[0m         r5 += pc                 [38;2;58;150;221m// 0x25ec // "(capture_count > 0)" // str._capture_count___0_
+[0m         r3 = [[38;2;19;161;14m0x00001c90[0m]        [38;2;58;150;221m// [0x1cf4:4]=0x6bc "r_ini_get_structure" // "r_ini_get_structure"
+[0m         r6 += pc                 [38;2;58;150;221m// 0x228c // "mm_rvc_sensor_create" // str.mm_rvc_sensor_create
+[0m         r4 = [38;2;19;161;14m0x133[0m               [38;2;58;150;221m// (pstr 0x00001e00) ", Removed\n"
+[0m         r2 += pc                 [38;2;58;150;221m// 0x1d70 // "MM_UNKNOWN" // r6
+[0m         r3 += pc                 [38;2;58;150;221m// 0x2358 // "%s: %s(%d) > failed [%s]\n" // str._s:__s__d____failed___s__n
+[0m         
+}
+
+[38;2;58;150;221m// callconv: r0 arm16 (r0, r1, r2, r3, stack);
+[0m[38;2;197;15;31mint[0m sym.mm_rvc_sensor_off ([38;2;197;15;31mint[0m r0, [38;2;197;15;31mint[0m r1) {
+    loc_0x00001cf8:
+        r0 = [38;2;19;161;14m0[0m
+        bx lr
+        [38;2;136;23;152mreturn[0m r0;
+}
+
+[38;2;58;150;221m// callconv: r0 arm16 (r0, r1, r2, r3, stack);
+[0m[38;2;197;15;31mvoid[0m sym.mm_rvc_sensor_prepare (uint32_t arg1, int16_t arg_17fch) {
+    loc_0x0000175c:
+        push (r4, r5, r6, r7, r8, sb, sl, fp, lr)
+        sp -= [38;2;19;161;14m0x84[0m
+        r3 = [38;2;19;161;14m0[0m
+        r4 = r0       [38;2;58;150;221m// arg1
+[0m        [var_7ch] = r3
+        (a, b) = compare (r0, [38;2;19;161;14m0[0m) [38;2;58;150;221m// arg1
+[0m        beq.w [38;2;19;161;14m0x1930[0m  [38;2;58;150;221m// likely
+[0m        [38;2;136;23;152mgoto[0m loc_0x0000176e;
+    loc_0x00001930:
+        [38;2;58;150;221m// CODE XREF from sym.mm_rvc_sensor_prepare @ 0x176a(x)
+[0m        r6 = [[38;2;19;161;14m0x00001934[0m] [38;2;58;150;221m// [0x19e8:4]=0x94e
+[0m        r0 = [38;2;19;161;14m2[0m
+        r2 = [[38;2;19;161;14m0x00001938[0m] [38;2;58;150;221m// [0x19ec:4]=0x42e
+[0m        r1 = [38;2;19;161;14m5[0m        [38;2;58;150;221m// (pstr 0x00000101) "NU"
+[0m        r3 = [[38;2;19;161;14m0x0000193c[0m] [38;2;58;150;221m// [0x19f0:4]=0xa12
+[0m        r6 += pc      [38;2;58;150;221m// 0x228c // "mm_rvc_sensor_create" // str.mm_rvc_sensor_create
+[0m        r7 = [[38;2;19;161;14m0x00001940[0m] [38;2;58;150;221m// [0x19f4:4]=0xa2c
+[0m        r2 += pc      [38;2;58;150;221m// 0x1d70 // "MM_UNKNOWN" // r6
+[0m        r5 = [[38;2;19;161;14m0x00001944[0m] [38;2;58;150;221m// [0x19f8:4]=0xadc // "S"
+[0m        r3 += pc      [38;2;58;150;221m// 0x2358 // "%s: %s(%d) > failed [%s]\n" // str._s:__s__d____failed___s__n
+[0m        r7 += pc      [38;2;58;150;221m// 0x2374 // "mm_rvc_sensor.c" // str.mm_rvc_sensor.c
+[0m        r4 = [38;2;19;161;14m0xb7[0m
+        r5 += pc      [38;2;58;150;221m// "cam"
+[0m        r6 += [38;2;19;161;14m0x80[0m    [38;2;58;150;221m// 0x230c // "mm_rvc_sensor_prepare" // str.mm_rvc_sensor_prepare
+[0m        [sp] = r7
+        [var_4h] = r6
+        [var_ch] = r5
+        [var_8h] = r4
+        loc.imp.__dlog_print ()
+        r0 = [38;2;19;161;14m0x200a[0m   [38;2;58;150;221m// '\n ' // "evice node : %s"
+[0m        r0 |= [38;2;19;161;14m0x8000[0m << [38;2;19;161;14m16[0m
+        [38;2;136;23;152mgoto[0m [38;2;19;161;14m0x188e[0m
+        
+    loc_0x0000188e:
+        [38;2;58;150;221m// CODE XREFS from sym.mm_rvc_sensor_prepare @ 0x18d2(x), 0x18fe(x), 0x1960(x)
+[0m        sp += [38;2;19;161;14m0x84[0m
+        pop (r4, r5, r6, r7, r8, sb, sl, fp, pc)
+        [38;2;136;23;152mgoto[0m loc_0x00001776;
+        [38;2;136;23;152mreturn[0m r0;
+    loc_0x00001776:
+        rsym.mm_rvc_sensor_ini_get_structure ()
+        r3 = [r4 + [38;2;19;161;14m4[0m]
+        (a, b) = compare (r3, [38;2;19;161;14m0[0m)
+        beq.w [38;2;19;161;14m0x1894[0m  [38;2;58;150;221m// unlikely
+[0m        [38;2;136;23;152mgoto[0m loc_0x00001782;
+    loc_0x00001894:
+        [38;2;58;150;221m// CODE XREF from sym.mm_rvc_sensor_prepare @ 0x177e(x)
+[0m        r6 = [r0 + [38;2;19;161;14m0x5c[0m]
+        r3 = r0
+        r7 = [r0 + [38;2;19;161;14m0x58[0m]
+        r8 = [r0 + [38;2;19;161;14m0x50[0m]
+        [var_64h] = r6
+        [38;2;136;23;152mgoto[0m [38;2;19;161;14m0x1794[0m
+        
+    loc_0x00001794:
+        [38;2;58;150;221m// CODE XREF from sym.mm_rvc_sensor_prepare @ 0x18a0(x)
+[0m        r2 = [[38;2;19;161;14m0x00001798[0m] [38;2;58;150;221m// [0x1964:4]=0x6f2 "4l2_create" // "4l2_create"
+[0m        r1 = var_7ch
+        r6 = [[38;2;19;161;14m0x0000179c[0m] [38;2;58;150;221m// [0x1968:4]=0xd60 // "`\r"
+[0m        mov.w lr, [38;2;19;161;14m0[0m
+        r2 += pc      [38;2;58;150;221m// "height"
+[0m        [var_68h] = r2
+        r2 = [[38;2;19;161;14m0x000017a4[0m] [38;2;58;150;221m// [0x196c:4]=0xd76 // "v\r"
+[0m        r6 += pc      [38;2;58;150;221m// 0x2508 // "memory_type" // str.memory_type
+[0m        r0 = [r4]
+        r5 = [38;2;19;161;14m4[0m
+        r2 += pc      [38;2;58;150;221m// 0x2524 // "set_format" // str.set_format
+[0m        [var_6ch] = r2
+        r2 = [var_64h]
+        [var_ch] = r6
+        r6 = [var_68h] [38;2;58;150;221m// "height"
+[0m        [var_28h] = r2
+        r2 = [[38;2;19;161;14m0x000017b8[0m] [38;2;58;150;221m// [0x1970:4]=0xd72 // "r\r"
+[0m        [var_24h] = r6
+        r2 += pc      [38;2;58;150;221m// 0x2530 // "nbuffers" // str.nbuffers
+[0m        [var_70h] = r2
+        r2 = [[38;2;19;161;14m0x000017c0[0m] [38;2;58;150;221m// [0x1974:4]=0xd76 // "v\r"
+[0m        r6 = [var_70h] [38;2;58;150;221m// "nbuffers" str.nbuffers
+[0m        r2 += pc      [38;2;58;150;221m// 0x253c // "set_input" // str.set_input
+[0m        [var_74h] = r2
+        r2 = [var_6ch] [38;2;58;150;221m// "set_format" str.set_format
+[0m        sb = [[38;2;19;161;14m0x000017d0[0m] [38;2;58;150;221m// [0x1978:4]=0xd40 // "@\r"
+[0m        [var_34h] = r6
+        [var_2ch] = r2
+        sb += pc      [38;2;58;150;221m// 0x2514 // "pixel_format" // str.pixel_format
+[0m        r6 = [var_74h] [38;2;58;150;221m// "set_input" str.set_input
+[0m        r2 = [[38;2;19;161;14m0x000017d8[0m] [38;2;58;150;221m// [0x197c:4]=0xd0a // "\n\r"
+[0m        str.w r8, [sp, [38;2;19;161;14m0x38[0m]
+        str.w sb, [sp, [38;2;19;161;14m0x14[0m]
+        r2 += pc      [38;2;58;150;221m// 0x24ec // "device_node" // str.device_node
+[0m        ip = [[38;2;19;161;14m0x000017e8[0m] [38;2;58;150;221m// [0x1980:4]=0xd08
+[0m        sl = [[38;2;19;161;14m0x000017ec[0m] [38;2;58;150;221m// [0x1984:4]=0x68e "chk" // "chk"
+[0m        fp = [[38;2;19;161;14m0x000017f0[0m] [38;2;58;150;221m// [0x1988:4]=0xd4c // "L\r"
+[0m        ip += pc      [38;2;58;150;221m// 0x24f8 // "capabilities" // str.capabilities
+[0m        r8 = [[38;2;19;161;14m0x000017f4[0m] [38;2;58;150;221m// [0x198c:4]=0xd56 // "V\r"
+[0m        sl += pc      [38;2;58;150;221m// "width"
+[0m        sb = [[38;2;19;161;14m0x000017fc[0m] [38;2;58;150;221m// [0x1990:4]=0xd5a // "Z\r"
+[0m        fp += pc      [38;2;58;150;221m// 0x2548 // "select_input" // str.select_input
+[0m        str.w ip, [sp, [38;2;19;161;14m4[0m]
+        r8 += pc      [38;2;58;150;221m// 0x2558 // "display_formats" // str.display_formats
+[0m        mov.w ip, [38;2;19;161;14m1[0m
+        [var_20h] = r7
+        str.w sl, [sp, [38;2;19;161;14m0x1c[0m]
+        sb += pc      [38;2;58;150;221m// 0x2568 // "display_inputs" // str.display_inputs
+[0m        [var_3ch] = r6
+        str.w fp, [sp, [38;2;19;161;14m0x44[0m]
+        str.w r8, [sp, [38;2;19;161;14m0x4c[0m]
+        str.w sb, [sp, [38;2;19;161;14m0x54[0m]
+        [sp] = r5
+        [var_18h] = r5
+        str.w lr, [sp, [38;2;19;161;14m8[0m]
+        str.w lr, [sp, [38;2;19;161;14m0x48[0m]
+        str.w lr, [sp, [38;2;19;161;14m0x50[0m]
+        str.w lr, [sp, [38;2;19;161;14m0x58[0m]
+        str.w lr, [sp, [38;2;19;161;14m0x5c[0m]
+        str.w ip, [sp, [38;2;19;161;14m0x10[0m]
+        str.w ip, [sp, [38;2;19;161;14m0x30[0m]
+        str.w ip, [sp, [38;2;19;161;14m0x40[0m]
+        loc.imp.mm_v4l2_set_attribute ()
+        (a, b) = compare (r0, [38;2;19;161;14m0[0m)
+        bne [38;2;19;161;14m0x18d4[0m    [38;2;58;150;221m// likely
+[0m        [38;2;136;23;152mgoto[0m loc_0x00001846;
+        [38;2;136;23;152mreturn[0m r0;
+    loc_0x00001782: [38;2;58;150;221m// orphan
+[0m         r6 = [r0 + [38;2;19;161;14m0x110[0m]
+         r3 = r0 + [38;2;19;161;14m0xb2[0m
+         r7 = [r0 + [38;2;19;161;14m0x10c[0m]
+         r8 = [r0 + [38;2;19;161;14m0x104[0m]
+         [var_64h] = r6
+
+    loc_0x00001794: [38;2;58;150;221m// orphan
+[0m         [38;2;58;150;221m// CODE XREF from sym.mm_rvc_sensor_prepare @ 0x18a0(x)
+[0m         r2 = [[38;2;19;161;14m0x00001798[0m]        [38;2;58;150;221m// [0x1964:4]=0x6f2 "4l2_create" // "4l2_create"
+[0m         r1 = var_7ch
+         r6 = [[38;2;19;161;14m0x0000179c[0m]        [38;2;58;150;221m// [0x1968:4]=0xd60 // "`\r"
+[0m         mov.w lr, [38;2;19;161;14m0[0m
+         r2 += pc                 [38;2;58;150;221m// "height"
+[0m         [var_68h] = r2
+         r2 = [[38;2;19;161;14m0x000017a4[0m]        [38;2;58;150;221m// [0x196c:4]=0xd76 // "v\r"
+[0m         r6 += pc                 [38;2;58;150;221m// 0x2508 // "memory_type" // str.memory_type
+[0m         r0 = [r4]
+         r5 = [38;2;19;161;14m4[0m
+         r2 += pc                 [38;2;58;150;221m// 0x2524 // "set_format" // str.set_format
+[0m         [var_6ch] = r2
+         r2 = [var_64h]
+         [var_ch] = r6
+         r6 = [var_68h]           [38;2;58;150;221m// "height"
+[0m         [var_28h] = r2
+         r2 = [[38;2;19;161;14m0x000017b8[0m]        [38;2;58;150;221m// [0x1970:4]=0xd72 // "r\r"
+[0m         [var_24h] = r6
+         r2 += pc                 [38;2;58;150;221m// 0x2530 // "nbuffers" // str.nbuffers
+[0m         [var_70h] = r2
+         r2 = [[38;2;19;161;14m0x000017c0[0m]        [38;2;58;150;221m// [0x1974:4]=0xd76 // "v\r"
+[0m         r6 = [var_70h]           [38;2;58;150;221m// "nbuffers" str.nbuffers
+[0m         r2 += pc                 [38;2;58;150;221m// 0x253c // "set_input" // str.set_input
+[0m         [var_74h] = r2
+         r2 = [var_6ch]           [38;2;58;150;221m// "set_format" str.set_format
+[0m         sb = [[38;2;19;161;14m0x000017d0[0m]        [38;2;58;150;221m// [0x1978:4]=0xd40 // "@\r"
+[0m         [var_34h] = r6
+         [var_2ch] = r2
+         sb += pc                 [38;2;58;150;221m// 0x2514 // "pixel_format" // str.pixel_format
+[0m         r6 = [var_74h]           [38;2;58;150;221m// "set_input" str.set_input
+[0m         r2 = [[38;2;19;161;14m0x000017d8[0m]        [38;2;58;150;221m// [0x197c:4]=0xd0a // "\n\r"
+[0m         str.w r8, [sp, [38;2;19;161;14m0x38[0m]
+         str.w sb, [sp, [38;2;19;161;14m0x14[0m]
+         r2 += pc                 [38;2;58;150;221m// 0x24ec // "device_node" // str.device_node
+[0m         ip = [[38;2;19;161;14m0x000017e8[0m]        [38;2;58;150;221m// [0x1980:4]=0xd08
+[0m         sl = [[38;2;19;161;14m0x000017ec[0m]        [38;2;58;150;221m// [0x1984:4]=0x68e "chk" // "chk"
+[0m         fp = [[38;2;19;161;14m0x000017f0[0m]        [38;2;58;150;221m// [0x1988:4]=0xd4c // "L\r"
+[0m         ip += pc                 [38;2;58;150;221m// 0x24f8 // "capabilities" // str.capabilities
+[0m         r8 = [[38;2;19;161;14m0x000017f4[0m]        [38;2;58;150;221m// [0x198c:4]=0xd56 // "V\r"
+[0m         sl += pc                 [38;2;58;150;221m// "width"
+[0m         sb = [[38;2;19;161;14m0x000017fc[0m]        [38;2;58;150;221m// [0x1990:4]=0xd5a // "Z\r"
+[0m         fp += pc                 [38;2;58;150;221m// 0x2548 // "select_input" // str.select_input
+[0m         str.w ip, [sp, [38;2;19;161;14m4[0m]
+         r8 += pc                 [38;2;58;150;221m// 0x2558 // "display_formats" // str.display_formats
+[0m         mov.w ip, [38;2;19;161;14m1[0m
+         [var_20h] = r7
+         str.w sl, [sp, [38;2;19;161;14m0x1c[0m]
+         sb += pc                 [38;2;58;150;221m// 0x2568 // "display_inputs" // str.display_inputs
+[0m         [var_3ch] = r6
+         str.w fp, [sp, [38;2;19;161;14m0x44[0m]
+         str.w r8, [sp, [38;2;19;161;14m0x4c[0m]
+         str.w sb, [sp, [38;2;19;161;14m0x54[0m]
+         [sp] = r5
+         [var_18h] = r5
+         str.w lr, [sp, [38;2;19;161;14m8[0m]
+         str.w lr, [sp, [38;2;19;161;14m0x48[0m]
+         str.w lr, [sp, [38;2;19;161;14m0x50[0m]
+         str.w lr, [sp, [38;2;19;161;14m0x58[0m]
+         str.w lr, [sp, [38;2;19;161;14m0x5c[0m]
+         str.w ip, [sp, [38;2;19;161;14m0x10[0m]
+         str.w ip, [sp, [38;2;19;161;14m0x30[0m]
+         str.w ip, [sp, [38;2;19;161;14m0x40[0m]
+         loc.imp.mm_v4l2_set_attribute ()
+         (a, b) = compare (r0, [38;2;19;161;14m0[0m)
+         bne [38;2;19;161;14m0x18d4[0m               [38;2;58;150;221m// likely
+[0m
+         [38;2;136;23;152mgoto[0m loc_0x00001846
+    loc_0x00001846: [38;2;58;150;221m// orphan
+[0m         r0 = [r4]
+         loc.imp.mm_v4l2_realize ()
+         (a, b) = compare (r0, [38;2;19;161;14m0[0m)
+         bne [38;2;19;161;14m0x1900[0m               [38;2;58;150;221m// likely
+[0m
+         [38;2;136;23;152mgoto[0m loc_0x00001850
+    loc_0x00001850: [38;2;58;150;221m// orphan
+[0m         r6 = [var_64h]
+         [r4 + [38;2;19;161;14m0xc[0m] = r7
+         r0 = [r4]
+         [r4 + [38;2;19;161;14m0x10[0m] = r6
+         loc.imp.mm_v4l2_start_capture ()
+         r6 = r0
+         (a, b) = compare (r0, [38;2;19;161;14m0[0m)
+         bne [38;2;19;161;14m0x1918[0m               [38;2;58;150;221m// likely
+[0m
+         [38;2;136;23;152mgoto[0m loc_0x00001862
+    loc_0x00001862: [38;2;58;150;221m// orphan
+[0m         r7 = [[38;2;19;161;14m0x00001864[0m]        [38;2;58;150;221m// [0x1994:4]=0xa1c // (pstr 0x00000716) "roy"
+[0m         r1 = r5
+         r2 = [[38;2;19;161;14m0x00001868[0m]        [38;2;58;150;221m// [0x1998:4]=0x4fa
+[0m         r0 = [38;2;19;161;14m2[0m
+         r3 = [[38;2;19;161;14m0x0000186c[0m]        [38;2;58;150;221m// [0x199c:4]=0xd24 // "$\r"
+[0m         r7 += pc                 [38;2;58;150;221m// 0x228c // "mm_rvc_sensor_create" // str.mm_rvc_sensor_create
+[0m         lr = loc.imp.mm_v4l2_get_format [38;2;58;150;221m// [0xaf8:4]=0xe28fc600
+[0m         r2 += pc                 [38;2;58;150;221m// 0x1d70 // "MM_UNKNOWN" // r6
+[0m         r3 += pc                 [38;2;58;150;221m// 0x259c // "%s: %s(%d) > success start capture\n" // str._s:__s__d____success_start_capture_n
+[0m         r5 = [38;2;19;161;14m0xf0[0m
+         lr += pc                 [38;2;58;150;221m// 0x2374 // "mm_rvc_sensor.c" // str.mm_rvc_sensor.c
+[0m         r7 += [38;2;19;161;14m0x80[0m               [38;2;58;150;221m// 0x230c // "mm_rvc_sensor_prepare" // str.mm_rvc_sensor_prepare
+[0m         str.w lr, [sp]
+         [var_4h] = r7
+         [var_8h] = r5
+         loc.imp.__dlog_print ()
+         r0 = r6                  [38;2;58;150;221m// "MM_UNKNOWN"
+[0m         r3 = [38;2;19;161;14m2[0m
+         [r4 + [38;2;19;161;14m8[0m] = r3
+
+    loc_0x0000188e: [38;2;58;150;221m// orphan
+[0m         [38;2;58;150;221m// CODE XREFS from sym.mm_rvc_sensor_prepare @ 0x18d2(x), 0x18fe(x), 0x1960(x)
+[0m         sp += [38;2;19;161;14m0x84[0m
+         pop (r4, r5, r6, r7, r8, sb, sl, fp, pc)
+
+        [38;2;136;23;152mreturn[0m r0;
+    loc_0x000018a2: [38;2;58;150;221m// orphan
+[0m         [38;2;58;150;221m// CODE XREF from sym.mm_rvc_sensor_prepare @ 0x1772(x)
+[0m         r6 = [[38;2;19;161;14m0x000018a4[0m]        [38;2;58;150;221m// [0x19a4:4]=0x9dc
+[0m         r0 = [38;2;19;161;14m2[0m
+         r2 = [[38;2;19;161;14m0x000018a8[0m]        [38;2;58;150;221m// [0x19a8:4]=0x4bc
+[0m         r1 = [38;2;19;161;14m5[0m                   [38;2;58;150;221m// (pstr 0x00000101) "NU"
+[0m         r3 = [[38;2;19;161;14m0x000018ac[0m]        [38;2;58;150;221m// [0x19ac:4]=0xaa0
+[0m         r6 += pc                 [38;2;58;150;221m// 0x228c // "mm_rvc_sensor_create" // str.mm_rvc_sensor_create
+[0m         r7 = [[38;2;19;161;14m0x000018b0[0m]        [38;2;58;150;221m// [0x19b0:4]=0xaba
+[0m         r2 += pc                 [38;2;58;150;221m// 0x1d70 // "MM_UNKNOWN" // r6
+[0m         r5 = [[38;2;19;161;14m0x000018b4[0m]        [38;2;58;150;221m// [0x19b4:4]=0xb6e
+[0m         r3 += pc                 [38;2;58;150;221m// 0x2358 // "%s: %s(%d) > failed [%s]\n" // str._s:__s__d____failed___s__n
+[0m         r7 += pc                 [38;2;58;150;221m// 0x2374 // "mm_rvc_sensor.c" // str.mm_rvc_sensor.c
+[0m         r4 = [38;2;19;161;14m0xb8[0m
+         r5 += pc                 [38;2;58;150;221m// 0x242c // "(cam->state == MM_RVC_SENSOR_STATE_CREATED)" // str._cam__state__MM_RVC_SENSOR_STATE_CREATED_
+[0m         r6 += [38;2;19;161;14m0x80[0m               [38;2;58;150;221m// 0x230c // "mm_rvc_sensor_prepare" // str.mm_rvc_sensor_prepare
+[0m         [sp] = r7
+         [var_4h] = r6
+         [var_ch] = r5
+         [var_8h] = r4
+         loc.imp.__dlog_print ()
+         r0 = [38;2;19;161;14m0x2005[0m              [38;2;58;150;221m// "ing:device node : %s"
+[0m         r0 |= [38;2;19;161;14m0x8000[0m << [38;2;19;161;14m16[0m
+         
+         [38;2;136;23;152mgoto[0m loc_0x000018d4
+    loc_0x000018d4: [38;2;58;150;221m// orphan
+[0m         [38;2;58;150;221m// CODE XREF from sym.mm_rvc_sensor_prepare @ 0x1844(x)
+[0m         r6 = [[38;2;19;161;14m0x000018d8[0m]        [38;2;58;150;221m// [0x19b8:4]=0xa92
+[0m         r0 = [38;2;19;161;14m2[0m
+         r5 = [[38;2;19;161;14m0x000018dc[0m]        [38;2;58;150;221m// [0x19bc:4]=0x9a6
+[0m         r1 = [38;2;19;161;14m6[0m
+         r2 = [[38;2;19;161;14m0x000018e0[0m]        [38;2;58;150;221m// [0x19c0:4]=0x488
+[0m         r6 += pc                 [38;2;58;150;221m// 0x2374 // "mm_rvc_sensor.c" // str.mm_rvc_sensor.c
+[0m         r3 = [[38;2;19;161;14m0x000018e4[0m]        [38;2;58;150;221m// [0x19c4:4]=0xb8c
+[0m         r5 += pc                 [38;2;58;150;221m// 0x228c // "mm_rvc_sensor_create" // str.mm_rvc_sensor_create
+[0m         r2 += pc                 [38;2;58;150;221m// 0x1d70 // "MM_UNKNOWN" // r6
+[0m         r4 = [38;2;19;161;14m0xdc[0m
+         r3 += pc                 [38;2;58;150;221m// 0x2478 // "%s: %s(%d) > mm_v4l2_set_attribute\n" // str._s:__s__d____mm_v4l2_set_attribute_n
+[0m
+    loc_0x000018ea: [38;2;58;150;221m// orphan
+[0m         [38;2;58;150;221m// CODE XREFS from sym.mm_rvc_sensor_prepare @ 0x1916(x), 0x192e(x)
+[0m         r5 += [38;2;19;161;14m0x80[0m               [38;2;58;150;221m// 0x230c // "mm_rvc_sensor_prepare"
+[0m         [sp] = r6
+         [var_4h] = r5
+         [var_8h] = r4
+         loc.imp.__dlog_print ()
+         r0 = [38;2;19;161;14m0x2004[0m              [38;2;58;150;221m// "ling:device node : %s"
+[0m         r0 |= [38;2;19;161;14m0x8000[0m << [38;2;19;161;14m16[0m
+         
+    loc_0x00001900: [38;2;58;150;221m// orphan
+[0m         [38;2;58;150;221m// CODE XREF from sym.mm_rvc_sensor_prepare @ 0x184e(x)
+[0m         r6 = [[38;2;19;161;14m0x00001904[0m]        [38;2;58;150;221m// [0x19c8:4]=0xa66 // "f\n"
+[0m         r0 = [38;2;19;161;14m2[0m
+         r5 = [[38;2;19;161;14m0x00001908[0m]        [38;2;58;150;221m// [0x19cc:4]=0x97a // "z\t"
+[0m         r1 = [38;2;19;161;14m6[0m
+         r2 = [[38;2;19;161;14m0x0000190c[0m]        [38;2;58;150;221m// [0x19d0:4]=0x45c // "\\x04"
+[0m         r6 += pc                 [38;2;58;150;221m// 0x2374 // "mm_rvc_sensor.c" // str.mm_rvc_sensor.c
+[0m         r3 = [[38;2;19;161;14m0x00001910[0m]        [38;2;58;150;221m// [0x19d4:4]=0xbb4
+[0m         r5 += pc                 [38;2;58;150;221m// 0x228c // "mm_rvc_sensor_create" // str.mm_rvc_sensor_create
+[0m         r2 += pc                 [38;2;58;150;221m// 0x1d70 // "MM_UNKNOWN" // r6
+[0m         r4 = [38;2;19;161;14m0xe2[0m
+         r3 += pc                 [38;2;58;150;221m// 0x24cc // "%s: %s(%d) > mm_v4l2_realize\n" // str._s:__s__d____mm_v4l2_realize_n
+[0m         
+         [38;2;136;23;152mgoto[0m loc_0x00001918
+    loc_0x00001918: [38;2;58;150;221m// orphan
+[0m         [38;2;58;150;221m// CODE XREF from sym.mm_rvc_sensor_prepare @ 0x1860(x)
+[0m         r6 = [[38;2;19;161;14m0x0000191c[0m]        [38;2;58;150;221m// [0x19d8:4]=0xa4e // "N\n"
+[0m         r0 = [38;2;19;161;14m2[0m
+         r5 = [[38;2;19;161;14m0x00001920[0m]        [38;2;58;150;221m// [0x19dc:4]=0x962 // "b\t"
+[0m         r1 = [38;2;19;161;14m6[0m
+         r2 = [[38;2;19;161;14m0x00001924[0m]        [38;2;58;150;221m// [0x19e0:4]=0x444
+[0m         r6 += pc                 [38;2;58;150;221m// 0x2374 // "mm_rvc_sensor.c" // str.mm_rvc_sensor.c
+[0m         r3 = [[38;2;19;161;14m0x00001928[0m]        [38;2;58;150;221m// [0x19e4:4]=0xc48
+[0m         r5 += pc                 [38;2;58;150;221m// 0x228c // "mm_rvc_sensor_create" // str.mm_rvc_sensor_create
+[0m         r2 += pc                 [38;2;58;150;221m// 0x1d70 // "MM_UNKNOWN" // r6
+[0m         r4 = [38;2;19;161;14m0xeb[0m                [38;2;58;150;221m// (pstr 0x00000600) "_load"
+[0m         r3 += pc                 [38;2;58;150;221m// 0x2578 // "%s: %s(%d) > mm_v4l2_start_capture\n" // str._s:__s__d____mm_v4l2_start_capture_n
+[0m         
+}
+
+[38;2;58;150;221m// callconv: r0 arm16 (r0, r1, r2, r3, stack);
+[0m[38;2;197;15;31mvoid[0m sym.mm_rvc_sensor_ini_load (int16_t arg_0h, int16_t arg_4h, int16_t arg_8h, int16_t arg_ch) {
+    loc_0x00000cb4:
+        r3 = [[38;2;19;161;14m0x00000cbc[0m] [38;2;58;150;221m// [0x1238:4]=0x9b8a
+[0m        r0 = [38;2;19;161;14m0[0m
+        push (r4, r5, r6, r7, r8, lr)
+        r3 += pc
+        sp -= [38;2;19;161;14m0x68[0m
+        r3 = (byte) [r3]
+        [38;2;136;23;152mif[0m (!r3) [38;2;136;23;152mgoto[0m [38;2;19;161;14m0xccc[0m [38;2;58;150;221m// unlikely
+[0m        [38;2;136;23;152mgoto[0m loc_0x00000cc6;
+    loc_0x00000ccc:
+        [38;2;58;150;221m// CODE XREF from sym.mm_rvc_sensor_ini_load @ 0xcc4(x)
+[0m        r4 = [[38;2;19;161;14m0x00000cd4[0m] [38;2;58;150;221m// [0x123c:4]=0x1078
+[0m        r0 = [38;2;19;161;14m3[0m        [38;2;58;150;221m// r1
+[0m        r2 = var_10h
+        r4 += pc      [38;2;58;150;221m// 0x1d50 // "/usr/etc/mmfw_rvc_sensor.ini" // str._usr_etc_mmfw_rvc_sensor.ini
+[0m        r1 = r4       [38;2;58;150;221m// "/usr/etc/mmfw_rvc_sensor.ini" str._usr_etc_mmfw_rvc_sensor.ini
+[0m        sym.imp.__xstat ()
+        (a, b) = compare (r0, [38;2;19;161;14m0[0m)
+        blt.w [38;2;19;161;14m0x11ec[0m  [38;2;58;150;221m// unlikely
+[0m        [38;2;136;23;152mgoto[0m loc_0x00000ce2;
+    loc_0x000011ec:
+        [38;2;58;150;221m// CODE XREF from sym.mm_rvc_sensor_ini_load @ 0xcde(x)
+[0m        r2 = [[38;2;19;161;14m0x000011f0[0m] [38;2;58;150;221m// [0x132c:4]=0xb76
+[0m        r0 = [38;2;19;161;14m2[0m
+        r3 = [[38;2;19;161;14m0x000011f4[0m] [38;2;58;150;221m// [0x1330:4]=0xb7e
+[0m        r1 = [38;2;19;161;14m5[0m        [38;2;58;150;221m// (pstr 0x00000101) "NU"
+[0m        r6 = [[38;2;19;161;14m0x000011f8[0m] [38;2;58;150;221m// [0x1334:4]=0xbb0
+[0m        r2 += pc      [38;2;58;150;221m// 0x1d70 // "MM_UNKNOWN" // r6
+[0m        r5 = [[38;2;19;161;14m0x000011fc[0m] [38;2;58;150;221m// [0x1338:4]=0xb0c
+[0m        r3 += pc      [38;2;58;150;221m// 0x1d7c // "%s: %s(%d) > failed to get rvc sensor ini status\n" // str._s:__s__d____failed_to_get_rvc_sensor_ini_status_n
+[0m        r6 += pc      [38;2;58;150;221m// 0x1db0 // "mm_rvc_s\x02" // r4
+[0m        r4 = [38;2;19;161;14m0xba[0m
+        r5 += pc      [38;2;58;150;221m// 0x1d10 // "__mm_rvc_sensor_ini_check_ini_status" // section..rodata
+[0m        [sp] = r6
+        [var_4h] = r5
+        [var_8h] = r4
+        loc.imp.__dlog_print ()
+        [38;2;136;23;152mgoto[0m [38;2;19;161;14m0xcea[0m
+        
+    loc_0x00000cea:
+        [38;2;58;150;221m// CODE XREFS from sym.mm_rvc_sensor_ini_load @ 0x11ea(x), 0x120c(x)
+[0m        r0 = [[38;2;19;161;14m0x00000cf0[0m] [38;2;58;150;221m// [0x1240:4]=0x105e
+[0m        r0 += pc      [38;2;58;150;221m// 0x1d50 // "/usr/etc/mmfw_rvc_sensor.ini" // str._usr_etc_mmfw_rvc_sensor.ini
+[0m        sym.imp.iniparser_load ()
+        r4 = r0       [38;2;58;150;221m// "/usr/etc/mmfw_rvc_sensor.ini" str._usr_etc_mmfw_rvc_sensor.ini
+[0m        (a, b) = compare (r0, [38;2;19;161;14m0[0m)
+        beq.w [38;2;19;161;14m0x120e[0m  [38;2;58;150;221m// unlikely
+[0m        [38;2;136;23;152mgoto[0m loc_0x00000cfc;
+        [38;2;136;23;152mgoto[0m loc_0x00000cea;
+        [38;2;136;23;152mreturn[0m r0;
+    loc_0x00000cea: [38;2;58;150;221m// orphan
+[0m         [38;2;58;150;221m// CODE XREFS from sym.mm_rvc_sensor_ini_load @ 0x11ea(x), 0x120c(x)
+[0m         r0 = [[38;2;19;161;14m0x00000cf0[0m]        [38;2;58;150;221m// [0x1240:4]=0x105e
+[0m         r0 += pc                 [38;2;58;150;221m// 0x1d50 // "/usr/etc/mmfw_rvc_sensor.ini" // str._usr_etc_mmfw_rvc_sensor.ini
+[0m         sym.imp.iniparser_load ()
+         r4 = r0                  [38;2;58;150;221m// "/usr/etc/mmfw_rvc_sensor.ini" str._usr_etc_mmfw_rvc_sensor.ini
+[0m         (a, b) = compare (r0, [38;2;19;161;14m0[0m)
+         beq.w [38;2;19;161;14m0x120e[0m             [38;2;58;150;221m// unlikely
+[0m
+         [38;2;136;23;152mgoto[0m loc_0x00000cfc
+    loc_0x00000cfc: [38;2;58;150;221m// orphan
+[0m         r5 = [[38;2;19;161;14m0x00000d04[0m]        [38;2;58;150;221m// [0x1244:4]=0x9b42 // DATA XREFS from sym.mm_rvc_sensor_set_capture_resolution @ 0x160c(r), 0x1668(r)
+[0m         r1 = [38;2;19;161;14m0[0m                   [38;2;58;150;221m// int c
+[0m         mov.w r2, [38;2;19;161;14m0x168[0m          [38;2;58;150;221m// size_t n
+[0m         r5 += pc [38;2;58;150;221m// DATA XREF from sym.mm_rvc_sensor_prepare @ 0x17e0(r)
+[0m         r5 += [38;2;19;161;14m4[0m                  [38;2;58;150;221m// 0xa850 // r8 // DATA XREF from sym.mm_rvc_sensor_prepare @ 0x17d4(r)
+[0m         r0 = r5                  [38;2;58;150;221m// void *s // r8
+[0m         sym.imp.memset () [38;2;58;150;221m// void *memset(0x0000, 0, 0x0015)
+[0m         r1 = [[38;2;19;161;14m0x00000d18[0m]        [38;2;58;150;221m// [0x1248:4]=0x1112
+[0m         r2 = [[38;2;19;161;14m0x00000d1c[0m]        [38;2;58;150;221m// [0x124c:4]=0x1124 // DATA XREF from sym.mm_rvc_sensor_destroy @ 0x1566(r) // DATA XREF from sym.mm_rvc_sensor_set_capture_resolution @ 0x1632(r)
+[0m         r0 = r4
+         r1 += pc                 [38;2;58;150;221m// 0x1e30 // "ceiling:device node" // str.ceiling:device_node
+[0m         r2 += pc                 [38;2;58;150;221m// 0x1e44 // "/dev/video0" // str._dev_video0
+[0m         sym.imp.iniparser_getstring ()
+         r6 = r0                  [38;2;58;150;221m// r4 // DATA XREF from sym.mm_rvc_sensor_prepare @ 0x186a(r)
+[0m         [38;2;136;23;152mif[0m (!r0) 
+         [38;2;136;23;152mgoto[0m loc_0x00000d26
+    loc_0x00000d26: [38;2;58;150;221m// orphan
+[0m         sym.imp.strlen () [38;2;58;150;221m// size_t strlen(0)
+[0m         (a, b) = compare (r0, [38;2;19;161;14m1[0m)
+         bls [38;2;19;161;14m0xd34[0m                [38;2;58;150;221m// likely
+[0m
+    loc_0x00000d2e: [38;2;58;150;221m// orphan
+[0m         (a, b) = compare (r0, [38;2;19;161;14m0x4f[0m)
+         bls.w [38;2;19;161;14m0x11b2[0m             [38;2;58;150;221m// likely
+[0m
+         [38;2;136;23;152mgoto[0m loc_0x00000d34
+    loc_0x00000d34: [38;2;58;150;221m// orphan
+[0m         [38;2;58;150;221m// CODE XREFS from sym.mm_rvc_sensor_ini_load @ 0xd24(x), 0xd2c(x)
+[0m         r2 = [[38;2;19;161;14m0x00000d3c[0m]        [38;2;58;150;221m// [0x1250:4]=0x1104
+[0m         r3 = [[38;2;19;161;14m0x00000d40[0m]        [38;2;58;150;221m// [0x1254:4]=0x9b0a
+[0m         r2 += pc                 [38;2;58;150;221m// 0x1e44 // "/dev/video0" // str._dev_video0
+[0m         r3 += pc [38;2;58;150;221m// DATA XREF from sym.mm_rvc_sensor_prepare @ 0x17c8(r)
+[0m         ldm r2, (r0, r1, r2)     [38;2;58;150;221m// 0x1e44 // "/dev/video0"
+[0m         r3 += [38;2;19;161;14m4[0m                  [38;2;58;150;221m// 0xa850 // r8
+[0m
+         [38;2;136;23;152mgoto[0m loc_0x000011b2
+    loc_0x000011b2: [38;2;58;150;221m// orphan
+[0m         [38;2;58;150;221m// CODE XREF from sym.mm_rvc_sensor_ini_load @ 0xd30(x)
+[0m         r0 = r5
+         r1 = r6                  [38;2;58;150;221m// "MM_UNKNOWN"
+[0m         r2 = [38;2;19;161;14m0x50[0m                [38;2;58;150;221m// 'P'
+[0m         sym.imp.__strcpy_chk ()
+         
+         [38;2;136;23;152mgoto[0m loc_0x000011be
+    loc_0x000011be: [38;2;58;150;221m// orphan
+[0m         [38;2;58;150;221m// CODE XREF from sym.mm_rvc_sensor_ini_load @ 0xce6(x)
+[0m         r2 = [[38;2;19;161;14m0x000011c0[0m]        [38;2;58;150;221m// [0x131c:4]=0xba2
+[0m         r0 = [38;2;19;161;14m2[0m
+         r3 = [[38;2;19;161;14m0x000011c4[0m]        [38;2;58;150;221m// [0x1320:4]=0xbf2
+[0m         r1 = [38;2;19;161;14m5[0m                   [38;2;58;150;221m// (pstr 0x00000101) "NU"
+[0m         lr = sym.imp.iniparser_getstring [38;2;58;150;221m// [0xbdc:4]=0xe28fc600
+[0m         r2 += pc                 [38;2;58;150;221m// 0x1d70 // "MM_UNKNOWN" // r6
+[0m         r7 = [[38;2;19;161;14m0x000011d0[0m]        [38;2;58;150;221m// [0x1328:4]=0xb38
+[0m         r3 += pc                 [38;2;58;150;221m// 0x1dc4 // "%s: %s(%d) > mmfw_rvc_sensor.ini file size=%d, Corrupted! So, Removed\n" // str._s:__s__d____mmfw_rvc_sensor.ini_file_size_d__Corrupted__So__Removed_n
+[0m         lr += pc                 [38;2;58;150;221m// 0x1db0 // "mm_rvc_s\x02" // r4
+[0m         r6 = [38;2;19;161;14m0xc0[0m
+         r7 += pc                 [38;2;58;150;221m// 0x1d10 // "__mm_rvc_sensor_ini_check_ini_status" // section..rodata
+[0m         [var_ch] = r5
+         str.w lr, [sp]
+         [var_4h] = r7
+         [var_8h] = r6
+         loc.imp.__dlog_print ()
+         r0 = r4                  [38;2;58;150;221m// const char *filename
+[0m         sym.imp.remove () [38;2;58;150;221m// int remove("mm_rvc_s\x02")
+[0m         
+    loc_0x0000120e: [38;2;58;150;221m// orphan
+[0m         [38;2;58;150;221m// CODE XREF from sym.mm_rvc_sensor_ini_load @ 0xcf8(x)
+[0m         r5 = [[38;2;19;161;14m0x00001210[0m]        [38;2;58;150;221m// [0x133c:4]=0xaf4 // "\u041c"
+[0m         r0 = [38;2;19;161;14m2[0m
+         r2 = [[38;2;19;161;14m0x00001214[0m]        [38;2;58;150;221m// [0x1340:4]=0xb50
+[0m         r1 = [38;2;19;161;14m3[0m
+         r3 = [[38;2;19;161;14m0x00001218[0m]        [38;2;58;150;221m// [0x1344:4]=0xbea
+[0m         r5 += pc                 [38;2;58;150;221m// 0x1d10 // "__mm_rvc_sensor_ini_check_ini_status" // section..rodata
+[0m         r6 = [[38;2;19;161;14m0x0000121c[0m]        [38;2;58;150;221m// [0x1348:4]=0xb8a
+[0m         r2 += pc                 [38;2;58;150;221m// 0x1d70 // "MM_UNKNOWN" // r6
+[0m         r3 += pc                 [38;2;58;150;221m// 0x1e0c // "%s: %s(%d) > No inifile found. \n" // str._s:__s__d____No_inifile_found.__n
+[0m         r4 = [38;2;19;161;14m0x4c[0m                [38;2;58;150;221m// 'L'
+[0m         r6 += pc                 [38;2;58;150;221m// 0x1db0 // "mm_rvc_s\x02" // r4
+[0m         r5 += [38;2;19;161;14m0x28[0m               [38;2;58;150;221m// 0x1d38 // "mm_rvc_sensor_ini_load" // str.mm_rvc_sensor_ini_load
+[0m         [sp] = r6
+         [var_4h] = r5
+         [var_8h] = r4
+         loc.imp.__dlog_print ()
+         r0 = [38;2;19;161;14m5[0m                   [38;2;58;150;221m// (pstr 0x00000101) "NU"
+[0m         r0 |= [38;2;19;161;14m0x8000[0m << [38;2;19;161;14m16[0m
+         
+}
+
+[38;2;58;150;221m// callconv: r0 arm16 (r0, r1, r2, r3, stack);
+[0m[38;2;197;15;31mint[0m sym.mm_rvc_sensor_ini_get_structure ([38;2;197;15;31mint[0m r0, [38;2;197;15;31mint[0m r1) {
+    loc_0x0000134c:
+        r0 = [[38;2;19;161;14m0x00001350[0m] [38;2;58;150;221m// [0x1354:4]=0x94fa
+[0m        r0 += pc
+        r0 += [38;2;19;161;14m4[0m       [38;2;58;150;221m// 0xa850 // r8
+[0m        bx lr
+        [38;2;136;23;152mreturn[0m r0;
+}
+
+[38;2;58;150;221m// callconv: r0 arm16 (r0, r1, r2, r3, stack);
+[0m[38;2;197;15;31mvoid[0m sym.mm_rvc_sensor_create (uint32_t arg1, uint32_t arg2) {
+    loc_0x00001358:
+        push (r4, r5, r6, r7, r8, lr)
+        r6 = r1       [38;2;58;150;221m// arg2
+[0m        sp -= [38;2;19;161;14m0x10[0m
+        r5 = r0       [38;2;58;150;221m// arg1
+[0m        (a, b) = compare (r0, [38;2;19;161;14m0[0m) [38;2;58;150;221m// arg1
+[0m        je [38;2;19;161;14m0x145a[0m     [38;2;58;150;221m// likely
+[0m        [38;2;136;23;152mgoto[0m loc_0x00001366;
+    loc_0x0000145a:
+        [38;2;58;150;221m// CODE XREF from sym.mm_rvc_sensor_create @ 0x1364(x)
+[0m        r2 = [[38;2;19;161;14m0x0000145c[0m] [38;2;58;150;221m// [0x14cc:4]=0x908 "d" // "d"
+[0m        r0 = [38;2;19;161;14m2[0m
+        r3 = [[38;2;19;161;14m0x00001460[0m] [38;2;58;150;221m// [0x14d0:4]=0xeec
+[0m        r1 = [38;2;19;161;14m5[0m        [38;2;58;150;221m// (pstr 0x00000101) "NU"
+[0m        r7 = [[38;2;19;161;14m0x00001464[0m] [38;2;58;150;221m// [0x14d4:4]=0xf04
+[0m        r2 += pc      [38;2;58;150;221m// 0x1d70 // "MM_UNKNOWN" // r6
+[0m        r6 = [[38;2;19;161;14m0x00001468[0m] [38;2;58;150;221m// [0x14d8:4]=0xe1a
+[0m        r3 += pc      [38;2;58;150;221m// 0x2358 // "%s: %s(%d) > failed [%s]\n" // str._s:__s__d____failed___s__n
+[0m        r5 = [[38;2;19;161;14m0x0000146c[0m] [38;2;58;150;221m// [0x14dc:4]=0xf0e
+[0m        r7 += pc      [38;2;58;150;221m// 0x2374 // "mm_rvc_sensor.c" // str.mm_rvc_sensor.c
+[0m        r6 += pc      [38;2;58;150;221m// 0x228c // "mm_rvc_sensor_create" // str.mm_rvc_sensor_create
+[0m        r4 = [38;2;19;161;14m0x2d[0m     [38;2;58;150;221m// '-'
+[0m        r5 += pc      [38;2;58;150;221m// 0x2384 // "sensor" // str.sensor
+[0m        [sp] = r7
+        [var_4h] = r6
+        [var_ch] = r5
+        [var_8h] = r4
+        loc.imp.__dlog_print ()
+        r0 = [38;2;19;161;14m0x200a[0m   [38;2;58;150;221m// '\n ' // "evice node : %s"
+[0m        r0 |= [38;2;19;161;14m0x8000[0m << [38;2;19;161;14m16[0m
+        [38;2;136;23;152mgoto[0m [38;2;19;161;14m0x13d0[0m
+        
+    loc_0x000013d0:
+        [38;2;58;150;221m// CODE XREFS from sym.mm_rvc_sensor_create @ 0x1372(x), 0x13fe(x), 0x142e(x), 0x1458(x), 0x1488(x)
+[0m        sp += [38;2;19;161;14m0x10[0m
+        pop (r4, r5, r6, r7, r8, pc) [38;2;58;150;221m// str.pixel_format
+[0m        [38;2;136;23;152mgoto[0m loc_0x00001374;
+        [38;2;136;23;152mreturn[0m r0;
+    loc_0x00001374:
+        rsym.mm_rvc_sensor_ini_load ()
+        r7 = r0
+        (a, b) = compare (r0, [38;2;19;161;14m0[0m)
+        bne [38;2;19;161;14m0x13d6[0m    [38;2;58;150;221m// unlikely
+[0m        [38;2;136;23;152mgoto[0m loc_0x0000137e;
+    loc_0x000013d6:
+        [38;2;58;150;221m// CODE XREF from sym.mm_rvc_sensor_create @ 0x137c(x)
+[0m        r2 = [[38;2;19;161;14m0x000013d8[0m] [38;2;58;150;221m// [0x149c:4]=0x98c
+[0m        r0 = [38;2;19;161;14m2[0m
+        r3 = [[38;2;19;161;14m0x000013dc[0m] [38;2;58;150;221m// [0x14a0:4]=0xfa4
+[0m        r1 = [38;2;19;161;14m6[0m
+        r6 = [[38;2;19;161;14m0x000013e0[0m] [38;2;58;150;221m// [0x14a4:4]=0xf8a
+[0m        r2 += pc      [38;2;58;150;221m// 0x1d70 // "MM_UNKNOWN" // r6
+[0m        r5 = [[38;2;19;161;14m0x000013e4[0m] [38;2;58;150;221m// [0x14a8:4]=0xe9e
+[0m        r3 += pc      [38;2;58;150;221m// 0x238c // "%s: %s(%d) > mm_rvc_sensor_ini_load\n" // str._s:__s__d____mm_rvc_sensor_ini_load_n
+[0m        r6 += pc      [38;2;58;150;221m// 0x2374 // "mm_rvc_sensor.c" // str.mm_rvc_sensor.c
+[0m        r4 = [38;2;19;161;14m0x37[0m     [38;2;58;150;221m// '7' // "pd&"
+[0m        r5 += pc      [38;2;58;150;221m// 0x228c // "mm_rvc_sensor_create" // str.mm_rvc_sensor_create
+[0m        [sp] = r6
+        [var_4h] = r5
+        [var_8h] = r4
+        loc.imp.__dlog_print ()
+        r0 = [38;2;19;161;14m0x2004[0m   [38;2;58;150;221m// "ling:device node : %s"
+[0m        r0 |= [38;2;19;161;14m0x8000[0m << [38;2;19;161;14m16[0m
+        [38;2;136;23;152mgoto[0m [38;2;19;161;14m0x13d0[0m
+    loc_0x0000137e: [38;2;58;150;221m// orphan
+[0m         r0 = [38;2;19;161;14m0x14[0m
+         sym.imp.g_malloc ()
+         r4 = r0
+         (a, b) = compare (r0, [38;2;19;161;14m0[0m)
+         je [38;2;19;161;14m0x1430[0m                [38;2;58;150;221m// unlikely
+[0m
+         [38;2;136;23;152mgoto[0m loc_0x0000138a
+    loc_0x0000138a: [38;2;58;150;221m// orphan
+[0m         r1 = r7                  [38;2;58;150;221m// int c // (pstr 0x00000600) "_load"
+[0m         r2 = [38;2;19;161;14m0x14[0m                [38;2;58;150;221m// size_t n
+[0m         sym.imp.memset () [38;2;58;150;221m// void *memset(0, 0x00000600, 0x0001)
+[0m         r0 = r4
+         loc.imp.mm_v4l2_create ()
+         r7 = r0                  [38;2;58;150;221m// r4
+[0m         (a, b) = compare (r0, [38;2;19;161;14m0[0m)
+         bne [38;2;19;161;14m0x1400[0m               [38;2;58;150;221m// likely
+[0m
+         [38;2;136;23;152mgoto[0m loc_0x0000139e
+    loc_0x0000139e: [38;2;58;150;221m// orphan
+[0m         r2 = [[38;2;19;161;14m0x000013a0[0m]        [38;2;58;150;221m// [0x148c:4]=0x9c2
+[0m         r0 = [38;2;19;161;14m2[0m
+         r3 = [[38;2;19;161;14m0x000013a4[0m]        [38;2;58;150;221m// [0x1490:4]=0x1050
+[0m         r1 = [38;2;19;161;14m4[0m
+         ip = [[38;2;19;161;14m0x000013ac[0m]        [38;2;58;150;221m// [0x1494:4]=0xfbe
+[0m         r2 += pc                 [38;2;58;150;221m// 0x1d70 // "MM_UNKNOWN" // r6
+[0m         lr = [[38;2;19;161;14m0x000013b4[0m]        [38;2;58;150;221m// [0x1498:4]=0xed0
+[0m         r3 += pc                 [38;2;58;150;221m// 0x2404 // "%s: %s(%d) > mm_v4l2_create ... OK\n" // str._s:__s__d____mm_v4l2_create_..._OK_n
+[0m         ip += pc                 [38;2;58;150;221m// 0x2374 // "mm_rvc_sensor.c" // str.mm_rvc_sensor.c
+[0m         mov.w r8, [38;2;19;161;14m0x4c[0m           [38;2;58;150;221m// 'L'
+[0m         lr += pc                 [38;2;58;150;221m// 0x228c // "mm_rvc_sensor_create" // str.mm_rvc_sensor_create
+[0m         str.w r8, [sp, [38;2;19;161;14m8[0m]
+         stm.w sp, (ip, lr)
+         loc.imp.__dlog_print ()
+         r0 = r7                  [38;2;58;150;221m// (pstr 0x00000600) "_load"
+[0m         [r4 + [38;2;19;161;14m4[0m] = r6
+         r3 = [38;2;19;161;14m1[0m
+         [r4 + [38;2;19;161;14m8[0m] = r3
+         [r5] = r4
+
+    loc_0x000013d0: [38;2;58;150;221m// orphan
+[0m         [38;2;58;150;221m// CODE XREFS from sym.mm_rvc_sensor_create @ 0x1372(x), 0x13fe(x), 0x142e(x), 0x1458(x), 0x1488(x)
+[0m         sp += [38;2;19;161;14m0x10[0m
+         pop (r4, r5, r6, r7, r8, pc) [38;2;58;150;221m// str.pixel_format
+[0m
+        [38;2;136;23;152mreturn[0m r0;
+    loc_0x00001400: [38;2;58;150;221m// orphan
+[0m         [38;2;58;150;221m// CODE XREF from sym.mm_rvc_sensor_create @ 0x139c(x)
+[0m         r2 = [[38;2;19;161;14m0x00001404[0m]        [38;2;58;150;221m// [0x14ac:4]=0x962 // "b\t"
+[0m         r1 = [38;2;19;161;14m6[0m
+         r3 = [[38;2;19;161;14m0x00001408[0m]        [38;2;58;150;221m// [0x14b0:4]=0xfd2
+[0m         r0 = [38;2;19;161;14m2[0m
+         r7 = [[38;2;19;161;14m0x0000140c[0m]        [38;2;58;150;221m// [0x14b4:4]=0xf60 // "`\x0f"
+[0m         r2 += pc                 [38;2;58;150;221m// 0x1d70 // "MM_UNKNOWN" // r6
+[0m         r6 = [[38;2;19;161;14m0x00001410[0m]        [38;2;58;150;221m// [0x14b8:4]=0xe74 // "t\x0e"
+[0m         r3 += pc                 [38;2;58;150;221m// 0x23e4 // "%s: %s(%d) > mm_v4l2_create\n" // str._s:__s__d____mm_v4l2_create_n
+[0m         r7 += pc                 [38;2;58;150;221m// 0x2374 // "mm_rvc_sensor.c" // str.mm_rvc_sensor.c
+[0m         r5 = [38;2;19;161;14m0x49[0m                [38;2;58;150;221m// 'I'
+[0m         r6 += pc                 [38;2;58;150;221m// 0x228c // "mm_rvc_sensor_create" // str.mm_rvc_sensor_create
+[0m         [sp] = r7
+         [var_4h] = r6
+         [var_8h] = r5
+         loc.imp.__dlog_print ()
+         r0 = r4
+         sym.imp.g_free ()
+         r0 = [38;2;19;161;14m0x2004[0m              [38;2;58;150;221m// "ling:device node : %s"
+[0m         r0 |= [38;2;19;161;14m0x8000[0m << [38;2;19;161;14m16[0m
+         
+         [38;2;136;23;152mgoto[0m loc_0x00001430
+    loc_0x00001430: [38;2;58;150;221m// orphan
+[0m         [38;2;58;150;221m// CODE XREF from sym.mm_rvc_sensor_create @ 0x1388(x)
+[0m         r2 = [[38;2;19;161;14m0x00001434[0m]        [38;2;58;150;221m// [0x932:4]=0 // section..gnu.version
+[0m                                  [[38;2;19;161;14m05[0m] -r-- section size [38;2;19;161;14m102[0m named .gnu.version
+         r0 = [38;2;19;161;14m2[0m
+         r3 = [[38;2;19;161;14m0x00001438[0m]        [38;2;58;150;221m// [0x14c0:4]=0xf72
+[0m         r1 = [38;2;19;161;14m7[0m
+         r6 = [[38;2;19;161;14m0x0000143c[0m]        [38;2;58;150;221m// [0x14c4:4]=0xf30
+[0m         r2 += pc                 [38;2;58;150;221m// 0x1d70 // "MM_UNKNOWN" // r6
+[0m         r5 = [[38;2;19;161;14m0x00001440[0m]        [38;2;58;150;221m// [0x14c8:4]=0xe44
+[0m         r3 += pc                 [38;2;58;150;221m// 0x23b4 // "%s: %s(%d) > Cannot allocate memory for v4l2\n" // str._s:__s__d____Cannot_allocate_memory_for_v4l2_n
+[0m         r6 += pc                 [38;2;58;150;221m// 0x2374 // "mm_rvc_sensor.c" // str.mm_rvc_sensor.c
+[0m         r4 = [38;2;19;161;14m0x3f[0m                [38;2;58;150;221m// '?'
+[0m         r5 += pc                 [38;2;58;150;221m// 0x228c // "mm_rvc_sensor_create" // str.mm_rvc_sensor_create
+[0m         [sp] = r6
+         [var_4h] = r5
+         [var_8h] = r4
+         loc.imp.__dlog_print ()
+         r0 = [38;2;19;161;14m0x2002[0m              [38;2;58;150;221m// "eiling:device node : %s"
+[0m         r0 |= [38;2;19;161;14m0x8000[0m << [38;2;19;161;14m16[0m
+         
+}
+
+[38;2;58;150;221m// callconv: r0 arm32 (r0, r1, r2, stack);
+[0m[38;2;197;15;31mint[0m rsym.mm_rvc_sensor_ini_load ([38;2;197;15;31mint[0m r0, [38;2;197;15;31mint[0m r1) {
+    loc_0x00000bac:
+        [38;2;58;150;221m// CALL XREF from sym.mm_rvc_sensor_create @ 0x1374(x)
+[0m        add ip, pc, [38;2;19;161;14m0[0m, [38;2;19;161;14m12[0m
+        [38;2;58;150;221m// DATA XREF from sym.mm_rvc_sensor_ini_load @ 0x11f4(r)
+[0m        ip += [38;2;19;161;14m0x9000[0m
+        [38;2;58;150;221m// DATA XREF from rsym.mm_rvc_sensor_ini_load @ 0xbac(r)
+[0m        [38;2;58;150;221m// DATA XREF from sym.mm_rvc_sensor_prepare @ 0x190c(r)
+[0m        pc = [ip + [38;2;19;161;14m0xc58[0m]! [38;2;58;150;221m// 0xa80c // reloc.mm_rvc_sensor_ini_load // fcn.00000ae4
+[0m        [38;2;136;23;152mreturn[0m r0;
+}
+
+[38;2;58;150;221m// callconv: r0 arm32 (r0, r1);
+[0m[38;2;197;15;31mint[0m loc.imp.mm_v4l2_create ([38;2;197;15;31mint[0m r0, [38;2;197;15;31mint[0m r1) {
+    loc_0x00000c00:
+        [38;2;58;150;221m// CALL XREF from sym.mm_rvc_sensor_create @ 0x1394(x)
+[0m        add ip, pc, [38;2;19;161;14m0[0m, [38;2;19;161;14m12[0m
+        ip += [38;2;19;161;14m0x9000[0m
+        [38;2;58;150;221m// DATA XREF from loc.imp.mm_v4l2_create @ 0xc00(r)
+[0m        pc = [ip + [38;2;19;161;14m0xc20[0m]! [38;2;58;150;221m// 0xa828 // reloc.mm_v4l2_create // fcn.00000ae4
+[0m        [38;2;136;23;152mreturn[0m r0;
+}
+
+[38;2;58;150;221m// callconv: r0 arm16 (r0, r1, r2, r3, r4, stack);
+[0m[38;2;197;15;31mint[0m sym.mm_rvc_sensor_on ([38;2;197;15;31mint[0m r0, [38;2;197;15;31mint[0m r1) {
+    loc_0x00001cfc:
+        r0 = [38;2;19;161;14m0[0m
+        bx lr
+        [38;2;136;23;152mreturn[0m r0;
+}
+
+[38;2;58;150;221m// callconv: r0 arm16 (r0, r1, r2, r3, stack);
+[0m[38;2;197;15;31mvoid[0m sym.mm_rvc_sensor_get_capture_resolution (int16_t arg1, int16_t arg2, int16_t arg3) {
+    loc_0x000016b4:
+        push (r4, r5, r6, r7, lr)
+        r6 = r1       [38;2;58;150;221m// arg2
+[0m        r4 = [r0 + [38;2;19;161;14m8[0m] [38;2;58;150;221m// arg1
+[0m        sp -= [38;2;19;161;14m0x1c[0m
+        r5 = r2       [38;2;58;150;221m// arg3 // "MM_UNKNOWN" r6
+[0m        (a, b) = compare (r4, [38;2;19;161;14m2[0m)
+        bne [38;2;19;161;14m0x16da[0m    [38;2;58;150;221m// likely
+[0m        [38;2;136;23;152mgoto[0m loc_0x000016c2;
+    loc_0x000016da:
+        [38;2;58;150;221m// CODE XREF from sym.mm_rvc_sensor_get_capture_resolution @ 0x16c0(x)
+[0m        r6 = [[38;2;19;161;14m0x000016dc[0m] [38;2;58;150;221m// [0x1738:4]=0xba4
+[0m        r0 = [38;2;19;161;14m2[0m
+        r2 = [[38;2;19;161;14m0x000016e0[0m] [38;2;58;150;221m// [0x173c:4]=0x684
+[0m        r1 = [38;2;19;161;14m5[0m        [38;2;58;150;221m// (pstr 0x00000101) "NU"
+[0m        r3 = [[38;2;19;161;14m0x000016e4[0m] [38;2;58;150;221m// [0x1740:4]=0xc68
+[0m        r6 += pc      [38;2;58;150;221m// 0x228c // "mm_rvc_sensor_create" // str.mm_rvc_sensor_create
+[0m        r7 = [[38;2;19;161;14m0x000016e8[0m] [38;2;58;150;221m// [0x1744:4]=0xc82
+[0m        r2 += pc      [38;2;58;150;221m// 0x1d70 // "MM_UNKNOWN" // r6
+[0m        r5 = [[38;2;19;161;14m0x000016ec[0m] [38;2;58;150;221m// [0x1748:4]=0xda6
+[0m        r3 += pc      [38;2;58;150;221m// 0x2358 // "%s: %s(%d) > failed [%s]\n" // str._s:__s__d____failed___s__n
+[0m        r7 += pc      [38;2;58;150;221m// 0x2374 // "mm_rvc_sensor.c" // str.mm_rvc_sensor.c
+[0m        r4 = [38;2;19;161;14m0x9c[0m
+        r5 += pc      [38;2;58;150;221m// 0x249c // "(cam->state == MM_RVC_SENSOR_STATE_PREPARED)" // str._cam__state__MM_RVC_SENSOR_STATE_PREPARED_
+[0m        r6 += [38;2;19;161;14m0x58[0m    [38;2;58;150;221m// 0x22e4 // "mm_rvc_sensor_get_capture_resolution" // str.mm_rvc_sensor_get_capture_resolution
+[0m        [sp] = r7
+        [var_4h] = r6
+        [var_ch] = r5
+        [var_8h] = r4
+        loc.imp.__dlog_print ()
+        r0 = [38;2;19;161;14m0x2005[0m   [38;2;58;150;221m// "ing:device node : %s"
+[0m        r0 |= [38;2;19;161;14m0x8000[0m << [38;2;19;161;14m16[0m
+        [38;2;136;23;152mgoto[0m [38;2;19;161;14m0x16d6[0m
+        
+    loc_0x000016d6:
+        [38;2;58;150;221m// CODE XREFS from sym.mm_rvc_sensor_get_capture_resolution @ 0x170a(x), 0x1736(x)
+[0m        sp += [38;2;19;161;14m0x1c[0m    [38;2;58;150;221m// (pstr 0x00001e84) "width"
+[0m        pop (r4, r5, r6, r7, pc) [38;2;58;150;221m// str.set_format
+[0m        [38;2;136;23;152mgoto[0m loc_0x000016ce;
+        [38;2;136;23;152mreturn[0m r0;
+    loc_0x000016ce:
+        r2 = [var_10h]
+        r3 = [var_14h] [38;2;58;150;221m// "pixel_format" str.pixel_format
+[0m        [r6] = r2
+        [r5] = r3     [38;2;58;150;221m// 0x1d70 // r6
+[0m    loc_0x000016d6: [38;2;58;150;221m// orphan
+[0m         [38;2;58;150;221m// CODE XREFS from sym.mm_rvc_sensor_get_capture_resolution @ 0x170a(x), 0x1736(x)
+[0m         sp += [38;2;19;161;14m0x1c[0m               [38;2;58;150;221m// (pstr 0x00001e84) "width"
+[0m         pop (r4, r5, r6, r7, pc) [38;2;58;150;221m// str.set_format
+[0m
+        [38;2;136;23;152mreturn[0m r0;
+    loc_0x0000170c: [38;2;58;150;221m// orphan
+[0m         [38;2;58;150;221m// CODE XREF from sym.mm_rvc_sensor_get_capture_resolution @ 0x16cc(x)
+[0m         r5 = [[38;2;19;161;14m0x00001710[0m]        [38;2;58;150;221m// [0x174c:4]=0xb72
+[0m         r0 = r4
+         r2 = [[38;2;19;161;14m0x00001714[0m]        [38;2;58;150;221m// [0x1750:4]=0x652 "iparser_getboolean" // "iparser_getboolean"
+[0m         r1 = [38;2;19;161;14m6[0m
+         r3 = [[38;2;19;161;14m0x00001718[0m]        [38;2;58;150;221m// [0x1754:4]=0xdac
+[0m         r5 += pc                 [38;2;58;150;221m// 0x228c // "mm_rvc_sensor_create" // str.mm_rvc_sensor_create
+[0m         r6 = [[38;2;19;161;14m0x0000171c[0m]        [38;2;58;150;221m// [0x1758:4]=0xc50
+[0m         r2 += pc                 [38;2;58;150;221m// 0x1d70 // r6
+[0m         r3 += pc                 [38;2;58;150;221m// 0x24cc // "%s: %s(%d) > mm_v4l2_realize\n" // str._s:__s__d____mm_v4l2_realize_n
+[0m         r4 = [38;2;19;161;14m0xa0[0m
+         r6 += pc                 [38;2;58;150;221m// 0x2374 // "mm_rvc_sensor.c" // str.mm_rvc_sensor.c
+[0m         r5 += [38;2;19;161;14m0x58[0m               [38;2;58;150;221m// 0x22e4 // "mm_rvc_sensor_get_capture_resolution" // str.mm_rvc_sensor_get_capture_resolution
+[0m         [sp] = r6
+         [var_4h] = r5
+         [var_8h] = r4
+         loc.imp.__dlog_print ()
+         r0 = [38;2;19;161;14m0x2004[0m              [38;2;58;150;221m// "ling:device node : %s"
+[0m         r0 |= [38;2;19;161;14m0x8000[0m << [38;2;19;161;14m16[0m
+         
+}
+
+[38;2;58;150;221m// callconv: r0 arm32 (r0, r1, r2, stack);
+[0m[38;2;197;15;31mint[0m loc.imp.mm_v4l2_get_format ([38;2;197;15;31mint[0m r0, [38;2;197;15;31mint[0m r1) {
+    loc_0x00000af8:
+        [38;2;58;150;221m// CALL XREF from sym.mm_rvc_sensor_get_capture_resolution @ 0x16c8(x)
+[0m        [38;2;58;150;221m// DATA XREF from sym.mm_rvc_sensor_prepare @ 0x186e(x)
+[0m        add ip, pc, [38;2;19;161;14m0[0m, [38;2;19;161;14m12[0m
+        ip += [38;2;19;161;14m0x9000[0m
+        [38;2;58;150;221m// DATA XREF from loc.imp.mm_v4l2_get_format @ 0xaf8(r)
+[0m        pc = [ip + [38;2;19;161;14m0xcd0[0m]! [38;2;58;150;221m// 0xa7d0 // reloc.mm_v4l2_get_format // fcn.00000ae4
+[0m        [38;2;136;23;152mreturn[0m r0;
+}
+
+[38;2;58;150;221m// callconv: r0 arm32 (r0, r1);
+[0m[38;2;197;15;31mint[0m sym._init ([38;2;197;15;31mint[0m r0, [38;2;197;15;31mint[0m r1) {
+    loc_0x00000ad8:
+        push (r3, lr) [38;2;58;150;221m// [09] -r-x section size 12 named .init
+[0m        [38;2;58;150;221m// DATA XREF from sym.mm_rvc_sensor_prepare @ 0x1940(r)
+[0m        entry0 ()     [38;2;58;150;221m// section..text
+[0m        pop (r3, pc)  [38;2;58;150;221m// r14 // r13
+[0m        [38;2;136;23;152mreturn[0m r0;
+}
+
+[38;2;58;150;221m// callconv: r0 arm16 (r0, r1, r2, r3, r4, stack);
+[0m[38;2;197;15;31mint[0m entry.init0 ([38;2;197;15;31mint[0m r0, [38;2;197;15;31mint[0m r1) {
+    loc_0x00000c90:
+        r0 = [[38;2;19;161;14m0x00000c94[0m] [38;2;58;150;221m// [0xca8:4]=0x9a28
+[0m        push (r3, lr)
+        r0 += pc      [38;2;58;150;221m// 0xa6c0 // section..jcr
+[0m        [[38;2;19;161;14m18[0m] -rw- section size [38;2;19;161;14m4[0m named .jcr
+        r3 = [[38;2;19;161;14m0x00000c98[0m] [38;2;58;150;221m// [0xcac:4]=0x9b26
+[0m        r2 = [r0]     [38;2;58;150;221m// 0xa6c0 // section..jcr
+[0m        [[38;2;19;161;14m18[0m] -rw- section size [38;2;19;161;14m4[0m named .jcr
+        r3 += pc      [38;2;58;150;221m// 0xa7c4 // section..got
+[0m        [[38;2;19;161;14m20[0m] -rw- section size [38;2;19;161;14m128[0m named .got
+        [38;2;136;23;152mif[0m (!r2) [38;2;136;23;152mgoto[0m [38;2;19;161;14m0xca6[0m [38;2;58;150;221m// likely
+[0m        [38;2;136;23;152mgoto[0m loc_0x00000c9e;
+    loc_0x00000ca6:
+        [38;2;58;150;221m// CODE XREFS from entry.init0 @ 0xc9c(x), 0xca2(x)
+[0m        pop (r3, pc)  [38;2;58;150;221m// str.mm_rvc_sensor.c // str.mm_rvc_sensor_get_capture_resolution
+[0m        [38;2;136;23;152mgoto[0m loc_0x00000ca4;
+        [38;2;136;23;152mreturn[0m r0;
+    loc_0x00000ca4:
+        r3 ()         [38;2;58;150;221m// 0x2247(0x0, 0x3, 0x1d70, 0x2248)
+[0m}
+
+[38;2;58;150;221m// callconv: r0 arm16 (r0, r1, r2, r3, stack);
+[0m[38;2;197;15;31mint[0m entry.fini0 ([38;2;197;15;31mint[0m r0, [38;2;197;15;31mint[0m r1) {
+    loc_0x00000c54:
+        [38;2;58;150;221m// DATA XREF from sym.mm_rvc_sensor_set_capture_resolution @ 0x162a(r)
+[0m        r2 = [[38;2;19;161;14m0x00000c58[0m] [38;2;58;150;221m// [0xc7c:4]=0x9bec
+[0m        push (r3, lr)
+        r2 += pc      [38;2;58;150;221m// 0xa848 // loc.__bss_start
+[0m        [[38;2;19;161;14m22[0m] -rw- section size [38;2;19;161;14m368[0m named .bss
+        r3 = [[38;2;19;161;14m0x00000c5c[0m] [38;2;58;150;221m// [0xc80:4]=0x9b62
+[0m        r2 = (byte) [r2] [38;2;58;150;221m// 0xa848 // loc.__bss_start
+[0m        [[38;2;19;161;14m22[0m] -rw- section size [38;2;19;161;14m368[0m named .bss
+        r3 += pc      [38;2;58;150;221m// 0xa7c4 // section..got
+[0m        [[38;2;19;161;14m20[0m] -rw- section size [38;2;19;161;14m128[0m named .got
+        [38;2;136;23;152mif[0m (r2) [38;2;136;23;152mgoto[0m [38;2;19;161;14m0xc7a[0m [38;2;58;150;221m// unlikely
+[0m        [38;2;136;23;152mgoto[0m loc_0x00000c62;
+    loc_0x00000c7a:
+        [38;2;58;150;221m// CODE XREF from entry.fini0 @ 0xc60(x)
+[0m        pop (r3, pc)  [38;2;58;150;221m// str.mm_rvc_sensor.c // str.mm_rvc_sensor_get_capture_resolution
+[0m        [38;2;136;23;152mgoto[0m loc_0x00000c68;
+        [38;2;136;23;152mreturn[0m r0;
+    loc_0x00000c68:
+        [38;2;58;150;221m// DATA XREF from sym.mm_rvc_sensor_get_capture_resolution @ 0x16e2(r)
+[0m        r3 = [[38;2;19;161;14m0x00000c6c[0m] [38;2;58;150;221m// [0xc88:4]=0x9bd6
+[0m        r3 += pc      [38;2;58;150;221m// 0xa844 // "D\xa8" // section..data
+[0m        r0 = [r3]     [38;2;58;150;221m// 0xa844 // "D\xa8" // section..data
+[0m        sym.imp.__cxa_finalize ()
+        
+    loc_0x00000c72:
+        [38;2;58;150;221m// CODE XREF from entry.fini0 @ 0xc66(x)
+[0m        r3 = [[38;2;19;161;14m0x00000c74[0m] [38;2;58;150;221m// [0xc8c:4]=0x9bce
+[0m        r2 = [38;2;19;161;14m1[0m
+        r3 += pc      [38;2;58;150;221m// 0xa848 // loc.__bss_start
+[0m        [[38;2;19;161;14m22[0m] -rw- section size [38;2;19;161;14m368[0m named .bss
+        [r3] = (byte) r2 [38;2;58;150;221m// 0xa848 // loc.__bss_start
+[0m        [[38;2;19;161;14m22[0m] -rw- section size [38;2;19;161;14m368[0m named .bss
+        [38;2;136;23;152mreturn[0m r0;
+    loc_0x00000c72: [38;2;58;150;221m// orphan
+[0m         [38;2;58;150;221m// CODE XREF from entry.fini0 @ 0xc66(x)
+[0m         r3 = [[38;2;19;161;14m0x00000c74[0m]        [38;2;58;150;221m// [0xc8c:4]=0x9bce
+[0m         r2 = [38;2;19;161;14m1[0m
+         r3 += pc                 [38;2;58;150;221m// 0xa848 // loc.__bss_start
+[0m                                  [[38;2;19;161;14m22[0m] -rw- section size [38;2;19;161;14m368[0m named .bss
+         [r3] = (byte) r2         [38;2;58;150;221m// 0xa848 // loc.__bss_start
+[0m                                  [[38;2;19;161;14m22[0m] -rw- section size [38;2;19;161;14m368[0m named .bss
+
+}
+
+[38;2;58;150;221m// callconv: r0 arm32 (r0, r1, r2, stack);
+[0m[38;2;197;15;31mint[0m loc.imp.mm_v4l2_realize ([38;2;197;15;31mint[0m r0, [38;2;197;15;31mint[0m r1) {
+    loc_0x00000c24:
+        [38;2;58;150;221m// CALL XREF from sym.mm_rvc_sensor_prepare @ 0x1848(x)
+[0m        add ip, pc, [38;2;19;161;14m0[0m, [38;2;19;161;14m12[0m
+        ip += [38;2;19;161;14m0x9000[0m
+        [38;2;58;150;221m// DATA XREF from loc.imp.mm_v4l2_realize @ 0xc24(r)
+[0m        pc = [ip + [38;2;19;161;14m0xc08[0m]! [38;2;58;150;221m// 0xa834 // reloc.mm_v4l2_realize // fcn.00000ae4
+[0m        [38;2;136;23;152mreturn[0m r0;
+}
+
+[38;2;58;150;221m// callconv: r0 arm32 (r0, r1);
+[0m[38;2;197;15;31mint[0m loc.imp.mm_v4l2_start_capture ([38;2;197;15;31mint[0m r0, [38;2;197;15;31mint[0m r1) {
+    loc_0x00000b7c:
+        [38;2;58;150;221m// CALL XREF from sym.mm_rvc_sensor_prepare @ 0x1858(x)
+[0m        add ip, pc, [38;2;19;161;14m0[0m, [38;2;19;161;14m12[0m
+        ip += [38;2;19;161;14m0x9000[0m
+        [38;2;58;150;221m// DATA XREF from loc.imp.mm_v4l2_start_capture @ 0xb7c(r)
+[0m        pc = [ip + [38;2;19;161;14m0xc78[0m]! [38;2;58;150;221m// 0xa7fc // reloc.mm_v4l2_start_capture // fcn.00000ae4
+[0m        [38;2;136;23;152mreturn[0m r0;
+}
+
+[38;2;58;150;221m// callconv: r0 arm32 (r0, r1);
+[0m[38;2;197;15;31mint[0m loc.imp.mm_v4l2_capture_image ([38;2;197;15;31mint[0m r0, [38;2;197;15;31mint[0m r1) {
+    loc_0x00000b94:
+        [38;2;58;150;221m// CALL XREFS from sym.mm_rvc_sensor_grab_image @ 0x1b66(x), 0x1be2(x)
+[0m        add ip, pc, [38;2;19;161;14m0[0m, [38;2;19;161;14m12[0m
+        ip += [38;2;19;161;14m0x9000[0m
+        [38;2;58;150;221m// DATA XREF from loc.imp.mm_v4l2_capture_image @ 0xb94(r)
+[0m        pc = [ip + [38;2;19;161;14m0xc68[0m]! [38;2;58;150;221m// 0xa804 // reloc.mm_v4l2_capture_image // fcn.00000ae4
+[0m        [38;2;136;23;152mreturn[0m r0;
+}
+

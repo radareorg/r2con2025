@@ -1,0 +1,25 @@
+0$ cat usr/etc/mmfw_rvc_sensor.ini
+[general]
+
+[ceiling]
+device node = /dev/rvc_sensor0
+buffer num = 3
+capture count = 1
+width = 320
+height = 240
+
+use time stamp = 0
+save image = 0
+file path = /opt/media/CeilingCapture_-.yuv
+
+[wild]
+device node = /dev/rvc_sensor1
+buffer num = 6
+capture count = 4
+width = 320
+height = 240
+
+use time stamp = 1
+save image = 0
+file path = /opt/media/WildCapture_-.yuv
+0$
